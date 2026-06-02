@@ -1,0 +1,923 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,viewport-fit=cover">
+<meta name="theme-color" content="#0c0a1e">
+<title>बिलासपुर टेस्ट सीरीज़ — CG शिक्षक भर्ती एवं CTET</title>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date());gtag('config','G-XXXXXXXXXX');</script>
+<script>!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,document,'script','https://connect.facebook.net/en_US/fbevents.js');fbq('init','YOUR_PIXEL_ID');fbq('track','PageView');</script>
+<noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=YOUR_PIXEL_ID&ev=PageView&noscript=1"/></noscript>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Devanagari:wght@400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<style>
+:root{--ink:#0c0a1e;--navy:#16135e;--indigo:#3730a3;--violet:#7c3aed;--saffron:#f59e0b;--amber:#fbbf24;--orange:#ea580c;--flame:#ef4444;--emerald:#059669;--bg:#f4f3ff;--bg2:#fff;--border:#e2e0f5;--muted:#6b7280;--text:#111827;--gd:linear-gradient(140deg,#0c0a1e 0%,#1e1354 45%,#16135e 100%);--gc:linear-gradient(135deg,#f59e0b,#ea580c);--g1:linear-gradient(135deg,#3b82f6,#6366f1);--g2:linear-gradient(135deg,#10b981,#059669);--g3:linear-gradient(135deg,#f59e0b,#d97706);--g4:linear-gradient(135deg,#8b5cf6,#6d28d9);--gapp:linear-gradient(135deg,#22c55e,#16a34a);--sc:0 4px 24px rgba(12,10,30,.08);--sh:0 16px 48px rgba(12,10,30,.14)}
+*{box-sizing:border-box;margin:0;padding:0}html{scroll-behavior:smooth}
+body{font-family:'Noto Sans Devanagari','Plus Jakarta Sans',sans-serif;background:var(--bg);color:var(--text);-webkit-font-smoothing:antialiased;overflow-x:hidden}
+::-webkit-scrollbar{width:4px}::-webkit-scrollbar-thumb{background:var(--indigo);border-radius:8px}
+::selection{background:#c4b5fd;color:#1e1b4b}
+#spbar{position:fixed;top:0;left:0;height:3px;background:var(--gc);z-index:9999;width:0%;box-shadow:0 0 10px rgba(245,158,11,.7);border-radius:0 3px 3px 0;transition:width .08s}
+.mob-bar{display:none;position:fixed;bottom:0;left:0;right:0;z-index:200;background:var(--ink);padding:10px 12px;border-top:1px solid rgba(245,158,11,.2);box-shadow:0 -8px 32px rgba(0,0,0,.5)}
+@media(max-width:767px){.mob-bar{display:block}}
+.mob-bar-r{display:flex;gap:8px}
+.mob-bar a.enroll{flex:1;display:flex;align-items:center;justify-content:center;gap:6px;background:var(--gc);color:#fff;padding:12px 8px;border-radius:12px;font-size:13px;font-weight:800;text-decoration:none;box-shadow:0 4px 18px rgba(234,88,12,.4)}
+.mob-bar a.app-dl{display:flex;align-items:center;justify-content:center;gap:5px;background:var(--gapp);color:#fff;padding:12px 16px;border-radius:12px;font-size:13px;font-weight:800;text-decoration:none;flex-shrink:0}
+.ticker{background:var(--gc);padding:9px 0;overflow:hidden}
+.tk-track{display:flex;white-space:nowrap;animation:tk 13s linear infinite}
+.tk-track:hover{animation-play-state:paused}
+@keyframes tk{0%{transform:translateX(0)}100%{transform:translateX(-50%)}}
+.tk-item{display:inline-flex;align-items:center;gap:6px;color:#fff;font-size:12px;font-weight:800;padding:0 28px;flex-shrink:0;letter-spacing:.3px}
+.tk-dot{width:5px;height:5px;background:rgba(255,255,255,.45);border-radius:50%;flex-shrink:0}
+.navbar{position:sticky;top:0;z-index:100;background:rgba(12,10,30,.97);backdrop-filter:blur(20px);border-bottom:1px solid rgba(245,158,11,.12)}
+.nav-inner{max-width:1240px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;padding:0 1.5rem;height:66px}
+.logo-w{display:flex;align-items:center;gap:12px}.logo-bs{display:flex;align-items:center;gap:6px}
+.lb{width:42px;height:42px;border-radius:10px;display:flex;align-items:center;justify-content:center;font-weight:900;font-size:14px}
+.lb1{background:var(--g1);color:#fff;box-shadow:0 4px 12px rgba(99,102,241,.35)}
+.lb2{background:var(--g2);color:#fff;font-size:10px;text-align:center;line-height:1.3;padding:4px;box-shadow:0 4px 12px rgba(5,150,105,.35)}
+.logo-sep{color:rgba(255,255,255,.25);font-weight:700;font-size:13px}
+.logo-t h1{color:#fff;font-size:15px;font-weight:800;letter-spacing:-.3px;line-height:1}
+.logo-t p{color:rgba(255,255,255,.38);font-size:10px;font-weight:600;margin-top:3px}
+nav ul{display:none;gap:22px;list-style:none}@media(min-width:960px){nav ul{display:flex}}
+nav a{color:rgba(255,255,255,.58);text-decoration:none;font-size:13px;font-weight:600;transition:color .2s;position:relative;padding-bottom:2px}
+nav a::after{content:'';position:absolute;bottom:-2px;left:0;width:0;height:2px;background:var(--saffron);border-radius:2px;transition:width .25s}
+nav a:hover,nav a.active{color:var(--amber)}nav a:hover::after,nav a.active::after{width:100%}
+.nav-r{display:flex;align-items:center;gap:8px}
+.lang-s{background:rgba(255,255,255,.07);color:rgba(255,255,255,.75);border:1px solid rgba(255,255,255,.12);padding:6px 10px;border-radius:8px;font-size:11px;font-weight:700;cursor:pointer;font-family:inherit}
+.btn-nv{display:none;background:var(--gc);color:#fff;padding:9px 18px;border-radius:10px;font-size:12px;font-weight:800;text-decoration:none;box-shadow:0 4px 18px rgba(234,88,12,.38);transition:all .2s}
+@media(min-width:576px){.btn-nv{display:block}}.btn-nv:hover{transform:translateY(-2px)}
+.btn-app-nav{display:none;align-items:center;gap:5px;background:var(--gapp);color:#fff;padding:8px 14px;border-radius:10px;font-size:12px;font-weight:800;text-decoration:none;box-shadow:0 4px 14px rgba(22,163,74,.35);transition:all .2s;white-space:nowrap}
+@media(min-width:780px){.btn-app-nav{display:flex}}.btn-app-nav:hover{transform:translateY(-2px)}
+.hero{background:var(--gd);position:relative;overflow:hidden;padding:100px 1.5rem 128px}
+.hg{position:absolute;inset:0;background-image:linear-gradient(rgba(255,255,255,.028) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.028) 1px,transparent 1px);background-size:48px 48px;mask-image:radial-gradient(ellipse 80% 80% at 50% 50%,black,transparent)}
+.particles{position:absolute;inset:0;overflow:hidden;pointer-events:none;z-index:0}
+.p-dot{position:absolute;border-radius:50%;animation:rise linear infinite;pointer-events:none}
+@keyframes rise{0%{transform:translateY(110%) scale(0);opacity:0}15%{opacity:1}80%{opacity:.5}100%{transform:translateY(-80px) scale(1.5);opacity:0}}
+.orb{position:absolute;border-radius:50%;pointer-events:none;filter:blur(60px);will-change:transform}
+.o1{width:500px;height:500px;background:rgba(99,102,241,.22);top:-180px;left:-100px;animation:od 12s ease-in-out infinite}
+.o2{width:400px;height:400px;background:rgba(245,158,11,.1);top:100px;right:-120px;animation:od 15s ease-in-out infinite reverse}
+.o3{width:300px;height:300px;background:rgba(124,58,237,.15);bottom:-80px;left:30%;animation:od 10s ease-in-out infinite 3s}
+@keyframes od{0%,100%{transform:translate(0,0)}33%{transform:translate(30px,-20px)}66%{transform:translate(-20px,30px)}}
+.sh2d{position:absolute;opacity:.08;pointer-events:none}
+.sh1{width:200px;height:200px;border:2px solid var(--amber);border-radius:30px;top:80px;right:8%;animation:ss 20s linear infinite}
+.sh2{width:120px;height:120px;border:2px solid #6366f1;border-radius:50%;bottom:100px;left:6%;animation:ss 14s linear infinite reverse}
+.sh3{width:80px;height:80px;border:2px solid var(--emerald);transform:rotate(45deg);top:40%;right:15%;animation:sf 6s ease-in-out infinite}
+@keyframes ss{to{transform:rotate(360deg)}}@keyframes sf{0%,100%{transform:rotate(45deg) translateY(0)}50%{transform:rotate(45deg) translateY(-18px)}}
+.hero-c{position:relative;z-index:2;max-width:860px;margin:0 auto;text-align:center}
+.eyebrow{display:inline-flex;align-items:center;gap:10px;background:rgba(245,158,11,.12);border:1px solid rgba(245,158,11,.35);color:var(--amber);padding:9px 24px;border-radius:100px;font-size:12px;font-weight:700;letter-spacing:.4px;margin-bottom:28px}
+.pr{position:relative;width:10px;height:10px;flex-shrink:0}.pr::before,.pr::after{content:'';position:absolute;inset:0;border-radius:50%;background:var(--saffron)}.pr::before{animation:prp 1.5s ease-out infinite;opacity:.6}.pr::after{transform:scale(.5)}
+@keyframes prp{0%{transform:scale(1);opacity:.6}100%{transform:scale(2.4);opacity:0}}
+.hero h2{font-size:clamp(26px,5.5vw,58px);font-weight:900;color:#fff;line-height:1.18;letter-spacing:-.5px;margin-bottom:28px}
+.hero h2 .gold{color:transparent;background:linear-gradient(135deg,#fbbf24,#f97316);-webkit-background-clip:text;background-clip:text}
+.hero-d{max-width:660px;margin:0 auto 40px}
+.hero-d p{font-size:15px;color:rgba(255,255,255,.7);line-height:1.75;font-weight:500;margin-bottom:10px}
+.hero-d p b{color:#fff;font-weight:700}
+.alert-l{color:#fca5a5;font-weight:600;background:rgba(239,68,68,.1);border:1px solid rgba(239,68,68,.2);border-radius:10px;padding:8px 14px;display:inline-block;margin-top:4px}
+.hbtns{display:flex;flex-direction:column;gap:12px;align-items:center;justify-content:center;flex-wrap:wrap}
+@media(min-width:576px){.hbtns{flex-direction:row}}
+.btn-p{display:inline-flex;align-items:center;gap:9px;background:var(--gc);color:#fff;padding:17px 40px;border-radius:14px;font-size:16px;font-weight:900;text-decoration:none;box-shadow:0 8px 32px rgba(234,88,12,.42);animation:cp 2.8s ease-in-out infinite;font-family:inherit}
+@keyframes cp{0%,100%{transform:scale(1);box-shadow:0 8px 32px rgba(234,88,12,.42)}50%{transform:scale(1.03);box-shadow:0 16px 52px rgba(234,88,12,.62)}}
+.btn-g{display:inline-flex;align-items:center;gap:9px;background:rgba(255,255,255,.07);border:1.5px solid rgba(255,255,255,.18);color:#fff;padding:16px 32px;border-radius:14px;font-size:15px;font-weight:700;text-decoration:none;transition:all .25s;font-family:inherit;backdrop-filter:blur(8px)}
+.btn-g:hover{background:rgba(255,255,255,.14)}
+.btn-app-hero{display:inline-flex;align-items:center;gap:9px;background:var(--gapp);color:#fff;padding:16px 32px;border-radius:14px;font-size:15px;font-weight:800;text-decoration:none;box-shadow:0 8px 24px rgba(22,163,74,.4);font-family:inherit;animation:cp2 3s ease-in-out infinite 1.4s}
+@keyframes cp2{0%,100%{transform:scale(1);box-shadow:0 8px 24px rgba(22,163,74,.4)}50%{transform:scale(1.025);box-shadow:0 12px 36px rgba(22,163,74,.6)}}
+.hclip{position:absolute;bottom:-2px;left:0;right:0;height:80px;background:var(--bg);clip-path:ellipse(55% 100% at 50% 100%)}
+.stats{background:var(--bg2);border-bottom:1px solid var(--border)}
+.si{max-width:900px;margin:0 auto;display:flex;flex-wrap:wrap;justify-content:center}
+.stat{flex:1;min-width:120px;padding:28px 20px;text-align:center;border-right:1px solid var(--border);position:relative}
+.stat:last-child{border-right:none}
+.stat::before{content:'';position:absolute;top:0;left:0;right:0;height:3px;border-radius:0 0 3px 3px}
+.stat:nth-child(1)::before{background:var(--g1)}.stat:nth-child(2)::before{background:var(--g2)}.stat:nth-child(3)::before{background:var(--gc)}.stat:nth-child(4)::before{background:var(--g4)}
+.sn{font-size:30px;font-weight:900;letter-spacing:-.5px;line-height:1;color:var(--navy)}.sn em{color:var(--orange);font-style:normal}
+.sl-stat{font-size:11px;color:var(--muted);font-weight:600;margin-top:6px}
+@media(max-width:575px){.si{display:grid;grid-template-columns:1fr 1fr}.stat{border-right:none;border-bottom:1px solid var(--border)}.stat:nth-child(odd){border-right:1px solid var(--border)}.stat:nth-child(3),.stat:nth-child(4){border-bottom:none}}
+/* APP SECTION */
+.app-sec{background:linear-gradient(145deg,#0c0a1e 0%,#1a1550 55%,#0f0c2e 100%);padding:80px 1.5rem;position:relative;overflow:hidden}
+.app-sec::before{content:'';position:absolute;top:-100px;right:-80px;width:380px;height:380px;background:radial-gradient(circle,rgba(34,197,94,.18),transparent 65%);pointer-events:none}
+.app-sec::after{content:'';position:absolute;bottom:-80px;left:-80px;width:300px;height:300px;background:radial-gradient(circle,rgba(99,102,241,.18),transparent 65%);pointer-events:none}
+.app-grid{max-width:1060px;margin:0 auto;display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center;position:relative;z-index:1}
+@media(max-width:780px){.app-grid{grid-template-columns:1fr;gap:40px}}
+.app-badge-s{display:inline-flex;align-items:center;gap:8px;background:rgba(34,197,94,.1);border:1px solid rgba(34,197,94,.32);color:#86efac;padding:7px 18px;border-radius:100px;font-size:11px;font-weight:800;letter-spacing:.5px;text-transform:uppercase;margin-bottom:18px}
+.live-dot{width:7px;height:7px;background:#22c55e;border-radius:50%;animation:prp 1.5s ease-out infinite;display:inline-block}
+.app-title{font-size:clamp(24px,3.5vw,38px);font-weight:900;color:#fff;line-height:1.25;margin-bottom:14px;letter-spacing:-.4px}
+.app-title .ag{color:transparent;background:linear-gradient(135deg,#fbbf24,#f97316);-webkit-background-clip:text;background-clip:text}
+.app-desc{color:rgba(255,255,255,.62);font-size:14px;line-height:1.82;font-weight:500;margin-bottom:26px}
+.app-feats{list-style:none;display:flex;flex-direction:column;gap:11px;margin-bottom:30px}
+.app-feats li{display:flex;align-items:center;gap:12px;color:rgba(255,255,255,.82);font-size:13.5px;font-weight:600}
+.af-icon{width:32px;height:32px;border-radius:8px;display:flex;align-items:center;justify-content:center;font-size:14px;flex-shrink:0}
+.btn-app-dl{display:inline-flex;align-items:center;gap:12px;background:var(--gapp);color:#fff;padding:17px 36px;border-radius:16px;font-size:16px;font-weight:900;text-decoration:none;box-shadow:0 8px 28px rgba(22,163,74,.45);transition:all .25s;font-family:inherit}
+.btn-app-dl:hover{transform:translateY(-3px);box-shadow:0 14px 40px rgba(22,163,74,.6)}
+.app-sub{font-size:11px;color:rgba(255,255,255,.36);margin-top:10px;font-weight:600}
+.phone-mockup{display:flex;justify-content:center;align-items:center}
+.phone-wrap{position:relative;width:240px;height:490px;animation:pfloat 4.5s ease-in-out infinite}
+@keyframes pfloat{0%,100%{transform:translateY(0) rotate(-2deg)}50%{transform:translateY(-18px) rotate(2deg)}}
+.phone-outer{width:100%;height:100%;background:linear-gradient(145deg,#1e1b4b,#312e81);border-radius:38px;border:2.5px solid rgba(99,102,241,.4);box-shadow:0 0 0 8px rgba(99,102,241,.07),0 40px 80px rgba(0,0,0,.65),inset 0 1px 0 rgba(255,255,255,.1);position:relative;overflow:hidden}
+.phone-screen{position:absolute;inset:8px;border-radius:30px;background:linear-gradient(160deg,#0c0a1e,#1e1354);overflow:hidden;display:flex;flex-direction:column}
+.phone-header{background:linear-gradient(135deg,rgba(99,102,241,.3),rgba(124,58,237,.2));padding:18px 14px 14px;border-bottom:1px solid rgba(255,255,255,.06)}
+.phone-logo{display:flex;align-items:center;gap:7px;margin-bottom:10px}
+.ph-lb{width:26px;height:26px;background:var(--g1);border-radius:6px;display:flex;align-items:center;justify-content:center;font-size:8px;font-weight:900;color:#fff}
+.ph-title{font-size:11px;font-weight:800;color:#fff}.phone-welcome{font-size:9px;color:rgba(255,255,255,.5);font-weight:600}
+.phone-body{flex:1;padding:10px;display:flex;flex-direction:column;gap:7px}
+.ph-card{background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.08);border-radius:11px;padding:9px 11px}
+.ph-card-title{font-size:9px;font-weight:800;color:rgba(255,255,255,.75);margin-bottom:3px}.ph-card-sub{font-size:7.5px;color:rgba(255,255,255,.4);font-weight:600}
+.ph-card.act{background:linear-gradient(135deg,rgba(245,158,11,.14),rgba(234,88,12,.09));border-color:rgba(245,158,11,.28)}.ph-card.act .ph-card-title{color:#fbbf24}
+.phone-otp{background:rgba(34,197,94,.08);border:1px solid rgba(34,197,94,.22);border-radius:11px;padding:9px 11px;margin:0 10px 10px}
+.ph-otp-label{font-size:8px;font-weight:700;color:#86efac;margin-bottom:5px}
+.ph-otp-boxes{display:flex;gap:4px;justify-content:center}
+.otp-box{width:22px;height:26px;background:rgba(255,255,255,.08);border:1px solid rgba(34,197,94,.3);border-radius:5px;display:flex;align-items:center;justify-content:center;font-size:10px;font-weight:900;color:#fff}
+.otp-box.filled{background:rgba(34,197,94,.15);border-color:rgba(34,197,94,.5);color:#86efac}
+.phone-glow{position:absolute;top:-50px;right:-50px;width:180px;height:180px;background:radial-gradient(circle,rgba(34,197,94,.2),transparent 65%)}
+/* HELPERS */
+.sl2{display:inline-block;font-size:10px;font-weight:800;letter-spacing:2px;text-transform:uppercase;padding:5px 14px;border-radius:6px;margin-bottom:12px}
+.li{background:#eef2ff;color:#4338ca}.lb3{background:#eff6ff;color:#1d4ed8}.lg{background:#f0fdf4;color:#15803d}.la{background:#fffbeb;color:#b45309}.lr{background:#fff1f2;color:#b91c1c}
+.st{font-size:clamp(22px,3.5vw,34px);font-weight:900;color:var(--navy);letter-spacing:-.4px;line-height:1.2}
+.ss{font-size:14px;color:var(--muted);font-weight:500;margin-top:8px;line-height:1.7;max-width:560px;margin-left:auto;margin-right:auto}
+.tc{text-align:center}.hidden{display:none!important}.mt8{margin-top:2rem}.mt10{margin-top:2.5rem}
+/* USP */
+.usp{padding:80px 1.5rem;background:var(--bg2);position:relative}
+.usp::after{content:'';position:absolute;bottom:0;left:0;right:0;height:1px;background:linear-gradient(90deg,transparent,var(--border),transparent)}
+.fc{background:var(--gd);border-radius:28px;padding:44px;max-width:860px;margin:36px auto 48px;position:relative;overflow:hidden;text-align:center}
+.fc::before{content:'';position:absolute;top:-80px;right:-80px;width:280px;height:280px;background:radial-gradient(circle,rgba(245,158,11,.2),transparent 65%)}
+.fc::after{content:'';position:absolute;bottom:-60px;left:-60px;width:220px;height:220px;background:radial-gradient(circle,rgba(99,102,241,.2),transparent 65%)}
+.fp{display:inline-flex;align-items:center;gap:7px;background:rgba(245,158,11,.16);border:1px solid rgba(245,158,11,.38);color:var(--amber);padding:6px 18px;border-radius:100px;font-size:12px;font-weight:800;margin-bottom:16px;position:relative;z-index:1}
+.fc h3{font-size:clamp(18px,2.8vw,24px);font-weight:900;color:#fff;margin-bottom:14px;position:relative;z-index:1}
+.fc p{color:rgba(255,255,255,.7);font-size:14px;line-height:1.78;font-weight:500;position:relative;z-index:1;max-width:640px;margin:0 auto}
+.ug{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:20px;max-width:900px;margin:0 auto}
+.uc{background:var(--bg);border:1.5px solid var(--border);border-radius:20px;padding:26px;transition:all .32s;position:relative;overflow:hidden}
+.uc::before{content:'';position:absolute;top:0;left:0;right:0;height:3px;border-radius:3px 3px 0 0;opacity:0;transition:opacity .3s}
+.uc:nth-child(1)::before{background:var(--g1)}.uc:nth-child(2)::before{background:var(--gc)}.uc:nth-child(3)::before{background:var(--g2)}
+.uc:hover{border-color:#a5b4fc;box-shadow:var(--sh);transform:translateY(-6px)}.uc:hover::before{opacity:1}
+.ui{width:48px;height:48px;border-radius:14px;display:flex;align-items:center;justify-content:center;font-size:22px;margin-bottom:16px}
+.uc h4{font-size:15px;font-weight:800;color:var(--navy);margin-bottom:8px}.uc p{font-size:13px;color:var(--muted);line-height:1.68;font-weight:500}
+/* COMPARISON */
+.comp{padding:80px 1.5rem;background:var(--bg)}.comp-wrap{max-width:900px;margin:40px auto 0;overflow-x:auto}
+table.ct{width:100%;border-collapse:collapse;background:var(--bg2);border-radius:20px;overflow:hidden;box-shadow:var(--sh)}
+table.ct thead tr{background:var(--gd)}
+table.ct th{padding:18px 20px;text-align:center;color:#fff;font-size:13px;font-weight:800;letter-spacing:.3px}
+table.ct th:first-child{text-align:left;color:rgba(255,255,255,.7);font-size:12px;font-weight:700}
+table.ct th.hl{background:linear-gradient(135deg,rgba(245,158,11,.25),rgba(234,88,12,.2));color:var(--amber)}
+table.ct tbody tr{border-bottom:1px solid var(--border);transition:background .2s}
+table.ct tbody tr:last-child{border-bottom:none}table.ct tbody tr:hover{background:#f9f8ff}
+table.ct td{padding:14px 20px;font-size:13px;font-weight:600;text-align:center;color:var(--muted)}
+table.ct td:first-child{text-align:left;color:var(--text);font-weight:700;font-size:13px}
+.c-yes{color:#059669;font-size:18px}.c-no{color:#dc2626;font-size:18px}.c-part{color:#d97706;font-size:14px;font-weight:800}
+.c-hl{color:var(--navy);font-weight:900;font-size:14px}.col-bts{background:rgba(245,158,11,.04)}
+.app-ct-badge{display:inline-flex;align-items:center;gap:4px;background:rgba(34,197,94,.1);border:1px solid rgba(34,197,94,.3);color:#15803d;font-size:11px;font-weight:800;padding:2px 9px;border-radius:6px}
+/* COURSES */
+.ctab{padding:72px 1.5rem;background:var(--bg)}
+.ctab-g{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:16px;max-width:1040px;margin:32px auto 0}
+.ctab-c{background:var(--bg2);border:1.5px solid var(--border);border-radius:22px;padding:24px;transition:all .3s;position:relative;overflow:hidden}
+.ctab-c:hover{transform:translateY(-5px);box-shadow:var(--sh)}.ctab-acc{position:absolute;top:0;left:0;right:0;height:4px}
+.cbadge{font-size:10px;font-weight:800;text-transform:uppercase;letter-spacing:.5px;padding:4px 12px;border-radius:6px;display:inline-block;margin-bottom:12px}
+.ctab-c h4{font-size:14px;font-weight:800;color:var(--navy);margin-bottom:14px;padding-bottom:10px;border-bottom:1px solid var(--border)}
+.ctags{display:flex;flex-wrap:wrap;gap:6px}.ctag{background:var(--bg);color:#374151;font-size:11px;font-weight:700;padding:4px 11px;border-radius:7px;border:1px solid var(--border);transition:all .2s}
+.ctag:hover{background:#eef2ff;border-color:#a5b4fc;color:#4338ca}
+/* BONUS */
+.bonus{padding:0 1.5rem 72px;background:var(--bg2)}
+.bonus-w{background:linear-gradient(135deg,#fffbeb,#fff7ed);border:2px solid #fcd34d;border-radius:28px;padding:38px 44px;max-width:920px;margin:0 auto;display:flex;align-items:flex-start;gap:28px;position:relative;overflow:hidden}
+.bonus-w::before{content:'BONUS';position:absolute;top:16px;right:-28px;background:#f59e0b;color:#fff;font-size:10px;font-weight:900;letter-spacing:2px;padding:4px 40px;transform:rotate(45deg)}
+@media(max-width:575px){.bonus-w{flex-direction:column;align-items:center;text-align:center;padding:28px 24px}}
+.bicon{font-size:60px;flex-shrink:0;filter:drop-shadow(0 4px 12px rgba(245,158,11,.3))}
+.bonus-w h4{font-size:20px;font-weight:900;color:var(--navy);margin-bottom:12px;line-height:1.3}.bonus-w p{font-size:14px;color:#78350f;line-height:1.75;font-weight:500}
+/* TRUST */
+.trust{padding:48px 1.5rem;background:var(--bg)}.tbadges{display:flex;flex-wrap:wrap;gap:14px;justify-content:center;max-width:860px;margin:28px auto 0}
+.tb{display:flex;align-items:center;gap:10px;background:var(--bg2);border:1.5px solid var(--border);border-radius:14px;padding:14px 20px;font-size:13px;font-weight:700;color:var(--navy);transition:all .2s}
+.tb:hover{border-color:#a5b4fc;box-shadow:var(--sc);transform:translateY(-2px)}.tb-icon{font-size:22px;flex-shrink:0}
+/* PATTERN */
+.pat{padding:80px 1.5rem;background:var(--bg2)}.drow{display:flex;flex-wrap:wrap;gap:10px;justify-content:center;margin:28px auto 40px}
+.diff{display:flex;align-items:center;gap:8px;padding:10px 22px;border-radius:100px;font-size:13px;font-weight:700;border:1.5px solid}
+.dd{width:10px;height:10px;border-radius:50%;flex-shrink:0}
+.de{background:#f0fdf4;border-color:#bbf7d0;color:#166534}.de .dd{background:#16a34a}.dm{background:#fffbeb;border-color:#fde68a;color:#92400e}.dm .dd{background:#d97706}.dh{background:#fff1f2;border-color:#fecdd3;color:#9f1239}.dh .dd{background:#e11d48}
+.pg{display:grid;grid-template-columns:repeat(auto-fill,minmax(170px,1fr));gap:14px;max-width:920px;margin:0 auto}
+.pc{background:var(--bg);border:1.5px solid var(--border);border-radius:18px;padding:22px 16px;text-align:center;transition:all .3s}
+.pc:hover{border-color:#a5b4fc;transform:translateY(-4px);box-shadow:var(--sc)}.pc.hl{background:linear-gradient(135deg,#eff6ff,#eef2ff);border-color:#a5b4fc}
+.pc em{font-size:30px;display:block;margin-bottom:10px;font-style:normal}.pc h4{font-size:13px;font-weight:800;color:var(--navy)}.pc p{font-size:11px;color:var(--muted);margin-top:4px;line-height:1.4}
+/* DEMO */
+.demo{padding:80px 1.5rem;background:var(--bg)}
+.dtabs{background:var(--bg2);border:1.5px solid var(--border);border-radius:16px;padding:6px;display:flex;flex-wrap:wrap;gap:4px;max-width:720px;margin:30px auto 24px}
+.demo-tab-btn{flex:1;min-width:0;padding:10px 8px;border:none;background:transparent;color:var(--muted);border-radius:10px;cursor:pointer;transition:all .25s;font-family:inherit;display:flex;flex-direction:column;align-items:center;gap:3px}
+.demo-tab-btn:hover{color:var(--navy);background:rgba(255,255,255,.8)}.demo-tab-btn.active{background:var(--navy);color:#fff;box-shadow:0 2px 14px rgba(22,19,94,.25);transform:translateY(-1px)}
+.dtb-main{font-size:14px;font-weight:800;line-height:1}.dtb-sub{font-size:10px;font-weight:600;opacity:.65;line-height:1}.demo-tab-btn.active .dtb-sub{opacity:.85}
+@media(max-width:500px){.dtabs{display:grid;grid-template-columns:1fr 1fr;gap:6px}.demo-tab-btn{padding:12px 8px}.dtb-main{font-size:15px}}
+.dpane{background:var(--bg2);border:1.5px solid var(--border);border-radius:22px;padding:28px;max-width:880px;margin:0 auto;min-height:150px}
+.dgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(155px,1fr));gap:12px}
+.dlink{background:var(--bg);border:1.5px solid var(--border);border-radius:13px;padding:16px 12px;text-align:center;font-size:13px;font-weight:700;color:var(--navy);text-decoration:none;transition:all .22s;display:block}
+.dlink:hover{border-color:#6366f1;color:#4f46e5;background:#eef2ff;transform:translateY(-3px);box-shadow:var(--sc)}
+.dempty{text-align:center;color:var(--muted);font-size:14px;font-weight:600;padding:36px}
+.tgbtn{display:inline-flex;align-items:center;gap:10px;background:#0088cc;color:#fff;padding:14px 34px;border-radius:14px;font-size:15px;font-weight:800;text-decoration:none;transition:all .2s;box-shadow:0 6px 24px rgba(0,136,204,.3);font-family:inherit}
+.tgbtn:hover{background:#0077b3;transform:translateY(-2px)}
+/* PRICING */
+.pricing{padding:80px 1.5rem;background:var(--bg)}
+.pcards{display:grid;grid-template-columns:repeat(auto-fill,minmax(278px,1fr));gap:22px;max-width:1220px;margin:36px auto 0;align-items:start}
+.card{background:var(--bg2);border:1.5px solid var(--border);border-radius:26px;padding:30px;display:flex;flex-direction:column;position:relative;transition:all .32s;will-change:transform;overflow:hidden}
+.card:hover{transform:translateY(-8px);box-shadow:var(--sh);border-color:#93c5fd}
+.card.dk{background:linear-gradient(160deg,#0c0a1e,#1e1354);border-color:rgba(124,58,237,.3)}.card.dk:hover{border-color:rgba(124,58,237,.6)}
+.ribbon{position:absolute;top:8px;left:20px;white-space:nowrap;background:var(--flame);color:#fff;padding:5px 14px;font-size:10px;font-weight:900;border-radius:100px;text-transform:uppercase;letter-spacing:.7px;box-shadow:0 2px 10px rgba(0,0,0,.2);z-index:20}
+.ribbon-special{background:var(--gc)}.card:has(.ribbon){padding-top:46px}.card.dk:has(.ribbon){padding-top:46px}
+.cstripe{position:absolute;top:0;left:0;right:0;height:6px}
+.ctg{font-size:10px;font-weight:900;text-transform:uppercase;letter-spacing:.5px;padding:4px 13px;border-radius:7px;display:inline-block}
+.card h4{font-size:22px;font-weight:900;margin-top:18px;line-height:1.25}
+.cstl{font-size:10px;font-weight:800;letter-spacing:1px;text-transform:uppercase;margin-top:22px;margin-bottom:12px}
+.clist{list-style:none;display:flex;flex-direction:column;gap:9px;flex-grow:1}.clist li{display:flex;align-items:center;gap:9px;font-size:13px;font-weight:600}
+.ck{width:18px;height:18px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:9px;flex-shrink:0}
+.cprice{margin-top:24px;padding-top:20px;border-top:1px solid var(--border);display:flex;justify-content:space-between;align-items:flex-end}
+.dk .cprice{border-color:rgba(255,255,255,.1)}.pcol{display:flex;flex-direction:column}
+.plbl{font-size:11px;font-weight:700}
+.pamt{font-size:26px;font-weight:900;letter-spacing:-.5px;line-height:1;margin:4px 0}
+.pamt-old{font-size:14px;font-weight:700;color:#9ca3af;text-decoration:line-through;display:block;margin-bottom:1px}
+.pamt-old-dk{font-size:14px;font-weight:700;color:rgba(255,255,255,.28);text-decoration:line-through;display:block;margin-bottom:1px}
+.psave{background:#dcfce7;color:#166534;border:1px solid #86efac;font-size:10px;font-weight:800;padding:2px 8px;border-radius:5px;display:inline-block;margin-top:3px}
+.psave-dk{background:rgba(34,197,94,.14);color:#86efac;border:1px solid rgba(34,197,94,.3);font-size:10px;font-weight:800;padding:2px 8px;border-radius:5px;display:inline-block;margin-top:3px}
+.pchip{background:#f0fdf4;color:#15803d;font-size:10px;font-weight:700;padding:2px 8px;border-radius:5px;display:inline-block}
+.pchip-m{background:#eff6ff;color:#1d4ed8;font-size:10px;font-weight:700;padding:2px 8px;border-radius:5px;display:inline-block}
+.pchip-dk{background:rgba(16,185,129,.15);color:#34d399}
+.pben{background:#f0fdf4;color:#15803d;font-size:10px;font-weight:700;padding:2px 8px;border-radius:5px;margin-top:3px;display:inline-block}
+.pben-dk{background:rgba(16,185,129,.12);color:#34d399}
+.cbtn{display:block;width:100%;padding:15px;text-align:center;font-size:14px;font-weight:800;text-decoration:none;border-radius:13px;margin-top:22px;transition:all .22s;font-family:inherit}
+.cbtn-ink{background:var(--navy);color:#fff}.cbtn-ink:hover{background:var(--indigo);box-shadow:0 6px 20px rgba(22,19,94,.3)}
+.cbtn-fire{background:var(--gc);color:#fff;box-shadow:0 4px 18px rgba(234,88,12,.3)}.cbtn-fire:hover{box-shadow:0 8px 32px rgba(234,88,12,.5);transform:translateY(-2px)}
+/* PROCESS */
+.proc2{padding:80px 1.5rem;background:var(--bg2)}
+.flow{max-width:780px;margin:48px auto 0;display:flex;flex-direction:column;gap:0}
+.flow-step{display:flex;gap:0;position:relative}
+.flow-left{display:flex;flex-direction:column;align-items:center;width:56px;flex-shrink:0}
+.flow-circle{width:52px;height:52px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:18px;font-weight:900;color:#fff;flex-shrink:0;position:relative;z-index:1;box-shadow:0 4px 16px rgba(0,0,0,.15)}
+.flow-line{width:2px;flex:1;min-height:24px;margin:4px 0}
+.flow-body{flex:1;background:var(--bg);border:1.5px solid var(--border);border-radius:18px;padding:20px 24px;margin-left:18px;margin-bottom:16px;transition:all .3s}
+.flow-step:hover .flow-body{border-color:#a5b4fc;box-shadow:var(--sc);transform:translateX(4px)}
+.flow-body.app-step{background:linear-gradient(135deg,rgba(34,197,94,.05),rgba(22,163,74,.03));border-color:rgba(34,197,94,.22)}
+.flow-step:hover .flow-body.app-step{border-color:rgba(34,197,94,.5);transform:translateX(4px)}
+.flow-body h4{font-size:15px;font-weight:800;color:var(--navy);margin-bottom:6px;display:flex;align-items:center;gap:8px;flex-wrap:wrap}
+.flow-body p{font-size:13px;color:var(--muted);line-height:1.7;font-weight:500}
+.ftag{display:inline-flex;align-items:center;gap:5px;font-size:11px;font-weight:700;padding:3px 10px;border-radius:6px;margin-top:8px;margin-right:6px}
+.ftag-tg{background:#e7f4fb;color:#0077b3}.ftag-wa{background:#e7fbe9;color:#15803d}.ftag-pdf{background:#fff1f2;color:#b91c1c}.ftag-rank{background:#f5f3ff;color:#7c3aed}.ftag-ok{background:#f0fdf4;color:#15803d}.ftag-app{background:rgba(34,197,94,.1);color:#15803d;border:1px solid rgba(34,197,94,.18)}
+.finfo{background:#fffbeb;border:1px solid #fde68a;border-radius:10px;padding:8px 12px;font-size:12px;font-weight:600;color:#92400e;margin-top:10px;line-height:1.6}
+.otp-steps{margin-top:14px;display:flex;flex-direction:column;gap:9px}
+.otp-step{display:flex;align-items:flex-start;gap:10px;font-size:12.5px;font-weight:700;color:var(--text)}
+.otp-num{width:22px;height:22px;min-width:22px;border-radius:50%;background:var(--g2);color:#fff;display:flex;align-items:center;justify-content:center;font-size:10px;font-weight:900;flex-shrink:0;margin-top:2px}
+@media(max-width:575px){.flow-body{padding:16px 18px;margin-left:12px}}
+/* GUARANTEE */
+.guarantee{padding:0 1.5rem 72px;background:var(--bg2)}
+.gbox{background:linear-gradient(135deg,#f0fdf4,#ecfdf5);border:2px solid #a7f3d0;border-radius:28px;padding:36px 44px;max-width:760px;margin:0 auto;text-align:center;position:relative;overflow:hidden}
+.gbox::before{content:'';position:absolute;top:-60px;right:-60px;width:180px;height:180px;background:radial-gradient(circle,rgba(5,150,105,.12),transparent 65%)}
+.gshield{font-size:56px;margin-bottom:16px;filter:drop-shadow(0 4px 12px rgba(5,150,105,.25))}
+.gbox h3{font-size:22px;font-weight:900;color:var(--navy);margin-bottom:10px}.gbox p{font-size:14px;color:#065f46;line-height:1.72;font-weight:500}
+/* TESTIMONIALS */
+.testi{padding:80px 1.5rem;background:var(--bg2)}
+.tgrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:22px;max-width:1000px;margin:40px auto 0}
+.tcard{background:var(--bg);border:1.5px solid var(--border);border-radius:22px;padding:28px;transition:all .32s;position:relative}
+.tcard:hover{box-shadow:var(--sh);transform:translateY(-5px);border-color:#a5b4fc}
+.tcard .stars{color:var(--saffron);font-size:15px;letter-spacing:2px;margin-bottom:14px}
+.tcard p{font-size:14px;color:#374151;line-height:1.75;font-weight:500;font-style:italic;margin-bottom:18px}
+.tcard p::before{content:'\201C';font-size:32px;color:#c4b5fd;font-family:Georgia,serif;line-height:0;vertical-align:-12px;margin-right:4px}
+.tauth{display:flex;align-items:center;gap:12px}
+.tav{width:44px;height:44px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:16px;font-weight:900;color:#fff;flex-shrink:0}
+.tauth-t h5{font-size:14px;font-weight:800;color:var(--navy)}.tauth-t p{font-size:11px;color:var(--muted);font-weight:600;margin-top:2px}
+.tcard-badge{position:absolute;top:16px;right:16px;background:#f0fdf4;color:#15803d;font-size:10px;font-weight:800;padding:3px 10px;border-radius:100px;border:1px solid #bbf7d0}
+/* FAQ */
+.faq{padding:80px 1.5rem;background:var(--bg)}.faq-list{max-width:760px;margin:36px auto 0;display:flex;flex-direction:column;gap:12px}
+.faq-item{background:var(--bg2);border:1.5px solid var(--border);border-radius:16px;overflow:hidden;transition:all .25s}.faq-item.open{border-color:#a5b4fc;box-shadow:var(--sc)}
+.faq-q{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:20px 22px;cursor:pointer;font-size:15px;font-weight:700;color:var(--navy)}.faq-q:hover{background:#f9f8ff}
+.faq-arrow{font-size:18px;transition:transform .3s;flex-shrink:0;color:var(--indigo)}.faq-item.open .faq-arrow{transform:rotate(180deg)}
+.faq-a{max-height:0;overflow:hidden;transition:max-height .4s ease}.faq-item.open .faq-a{max-height:700px}
+.faq-a-inner{padding:14px 22px 20px;font-size:14px;color:#374151;line-height:1.75;font-weight:500;border-top:1px solid var(--border)}
+/* CTA */
+.fcta{padding:40px 1.5rem 100px;background:var(--bg2)}
+.fbox{background:var(--gd);border-radius:32px;padding:56px 44px;max-width:700px;margin:0 auto;text-align:center;position:relative;overflow:hidden}
+.fbox::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse 60% 60% at 20% 30%,rgba(245,158,11,.1),transparent),radial-gradient(ellipse 60% 60% at 80% 70%,rgba(99,102,241,.12),transparent)}
+.fbox-grid{position:absolute;inset:0;background-image:linear-gradient(rgba(255,255,255,.025) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.025) 1px,transparent 1px);background-size:36px 36px}
+.fbox h3{font-size:28px;font-weight:900;color:#fff;margin-bottom:26px;position:relative}
+footer{background:var(--ink);padding:28px 1.5rem;text-align:center;border-top:1px solid rgba(255,255,255,.05)}
+footer p{color:rgba(255,255,255,.35);font-size:13px;font-weight:500}footer p span{color:rgba(255,255,255,.62)}
+.wa{position:fixed;bottom:82px;right:20px;z-index:150;background:#25D366;color:#fff;width:56px;height:56px;border-radius:50%;display:flex;align-items:center;justify-content:center;box-shadow:0 8px 28px rgba(37,211,102,.42);border:3px solid #fff;text-decoration:none;animation:wf 3.2s ease-in-out infinite;transition:transform .2s}
+@media(min-width:768px){.wa{bottom:24px;right:24px}}.wa:hover{transform:scale(1.12)!important;animation-play-state:paused}
+@keyframes wf{0%,100%{transform:translateY(0)}50%{transform:translateY(-8px)}}
+.app-fab{position:fixed;bottom:150px;right:20px;z-index:150;background:var(--gapp);color:#fff;width:56px;height:56px;border-radius:50%;display:flex;align-items:center;justify-content:center;box-shadow:0 8px 28px rgba(22,163,74,.42);border:3px solid #fff;text-decoration:none;font-size:22px;animation:wf 3.2s ease-in-out infinite 1.6s}
+@media(min-width:768px){.app-fab{bottom:92px;right:24px}}.app-fab:hover{transform:scale(1.12)!important;animation-play-state:paused}
+.rv{opacity:0;transform:translateY(26px);transition:opacity .6s ease,transform .6s ease}.rv.in{opacity:1;transform:translateY(0)}
+.d1{transition-delay:.1s}.d2{transition-delay:.2s}.d3{transition-delay:.3s}
+</style>
+</head>
+<body>
+<div id="spbar"></div>
+<!-- MOBILE STICKY -->
+<div class="mob-bar">
+  <div class="mob-bar-r">
+    <a href="https://script.google.com/macros/s/AKfycbwamJrSV85Bl3q4DdZZO-6fgHbOjlls9GeSjfwa8bSYh8F7nXUEdrYp/exec" target="_blank" class="enroll data-lang" data-hi="🔒 अभी एडमिशन लें!" data-en="🔒 Enroll Now!" data-cg="🔒 अभी एडमिशन लेव!">🔒 अभी एडमिशन लें!</a>
+    <a href="#app-download" class="app-dl">📱 App</a>
+  </div>
+</div>
+<!-- TICKER -->
+<div class="ticker"><div class="tk-track">
+  <span class="tk-item"><span class="tk-dot"></span>🎯 CG शिक्षक भर्ती 2026 स्पेशल बैच अभी शुरू</span>
+  <span class="tk-item"><span class="tk-dot"></span>📱 BTS Android App लॉन्च — अभी Download करें!</span>
+  <span class="tk-item"><span class="tk-dot"></span>⭐ 150+ Consistent Tests — Unlimited Attempts</span>
+  <span class="tk-item"><span class="tk-dot"></span>💰 केवल ₹2.5/दिन से शुरू — Full Course</span>
+  <span class="tk-item"><span class="tk-dot"></span>🛡️ CTET अनिवार्य — अभी तैयारी शुरू करें</span>
+  <span class="tk-item"><span class="tk-dot"></span>🎁 PYQ और Smart Notes बोनस में मुफ्त</span>
+  <span class="tk-item"><span class="tk-dot"></span>🎯 CG शिक्षक भर्ती 2026 स्पेशल बैच अभी शुरू</span>
+  <span class="tk-item"><span class="tk-dot"></span>📱 BTS Android App लॉन्च — अभी Download करें!</span>
+  <span class="tk-item"><span class="tk-dot"></span>⭐ 150+ Consistent Tests — Unlimited Attempts</span>
+  <span class="tk-item"><span class="tk-dot"></span>💰 केवल ₹2.5/दिन से शुरू — Full Course</span>
+  <span class="tk-item"><span class="tk-dot"></span>🛡️ CTET अनिवार्य — अभी तैयारी शुरू करें</span>
+  <span class="tk-item"><span class="tk-dot"></span>🎁 PYQ और Smart Notes बोनस में मुफ्त</span>
+</div></div>
+<!-- NAVBAR -->
+<header class="navbar">
+  <div class="nav-inner">
+    <div class="logo-w">
+      <div class="logo-bs"><div class="lb lb1">BTS</div><span class="logo-sep">+</span><div class="lb lb2">आज़ाद</div></div>
+      <div class="logo-t">
+        <h1 class="data-lang" data-hi="बिलासपुर टेस्ट सीरीज़" data-en="Bilaspur Test Series" data-cg="बिलासपुर टेस्ट सीरीज़">बिलासपुर टेस्ट सीरीज़</h1>
+        <p class="data-lang" data-hi="आज़ाद इंस्टीट्यूट वेंचर" data-en="Azad Institute Venture" data-cg="आज़ाद इंस्टीट्यूट के उदिम">आज़ाद इंस्टीट्यूट वेंचर</p>
+      </div>
+    </div>
+    <nav><ul>
+      <li><a href="#usp" class="data-lang" data-hi="विशेषता" data-en="USP" data-cg="खासियत">विशेषता</a></li>
+      <li><a href="#compare" class="data-lang" data-hi="क्यों BTS?" data-en="Why BTS?" data-cg="काबर BTS?">क्यों BTS?</a></li>
+      <li><a href="#app-download" class="data-lang" data-hi="📱 App" data-en="📱 App" data-cg="📱 App">📱 App</a></li>
+      <li><a href="#demo" class="data-lang" data-hi="फ्री डेमो" data-en="Free Demo" data-cg="फ्री डेमो">फ्री डेमो</a></li>
+      <li><a href="#courses" class="data-lang" data-hi="कोर्स एवं फीस" data-en="Courses &amp; Fees" data-cg="कोर्स अउ फीस">कोर्स एवं फीस</a></li>
+      <li><a href="#faq" class="data-lang" data-hi="FAQ" data-en="FAQ" data-cg="FAQ">FAQ</a></li>
+    </ul></nav>
+    <div class="nav-r">
+      <select id="langSelect" onchange="switchLanguage(this.value)" class="lang-s">
+        <option value="hi">हिन्दी</option><option value="en">English</option><option value="cg">छत्तीसगढ़ी</option>
+      </select>
+      <a href="#app-download" class="btn-app-nav data-lang" data-hi="📲 App Download" data-en="📲 Download App" data-cg="📲 App Download">📲 App Download</a>
+      <a href="https://script.google.com/macros/s/AKfycbwamJrSV85Bl3q4DdZZO-6fgHbOjlls9GeSjfwa8bSYh8F7nXUEdrYp/exec" target="_blank" class="btn-nv data-lang" data-hi="सीधे प्रवेश लें ➔" data-en="Direct Admission ➔" data-cg="सोझा एडमिशन लेव ➔">सीधे प्रवेश लें ➔</a>
+    </div>
+  </div>
+</header>
+<!-- HERO -->
+<section class="hero">
+  <div class="hg"></div><div class="particles" id="particles"></div>
+  <div class="orb o1"></div><div class="orb o2"></div><div class="orb o3"></div>
+  <div class="sh2d sh1"></div><div class="sh2d sh2"></div><div class="sh2d sh3"></div>
+  <div class="hero-c rv">
+    <div class="eyebrow data-lang" data-hi="🎯 CG शिक्षक भर्ती 2026 एवं CTET स्पेशल" data-en="🎯 CG Teacher Recruitment 2026 &amp; CTET Special" data-cg="🎯 CG शिक्षक भरती 2026 अउ CTET स्पेशल"><span class="pr"></span>🎯 CG शिक्षक भर्ती 2026 एवं CTET स्पेशल</div>
+    <h2 class="data-lang" data-hi="शिक्षक बनने के सपने को दें असली उड़ान, और कार्यरत शिक्षक करें अपनी जॉब सुरक्षित!" data-en="Give real flight to your teaching dream, and serving teachers secure your job!" data-cg="मास्टर बने के सपना ला देवव असली उड़ान, अउ काम करत मास्टर मन नौकरी ला सुरक्षित करव!">
+      शिक्षक बनने के सपने को दें<br><span class="gold">असली उड़ान,</span><br>और कार्यरत शिक्षक करें अपनी जॉब सुरक्षित!
+    </h2>
+    <div class="hero-d">
+      <p class="data-lang" data-hi="&lt;b&gt;शून्य से चयन तक:&lt;/b&gt; नए अभ्यर्थियों के लिए वर्ग-1, 2 और 3 की 100% एग्जाम-ओरिएंटेड टेस्ट सीरीज़।" data-en="&lt;b&gt;From Zero to Selection:&lt;/b&gt; 100% exam-oriented test series for Varg-1, 2 &amp; 3." data-cg="&lt;b&gt;शून्य ले चयन तक:&lt;/b&gt; वर्ग-1, 2 अउ 3 के 100% परीक्षा के हिसाब ले टेस्ट सीरीज़।"><b>शून्य से चयन तक:</b> नए अभ्यर्थियों के लिए वर्ग-1, 2 और 3 की 100% एग्जाम-ओरिएंटेड टेस्ट सीरीज़।</p>
+      <p class="data-lang" data-hi="&lt;b&gt;नौकरी की सुरक्षा:&lt;/b&gt; कार्यरत शिक्षकों के लिए अनिवार्य CTET पास करने की अचूक रणनीति।" data-en="&lt;b&gt;Job Security:&lt;/b&gt; Foolproof strategy for serving teachers to pass mandatory CTET." data-cg="&lt;b&gt;नौकरी के सुरक्षा:&lt;/b&gt; काम करत मास्टर मन बर CTET पास करे के अचूक रणनीति।"><span class="alert-l"><b>नौकरी की सुरक्षा:</b> कार्यरत शिक्षकों के लिए अनिवार्य CTET पास करने की अचूक रणनीति।</span></p>
+    </div>
+    <div class="hbtns">
+      <a href="https://script.google.com/macros/s/AKfycbwamJrSV85Bl3q4DdZZO-6fgHbOjlls9GeSjfwa8bSYh8F7nXUEdrYp/exec" target="_blank" class="btn-p data-lang" data-hi="🔒 एडमिशन पोर्टल खोलें" data-en="🔒 Open Admission Portal" data-cg="🔒 एडमिशन पोर्टल ला खोलव">🔒 एडमिशन पोर्टल खोलें</a>
+      <a href="#app-download" class="btn-app-hero data-lang" data-hi="📲 Android App Download करें" data-en="📲 Download Android App" data-cg="📲 Android App Download करव">📲 Android App Download करें</a>
+      <a href="#demo" class="btn-g data-lang" data-hi="📝 फ्री डेमो टेस्ट दें" data-en="📝 Try Free Demo" data-cg="📝 फ्री डेमो टेस्ट देवव">📝 फ्री डेमो टेस्ट दें</a>
+    </div>
+  </div>
+  <div class="hclip"></div>
+</section>
+<!-- STATS -->
+<div class="stats"><div class="si">
+  <div class="stat rv"><div class="sn" data-target="150"><em>0</em><span style="color:var(--orange)">+</span></div><div class="sl-stat">Consistent Tests</div></div>
+  <div class="stat rv d1"><div class="sn" data-target="4"><em>0</em></div><div class="sl-stat">Exam Categories</div></div>
+  <div class="stat rv d2"><div class="sn">₹2.5<em style="font-size:14px;color:var(--orange)">/दिन</em></div><div class="sl-stat">से शुरुआत</div></div>
+  <div class="stat rv d3"><div class="sn" data-target="100"><em>0</em><span style="color:var(--orange)">%</span></div><div class="sl-stat">Exam Oriented</div></div>
+</div></div>
+<!-- APP SECTION -->
+<section id="app-download" class="app-sec">
+  <div class="app-grid">
+    <div class="rv">
+      <div class="app-badge-s"><span class="live-dot"></span> अभी उपलब्ध — Android App</div>
+      <h2 class="app-title data-lang" data-hi="BTS App — सारे Tests, अब आपकी &lt;span class='ag'&gt;मुट्ठी में!&lt;/span&gt;" data-en="BTS App — All Tests, Now in Your &lt;span class='ag'&gt;Pocket!&lt;/span&gt;" data-cg="BTS App — सबो Tests, अब तुम्हर &lt;span class='ag'&gt;मुट्ठी मा!&lt;/span&gt;">BTS App — सारे Tests, अब आपकी <span class="ag">मुट्ठी में!</span></h2>
+      <p class="app-desc data-lang" data-hi="अब Telegram / WhatsApp की ज़रूरत नहीं — BTS Android App से सीधे Mobile Number और OTP से Login करें। सभी Tests, Rank List और Results एक ही जगह।" data-en="No more Telegram / WhatsApp — login with Mobile Number and OTP on the BTS Android App. All Tests, Rank List and Results in one place." data-cg="अब Telegram / WhatsApp के ज़रूरत नइ — BTS Android App ले Mobile Number अउ OTP ले Login करव। सबो Tests, Rank List अउ Results एकेच जगह।">अब Telegram / WhatsApp की ज़रूरत नहीं — BTS Android App से सीधे Mobile Number और OTP से Login करें। सभी Tests, Rank List और Results एक ही जगह।</p>
+      <ul class="app-feats">
+        <li><div class="af-icon" style="background:rgba(99,102,241,.2)">🔐</div><span class="data-lang" data-hi="Mobile Number + OTP Login — कोई Password नहीं" data-en="Mobile Number + OTP Login — No Password needed" data-cg="Mobile Number + OTP Login — कोनो Password नइ">Mobile Number + OTP Login — कोई Password नहीं</span></li>
+        <li><div class="af-icon" style="background:rgba(245,158,11,.18)">📋</div><span class="data-lang" data-hi="सभी 150+ Tests एक ही App में — Unlimited Attempts" data-en="All 150+ Tests in one App — Unlimited Attempts" data-cg="सबो 150+ Tests एकेच App मा — Unlimited Attempts">सभी 150+ Tests एक ही App में — Unlimited Attempts</span></li>
+        <li><div class="af-icon" style="background:rgba(16,185,129,.18)">📊</div><span class="data-lang" data-hi="Live Rank List, Answer Key और Score तुरंत" data-en="Live Rank List, Answer Key and Score instantly" data-cg="Live Rank List, Answer Key अउ Score तुरंत">Live Rank List, Answer Key और Score तुरंत</span></li>
+        <li><div class="af-icon" style="background:rgba(124,58,237,.18)">📵</div><span class="data-lang" data-hi="Offline Mode — Internet न हो तो भी Tests दें" data-en="Offline Mode — Give Tests even without internet" data-cg="Offline Mode — Internet नइ होय तभो Tests देवव">Offline Mode — Internet न हो तो भी Tests दें</span></li>
+        <li><div class="af-icon" style="background:rgba(239,68,68,.15)">🔔</div><span class="data-lang" data-hi="नए Test का Push Notification तुरंत मिलेगा" data-en="Instant Push Notification for new Tests" data-cg="नवा Test के Push Notification तुरंत मिलही">नए Test का Push Notification तुरंत मिलेगा</span></li>
+      </ul>
+      <a href="#app-download" class="btn-app-dl data-lang" data-hi="📲 Android App अभी Download करें" data-en="📲 Download Android App Now" data-cg="📲 Android App अभी Download करव">📲 Android App अभी Download करें</a>
+      <p class="app-sub data-lang" data-hi="✅ Free to Download · Android 6.0+ · सुरक्षित · हिंदी Interface" data-en="✅ Free to Download · Android 6.0+ · Secure · Hindi Interface" data-cg="✅ Free to Download · Android 6.0+ · सुरक्षित · हिंदी Interface">✅ Free to Download · Android 6.0+ · सुरक्षित · हिंदी Interface</p>
+    </div>
+    <div class="phone-mockup rv d2">
+      <div class="phone-wrap">
+        <div class="phone-outer">
+          <div class="phone-screen">
+            <div class="phone-header">
+              <div class="phone-logo"><div class="ph-lb">BTS</div><span class="ph-title">BTS App</span></div>
+              <div class="phone-welcome">नमस्ते! आज का टेस्ट तैयार है 👋</div>
+            </div>
+            <div class="phone-body">
+              <div class="ph-card act"><div class="ph-card-title">📋 आज का टेस्ट</div><div class="ph-card-sub">वर्ग-1 · Mathematics · 100 प्रश्न</div></div>
+              <div class="ph-card"><div class="ph-card-title">📊 Rank List</div><div class="ph-card-sub">आपकी Rank: #47 / 1,230</div></div>
+              <div class="ph-card"><div class="ph-card-title">✅ Answer Key</div><div class="ph-card-sub">Score: 78/100 · Percentile: 93.6%</div></div>
+            </div>
+            <div class="phone-otp">
+              <div class="ph-otp-label">📱 OTP Login — अपना Number डालें</div>
+              <div class="ph-otp-boxes">
+                <div class="otp-box filled">●</div><div class="otp-box filled">●</div><div class="otp-box filled">●</div><div class="otp-box filled">●</div>
+                <div class="otp-box" style="opacity:.4">_</div><div class="otp-box" style="opacity:.4">_</div>
+              </div>
+            </div>
+          </div>
+          <div class="phone-glow"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- USP -->
+<section id="usp" class="usp">
+  <div class="tc rv"><span class="sl2 li">Our USP</span>
+    <h2 class="st data-lang" data-hi="हमारी टेस्ट श्रृंखला का वैज्ञानिक प्रारूप" data-en="Scientific Format of Our Test Series" data-cg="हमर टेस्ट श्रृंखला के वैज्ञानिक रूप">हमारी टेस्ट श्रृंखला का वैज्ञानिक प्रारूप</h2>
+  </div>
+  <div class="fc rv mt8">
+    <div class="fp">⭐ छत्तीसगढ़ में पहली बार</div>
+    <h3 class="data-lang" data-hi="150+ कंसिस्टेंट टेस्ट्स — बिना गैप के, Unlimited Attempts" data-en="150+ Consistent Tests — No Gap, Unlimited Attempts" data-cg="150+ कंसिस्टेंट टेस्ट — बिना गैप के, Unlimited Attempts">150+ कंसिस्टेंट टेस्ट्स — बिना गैप के, Unlimited Attempts</h3>
+    <p class="data-lang" data-hi="अन्य कोचिंग की तरह कोई गैप नहीं। किसी भी दिन, किसी भी समय और कितनी भी बार (Unlimited Attempts) टेस्ट दें। प्रत्येक विषय में 150+ टेस्ट — प्रत्येक में ~100 प्रश्न।" data-en="No gaps like other coachings. Give tests any day, any time, unlimited times. 150+ tests per subject, ~100 questions each." data-cg="दूसर कोचिंग कस कोनो गैप नइ। कोनो भी दिन, कोनो भी समय Unlimited Attempts। हर बिसय मा 150+ टेस्ट — हर एक मा ~100 प्रश्न।">अन्य कोचिंग की तरह कोई गैप नहीं। किसी भी दिन, किसी भी समय और कितनी भी बार (Unlimited Attempts) टेस्ट दें। प्रत्येक विषय में 150+ टेस्ट — प्रत्येक में ~100 प्रश्न।</p>
+  </div>
+  <div class="ug">
+    <div class="uc rv"><div class="ui" style="background:#eff6ff">📋</div><h4 class="data-lang" data-hi="सटीक पाठ्यक्रम अनुकरण" data-en="Strict Syllabus Following" data-cg="एकदम सिलेबस के हिसाब ले">सटीक पाठ्यक्रम अनुकरण</h4><p class="data-lang" data-hi="सभी टेस्ट विभाग द्वारा निर्धारित आधिकारिक पाठ्यक्रम के टॉपिक्स के अनुसार क्रमानुसार।" data-en="All tests sequentially as per official syllabus topics." data-cg="सबो टेस्ट असली सिलेबस के हिसाब ले सिरी-सिरी।">सभी टेस्ट आधिकारिक पाठ्यक्रम के टॉपिक्स के अनुसार क्रमानुसार।</p></div>
+    <div class="uc rv d1"><div class="ui" style="background:#fffbeb">🔄</div><h4 class="data-lang" data-hi="विषयवार एवं कंबाइंड टेस्ट" data-en="Subject-wise & Combined Tests" data-cg="बिसय वार अउ कंबाइंड टेस्ट">विषयवार एवं कंबाइंड टेस्ट</h4><p class="data-lang" data-hi="विषयवार टेस्ट के साथ सभी विषयों का 'कंबाइंड टेस्ट' भी नियमित अंतराल पर।" data-en="Along with subject-wise tests, Combined Test of all subjects at regular intervals." data-cg="बिसय वार टेस्ट के संगे सबो बिसय के कंबाइंड टेस्ट घलो नियमित।">विषयवार के साथ सभी विषयों का 'कंबाइंड टेस्ट' भी नियमित अंतराल पर।</p></div>
+    <div class="uc rv d2"><div class="ui" style="background:#fff1f2">📊</div><h4 class="data-lang" data-hi="मेरिट सूची एवं आपत्ति निवारण" data-en="Merit List & Doubt Resolution" data-cg="मेरिट लिस्ट अउ संदेहा के हल">मेरिट सूची एवं आपत्ति निवारण</h4><p class="data-lang" data-hi="टेस्ट के बाद Answer Key, Merit List और विशेषज्ञों द्वारा संशय निवारण।" data-en="After test: Answer Key, Merit List, and expert doubt resolution." data-cg="टेस्ट के बाद Answer Key, Merit List अउ विसेसग्य मन डहर ले संदेहा हल।">टेस्ट के बाद Answer Key, Merit List और विशेषज्ञों द्वारा संशय निवारण।</p></div>
+  </div>
+</section>
+<!-- COMPARISON -->
+<section id="compare" class="comp">
+  <div class="tc rv"><span class="sl2 lr">हम क्यों बेहतर हैं?</span>
+    <h2 class="st data-lang" data-hi="BTS बनाम अन्य कोचिंग संस्थान" data-en="BTS vs Other Coaching Institutes" data-cg="BTS बनाम दूसर कोचिंग संस्थान">BTS बनाम अन्य कोचिंग संस्थान</h2>
+    <p class="ss data-lang" data-hi="खुद देखिए — एक ही नज़र में फर्क साफ दिखेगा।" data-en="See for yourself — the difference is clear at a glance." data-cg="खुद देख लव — एक ही नदर मा फरक साफ दिख जाही।">खुद देखिए — एक ही नज़र में फर्क साफ दिखेगा।</p>
+  </div>
+  <div class="comp-wrap rv">
+    <table class="ct"><thead><tr><th>विशेषता</th><th class="hl">🏆 BTS (हम)</th><th>अन्य कोचिंग</th></tr></thead>
+    <tbody>
+      <tr><td>टेस्ट की संख्या</td><td class="col-bts"><span class="c-hl">150+ per subject</span></td><td><span class="c-part">10–30 टेस्ट</span></td></tr>
+      <tr><td>Unlimited Attempts</td><td class="col-bts"><span class="c-yes">✓</span></td><td><span class="c-no">✗</span></td></tr>
+      <tr><td>कभी भी टेस्ट दें (24/7)</td><td class="col-bts"><span class="c-yes">✓</span></td><td><span class="c-no">✗ Fixed Schedule</span></td></tr>
+      <tr><td>Answer Key + Merit List</td><td class="col-bts"><span class="c-yes">✓</span></td><td><span class="c-part">कभी-कभी</span></td></tr>
+      <tr><td>PYQ + Short Notes</td><td class="col-bts"><span class="c-yes">✓ Free/Nominal</span></td><td><span class="c-no">✗ अलग से पैसे</span></td></tr>
+      <tr><td>CTET Special Batch</td><td class="col-bts"><span class="c-yes">✓</span></td><td><span class="c-no">✗ नहीं</span></td></tr>
+      <tr><td>Telegram + WhatsApp Group</td><td class="col-bts"><span class="c-yes">✓</span></td><td><span class="c-part">केवल Telegram</span></td></tr>
+      <tr><td>Dedicated Mobile App</td><td class="col-bts"><span class="app-ct-badge">📱 Android App</span></td><td><span class="c-no">✗ नहीं</span></td></tr>
+      <tr><td>मूल्य (Full Course)</td><td class="col-bts"><span class="c-hl">₹449–₹749</span></td><td><span class="c-part">₹3000–₹8000+</span></td></tr>
+      <tr><td>Monthly Plan उपलब्ध</td><td class="col-bts"><span class="c-yes">✓ ₹149 से शुरू</span></td><td><span class="c-no">✗ नहीं</span></td></tr>
+    </tbody></table>
+  </div>
+</section>
+<!-- COURSES -->
+<section class="ctab">
+  <div class="tc rv"><span class="sl2 lb3">Available Courses</span>
+    <h2 class="st data-lang" data-hi="हमारे उपलब्ध पाठ्यक्रम एवं विषय" data-en="Our Available Courses &amp; Subjects" data-cg="हमर करा उपलब्ध कोर्स अउ बिसय">हमारे उपलब्ध पाठ्यक्रम एवं विषय</h2>
+  </div>
+  <div class="ctab-g">
+    <div class="ctab-c rv"><div class="ctab-acc" style="background:var(--g1)"></div><span class="cbadge" style="background:#eff6ff;color:#1d4ed8">वर्ग-1 (व्याख्याता)</span><h4>Lecturer Courses</h4><div class="ctags"><span class="ctag">Maths</span><span class="ctag">Physics</span><span class="ctag">Chemistry</span><span class="ctag">Biology</span><span class="ctag">Commerce</span><span class="ctag">Hindi</span><span class="ctag">English</span></div>
+      <p style="margin-top:14px;font-size:12px;color:#b45309;background:#fffbeb;border:1px solid #fcd34d;border-radius:10px;padding:10px 12px;line-height:1.65;font-weight:600;" class="data-lang" data-hi="📌 वर्तमान में पुराने/केंद्रीय पाठ्यक्रम के अनुसार टेस्ट। नवीनतम सिलेबस आने पर अद्यतन होगा।" data-en="📌 Currently based on Old/Central syllabus. Will be updated with latest official syllabus." data-cg="📌 अभी पुराना/केंद्रीय पाठ्यक्रम के हिसाब ले। नवा सिलेबस आय मा बदले जाही।">📌 वर्तमान में पुराने/केंद्रीय पाठ्यक्रम के अनुसार टेस्ट।</p></div>
+    <div class="ctab-c rv d1"><div class="ctab-acc" style="background:var(--g2)"></div><span class="cbadge" style="background:#f0fdf4;color:#15803d">वर्ग-2 (शिक्षक)</span><h4>Teacher Courses</h4><div class="ctags"><span class="ctag">Social Science (SST)</span><span class="ctag">Maths</span><span class="ctag">Science</span></div>
+      <p style="margin-top:14px;font-size:12px;color:#b45309;background:#fffbeb;border:1px solid #fcd34d;border-radius:10px;padding:10px 12px;line-height:1.65;font-weight:600;" class="data-lang" data-hi="📌 वर्तमान में अनुमानित पाठ्यक्रम के आधार पर टेस्ट। नवीनतम सिलेबस आने पर अद्यतन होगा।" data-en="📌 Currently based on estimated syllabus. Will update with official syllabus." data-cg="📌 अभी अनुमानित पाठ्यक्रम के हिसाब ले। नवा सिलेबस आय मा बदले जाही।">📌 वर्तमान में अनुमानित पाठ्यक्रम के आधार पर टेस्ट।</p></div>
+    <div class="ctab-c rv d2"><div class="ctab-acc" style="background:var(--g3)"></div><span class="cbadge" style="background:#fffbeb;color:#b45309">वर्ग-3 (सहायक शिक्षक)</span><h4>Asst. Teacher</h4><div class="ctags"><span class="ctag">संपूर्ण प्राथमिक सिलेबस</span><span class="ctag">बाल विकास (CDP)</span></div></div>
+    <div class="ctab-c rv d3"><div class="ctab-acc" style="background:var(--g4)"></div><span class="cbadge" style="background:#faf5ff;color:#7c3aed">CTET स्पेशल</span><h4>Central Eligibility</h4><div class="ctags"><span class="ctag">Paper 1 (Pedagogy)</span><span class="ctag">Paper 2 (Maths &amp; Sci)</span><span class="ctag">Paper 2 (SST)</span></div></div>
+  </div>
+</section>
+<!-- BONUS -->
+<section class="bonus">
+  <div class="bonus-w rv"><div class="bicon">🎁</div>
+    <div>
+      <h4 class="data-lang" data-hi="स्पेशल मेगा बोनस: PYQ एवं Smart Revision Notes" data-en="Mega Bonus: PYQ &amp; Smart Revision Notes" data-cg="स्पेशल मेगा बोनस: PYQ अउ Smart Notes">स्पेशल मेगा बोनस: पिछले वर्षों के प्रश्न (PYQ) एवं नोट्स</h4>
+      <p class="data-lang" data-hi="सभी कोर्सेज में लाइव टेस्ट के साथ टॉपिक-वाइज वास्तविक PYQ और शॉर्ट नोट्स — बिल्कुल मुफ्त या Nominal शुल्क पर।" data-en="Along with live tests, get topic-wise PYQs and short notes — completely free or at nominal fee." data-cg="सबो कोर्स मा लाइव टेस्ट के संगे टॉपिक-वाइज PYQ अउ शॉर्ट नोट्स — एकदम मुफ़्त या बहुत कम फीस मा।">सभी कोर्सेज में लाइव टेस्ट के साथ टॉपिक-वाइज वास्तविक PYQ और शॉर्ट नोट्स — बिल्कुल मुफ्त या Nominal शुल्क पर।</p>
+    </div>
+  </div>
+</section>
+<!-- PATTERN -->
+<section id="pattern" class="pat">
+  <div class="tc rv"><span class="sl2 li">Question Patterns</span>
+    <h2 class="st data-lang" data-hi="नवीनतम परीक्षा पैटर्न एवं प्रश्नों का स्तर" data-en="Latest Exam Pattern &amp; Question Difficulty" data-cg="नवा परीक्षा पैटर्न अउ प्रश्न के स्तर">नवीनतम परीक्षा पैटर्न एवं प्रश्नों का स्तर</h2>
+    <p class="ss data-lang" data-hi="व्यापम, CGPSC और शिक्षक भर्ती बोर्ड के बदलते ट्रेंड्स के अनुसार उच्च-स्तरीय प्रश्न।" data-en="High-level questions as per changing trends of Vyapam, CGPSC &amp; Teacher Recruitment Board." data-cg="व्यापम, CGPSC अउ शिक्षक भरती बोर्ड के नवा ट्रेंड के हिसाब ले उच्च-स्तरीय प्रश्न।">व्यापम, CGPSC और शिक्षक भर्ती बोर्ड के बदलते ट्रेंड्स के अनुसार उच्च-स्तरीय प्रश्न।</p>
+  </div>
+  <div class="drow">
+    <div class="diff de rv"><span class="dd"></span>Easy (सरल) — 30%</div>
+    <div class="diff dm rv d1"><span class="dd"></span>Medium (मध्यम) — 40%</div>
+    <div class="diff dh rv d2"><span class="dd"></span>Hard (कठिन) — 30%</div>
+  </div>
+  <div class="pg">
+    <div class="pc rv"><em>🤔</em><h4>Assertion &amp; Reasoning</h4><p>(कथन एवं कारण)</p></div>
+    <div class="pc rv d1"><em>📑</em><h4>Statement Based</h4><p>(बहु-कथन आधारित)</p></div>
+    <div class="pc rv d2"><em>🔗</em><h4>Match the Following</h4><p>(JKLM / सुमेलित करें)</p></div>
+    <div class="pc rv"><em>⏳</em><h4>Chronological Order</h4><p>(कालक्रम / व्यवस्थापन)</p></div>
+    <div class="pc rv d1"><em>🧮</em><h4>Numerical &amp; Data</h4><p>(गणित एवं विज्ञान)</p></div>
+    <div class="pc rv d2"><em>🧠</em><h4>Conceptual / Theoretical</h4><p>(वैचारिक एवं सैद्धांतिक)</p></div>
+    <div class="pc rv"><em>👨‍🏫</em><h4>Teaching Pedagogical</h4><p>(शिक्षण शास्त्र)</p></div>
+    <div class="pc hl rv d1"><em>✅</em><h4 style="color:#1d4ed8">100% Exam Oriented</h4><p style="color:#3b82f6">Every question counts</p></div>
+  </div>
+</section>
+<!-- DEMO -->
+<section id="demo" class="demo">
+  <div class="tc rv">
+    <h2 class="st data-lang" data-hi="🎯 फ्री डेमो टेस्ट ज़ोन" data-en="🎯 Free Demo Test Zone" data-cg="🎯 फ्री डेमो टेस्ट ज़ोन">🎯 फ्री डेमो टेस्ट ज़ोन</h2>
+    <p class="ss data-lang" data-hi="अपनी पसंद के वर्ग और विषय का चयन करें और सीधे स्क्रीन पर परीक्षा का अनुभव करें।" data-en="Select your category &amp; subject and experience the exam directly on screen." data-cg="अपन पसंद के वर्ग अउ बिसय ला चुनव अउ सोझा स्क्रीन मा परीक्षा के अनुभव करव।">अपनी पसंद के वर्ग और विषय का चयन करें और सीधे स्क्रीन पर परीक्षा का अनुभव करें।</p>
+  </div>
+  <div class="dtabs rv">
+    <button onclick="switchDemoTab('demo-varg1')" id="tab-demo-varg1" class="demo-tab-btn active"><span class="dtb-main">वर्ग-1</span><span class="dtb-sub">व्याख्याता</span></button>
+    <button onclick="switchDemoTab('demo-varg2')" id="tab-demo-varg2" class="demo-tab-btn"><span class="dtb-main">वर्ग-2</span><span class="dtb-sub">शिक्षक</span></button>
+    <button onclick="switchDemoTab('demo-varg3')" id="tab-demo-varg3" class="demo-tab-btn"><span class="dtb-main">वर्ग-3</span><span class="dtb-sub">सहायक</span></button>
+    <button onclick="switchDemoTab('demo-ctet')" id="tab-demo-ctet" class="demo-tab-btn"><span class="dtb-main">CTET</span><span class="dtb-sub">स्पेशल</span></button>
+  </div>
+  <div class="dpane rv">
+    <div id="demo-varg1" class="demo-content-pane dgrid"><a id="btn-v1-maths" href="maths.html" target="_blank" class="dlink">📐 Mathematics ➔</a><a id="btn-v1-physics" href="physics.html" target="_blank" class="dlink">⚛️ Physics ➔</a><a id="btn-v1-chemistry" href="#" target="_blank" class="dlink hidden">🧪 Chemistry ➔</a><a id="btn-v1-biology" href="#" target="_blank" class="dlink hidden">🧬 Biology ➔</a><a id="btn-v1-commerce" href="#" target="_blank" class="dlink hidden">📊 Commerce ➔</a><a id="btn-v1-hindi" href="#" target="_blank" class="dlink hidden">📖 Hindi ➔</a><a id="btn-v1-english" href="#" target="_blank" class="dlink hidden">🇬🇧 English ➔</a></div>
+    <div id="demo-varg2" class="demo-content-pane dgrid hidden"><a id="btn-v2-sst" href="varg2-sst.html" target="_blank" class="dlink">🌍 Social Science (SST) ➔</a><a id="btn-v2-maths" href="#" target="_blank" class="dlink hidden">📐 Mathematics ➔</a><a id="btn-v2-science" href="#" target="_blank" class="dlink hidden">🧬 Science ➔</a></div>
+    <div id="demo-varg3" class="demo-content-pane dgrid hidden"><a id="btn-v3-common" href="#" target="_blank" class="dlink hidden">👶 बाल विकास (CDP) ➔</a><a id="btn-v3-full" href="#" target="_blank" class="dlink hidden">📝 संपूर्ण प्राथमिक सिलेबस ➔</a></div>
+    <div id="demo-ctet" class="demo-content-pane dgrid hidden"><a id="btn-ctet-p1" href="#" target="_blank" class="dlink hidden">📘 Paper 1 (Pedagogy) ➔</a><a id="btn-ctet-p2-math" href="#" target="_blank" class="dlink hidden">📙 Paper 2 (Maths &amp; Sci) ➔</a><a id="btn-ctet-p2-sst" href="#" target="_blank" class="dlink hidden">🌍 Paper 2 (SST) ➔</a></div>
+    <div id="demo-empty-notice" class="dempty hidden">इस वर्ग के डेमो टेस्ट शीघ्र ही अपलोड किए जा रहे हैं। कृपया जुड़े रहें!</div>
+  </div>
+  <div class="tc mt10 rv">
+    <a href="https://t.me/YOUR_TELEGRAM_CHANNEL_LINK" target="_blank" class="tgbtn">
+      <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" viewBox="0 0 16 16"><path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.287 5.906c-.778.324-2.334.994-4.666 2.01-.378.15-.577.298-.595.442-.03.243.275.339.69.47l.175.055c.408.133.958.288 1.243.294.26.006.549-.1.868-.32 2.179-1.471 3.304-2.214 3.374-2.23.05-.012.12-.026.166.016.047.041.042.12.037.141-.03.129-1.227 1.241-1.846 1.817-.193.18-.33.307-.358.336a8.154 8.154 0 0 1-.188.186c-.38.366-.664.64.015 1.088.327.216.589.393.85.571.284.194.568.387.936.629.093.06.183.125.27.187.331.236.63.448.997.414.214-.02.435-.22.547-.82.265-1.417.786-4.486.906-5.751a1.426 1.426 0 0 0-.013-.315.337.337 0 0 0-.114-.217.526.526 0 0 0-.31-.093c-.3.005-.763.166-2.984 1.09z"/></svg>
+      <span class="data-lang" data-hi="जॉइन फ्री डेमो टेलीग्राम चैनल" data-en="Join Free Demo Telegram Channel" data-cg="फ्री डेमो टेलीग्राम चैनल जॉइन करव">जॉइन फ्री डेमो टेलीग्राम चैनल</span>
+    </a>
+  </div>
+</section>
+<!-- PRICING -->
+<section id="courses" class="pricing">
+  <div class="tc rv"><span class="sl2 la">Plans &amp; Pricing</span>
+    <h2 class="st data-lang" data-hi="कोर्सेस एवं सब्सक्रिप्शन प्लान्स" data-en="Courses &amp; Subscription Plans" data-cg="कोर्स अउ सब्सक्रिप्शन प्लान">कोर्सेस एवं सब्सक्रिप्शन प्लान्स</h2>
+    <p class="ss data-lang" data-hi="महज़ 4 महीने की कीमत में पूरा Full Course — बचत करें, स्मार्ट बनें!" data-en="Get the Full Course at the price of just 4 months — Save Smart!" data-cg="सिरिफ 4 महिना के कीमत मा पूरा Full Course — बचत करव, स्मार्ट बनव!">महज़ 4 महीने की कीमत में पूरा Full Course — बचत करें, स्मार्ट बनें!</p>
+  </div>
+  <div class="pcards">
+    <!-- VARG 1 -->
+    <div class="card rv">
+      <div class="cstripe" style="background:var(--g1)"></div><div class="ribbon">Most Popular</div>
+      <span class="ctg" style="background:#eff6ff;color:#1d4ed8;margin-top:10px;">वर्ग - 1</span>
+      <h4 style="color:var(--navy)">Lecturer <span style="font-size:15px;color:var(--muted);font-weight:600">(व्याख्याता)</span></h4>
+      <p class="cstl" style="color:var(--muted)">उपलब्ध विषय</p>
+      <ul class="clist">
+        <li><span class="ck" style="background:#dcfce7;color:#16a34a">✓</span>Mathematics</li>
+        <li><span class="ck" style="background:#dcfce7;color:#16a34a">✓</span>Physics</li>
+        <li><span class="ck" style="background:#dcfce7;color:#16a34a">✓</span>Chemistry</li>
+        <li><span class="ck" style="background:#dcfce7;color:#16a34a">✓</span>Biology</li>
+        <li><span class="ck" style="background:#dcfce7;color:#16a34a">✓</span>Commerce</li>
+        <li><span class="ck" style="background:#dcfce7;color:#16a34a">✓</span>Hindi</li>
+        <li><span class="ck" style="background:#dcfce7;color:#16a34a">✓</span>English</li>
+      </ul>
+      <div class="cprice">
+        <div class="pcol">
+          <span class="plbl" style="color:var(--muted)">मंथली</span>
+          <span class="pamt" style="color:var(--navy)">₹249</span>
+          <span class="pchip-m">~₹8/दिन</span>
+          <span class="pben">✅ Telegram</span>
+        </div>
+        <div class="pcol" style="text-align:right">
+          <span class="plbl" style="color:var(--muted)">फुल कोर्स</span>
+          <span class="pamt-old">₹1,099</span>
+          <span class="pamt" style="color:#1d4ed8">₹749</span>
+          <span class="pchip">~₹4/दिन</span>
+          <span class="psave">32% की बचत!</span>
+          <span class="pben" style="display:block;margin-top:3px">✅ Telegram + WhatsApp</span>
+        </div>
+      </div>
+      <a href="https://script.google.com/macros/s/AKfycbwamJrSV85Bl3q4DdZZO-6fgHbOjlls9GeSjfwa8bSYh8F7nXUEdrYp/exec" target="_blank" class="cbtn cbtn-ink data-lang" data-hi="अभी Buy करें ➔" data-en="Buy Now ➔" data-cg="अभी Buy करव ➔">अभी Buy करें ➔</a>
+    </div>
+    <!-- VARG 2 -->
+    <div class="card rv d1">
+      <div class="cstripe" style="background:var(--g2)"></div>
+      <span class="ctg" style="background:#f0fdf4;color:#15803d;margin-top:10px;">वर्ग - 2</span>
+      <h4 style="color:var(--navy)">Teacher <span style="font-size:15px;color:var(--muted);font-weight:600">(शिक्षक)</span></h4>
+      <p class="cstl" style="color:var(--muted)">उपलब्ध विषय</p>
+      <ul class="clist">
+        <li><span class="ck" style="background:#dcfce7;color:#16a34a">✓</span>Social Science (SST)</li>
+        <li><span class="ck" style="background:#dcfce7;color:#16a34a">✓</span>Mathematics</li>
+        <li><span class="ck" style="background:#dcfce7;color:#16a34a">✓</span>Science</li>
+      </ul>
+      <div class="cprice">
+        <div class="pcol">
+          <span class="plbl" style="color:var(--muted)">मंथली</span>
+          <span class="pamt" style="color:var(--navy)">₹199</span>
+          <span class="pchip-m">~₹6.6/दिन</span>
+          <span class="pben">✅ Telegram</span>
+        </div>
+        <div class="pcol" style="text-align:right">
+          <span class="plbl" style="color:var(--muted)">फुल कोर्स</span>
+          <span class="pamt-old">₹799</span>
+          <span class="pamt" style="color:#059669">₹549</span>
+          <span class="pchip">~₹3/दिन</span>
+          <span class="psave">31% की बचत!</span>
+          <span class="pben" style="display:block;margin-top:3px">✅ Telegram + WhatsApp</span>
+        </div>
+      </div>
+      <a href="https://script.google.com/macros/s/AKfycbwamJrSV85Bl3q4DdZZO-6fgHbOjlls9GeSjfwa8bSYh8F7nXUEdrYp/exec" target="_blank" class="cbtn cbtn-ink data-lang" data-hi="अभी Buy करें ➔" data-en="Buy Now ➔" data-cg="अभी Buy करव ➔">अभी Buy करें ➔</a>
+    </div>
+    <!-- VARG 3 -->
+    <div class="card rv d2">
+      <div class="cstripe" style="background:var(--g3)"></div><div class="ribbon" style="background:var(--emerald)">Best Value</div>
+      <span class="ctg" style="background:#fffbeb;color:#b45309;margin-top:10px;">वर्ग - 3</span>
+      <h4 style="color:var(--navy)">Asst. Teacher <span style="font-size:15px;color:var(--muted);font-weight:600">(सहायक शिक्षक)</span></h4>
+      <p class="cstl" style="color:var(--muted)">विषय समूह</p>
+      <ul class="clist">
+        <li><span class="ck" style="background:#dcfce7;color:#16a34a">✓</span>संपूर्ण प्राथमिक सिलेबस</li>
+        <li><span class="ck" style="background:#dcfce7;color:#16a34a">✓</span>बाल विकास (CDP)</li>
+      </ul>
+      <div class="cprice">
+        <div class="pcol">
+          <span class="plbl" style="color:var(--muted)">मंथली</span>
+          <span class="pamt" style="color:var(--navy)">₹149</span>
+          <span class="pchip-m">~₹5/दिन</span>
+          <span class="pben">✅ Telegram</span>
+        </div>
+        <div class="pcol" style="text-align:right">
+          <span class="plbl" style="color:var(--muted)">फुल कोर्स</span>
+          <span class="pamt-old">₹599</span>
+          <span class="pamt" style="color:#d97706">₹449</span>
+          <span class="pchip">~₹2.5/दिन</span>
+          <span class="psave">25% की बचत!</span>
+          <span class="pben" style="display:block;margin-top:3px">✅ Telegram + WhatsApp</span>
+        </div>
+      </div>
+      <a href="https://script.google.com/macros/s/AKfycbwamJrSV85Bl3q4DdZZO-6fgHbOjlls9GeSjfwa8bSYh8F7nXUEdrYp/exec" target="_blank" class="cbtn cbtn-ink data-lang" data-hi="अभी Buy करें ➔" data-en="Buy Now ➔" data-cg="अभी Buy करव ➔">अभी Buy करें ➔</a>
+    </div>
+    <!-- CTET -->
+    <div class="card dk rv d3">
+      <div class="cstripe" style="background:linear-gradient(90deg,#fbbf24,#f59e0b)"></div><div class="ribbon ribbon-special">Special Batch</div>
+      <span class="ctg" style="background:rgba(255,255,255,.08);color:#c4b5fd;border:1px solid rgba(196,181,253,.2);margin-top:10px;">Teachers' Upgrade</span>
+      <h4 style="color:#fff">CTET <span style="font-size:15px;color:#94a3b8;font-weight:600">(केंद्रीय पात्रता)</span></h4>
+      <p class="cstl" style="color:#64748b">उपलब्ध विषय</p>
+      <ul class="clist">
+        <li><span class="ck" style="background:rgba(16,185,129,.15);color:#34d399">✓</span><span style="color:#cbd5e1">Paper 1 (Primary / Pedagogy)</span></li>
+        <li><span class="ck" style="background:rgba(16,185,129,.15);color:#34d399">✓</span><span style="color:#cbd5e1">Paper 2 (Maths &amp; Science)</span></li>
+        <li><span class="ck" style="background:rgba(16,185,129,.15);color:#34d399">✓</span><span style="color:#cbd5e1">Paper 2 (Social Science)</span></li>
+      </ul>
+      <div class="cprice" style="display:block;padding-top:16px;">
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px;border-bottom:1px dashed rgba(255,255,255,.15);padding-bottom:10px;">
+          <div><span class="plbl" style="color:#94a3b8;display:block;">Paper 1 (वर्ग-3 के लिए)</span><span style="font-size:10px;color:#64748b;font-weight:700;">फुल कोर्स (2 महीने)</span></div>
+          <div style="text-align:right"><span class="pamt-old-dk">₹399</span><span class="pamt" style="color:#fff;font-size:24px;">₹249</span><span class="psave-dk">37% off</span></div>
+        </div>
+        <div style="display:flex;justify-content:space-between;align-items:center;">
+          <div><span class="plbl" style="color:#94a3b8;display:block;">Paper 2 (वर्ग-2 के लिए)</span><span style="font-size:10px;color:#64748b;font-weight:700;">फुल कोर्स (2 महीने)</span></div>
+          <div style="text-align:right"><span class="pamt-old-dk">₹499</span><span class="pamt" style="color:#818cf8;font-size:24px;">₹299</span><span class="psave-dk">40% off</span></div>
+        </div>
+        <div style="text-align:right;margin-top:12px;"><span class="pben pben-dk">✅ Telegram + WhatsApp Group</span></div>
+      </div>
+      <a href="https://script.google.com/macros/s/AKfycbwamJrSV85Bl3q4DdZZO-6fgHbOjlls9GeSjfwa8bSYh8F7nXUEdrYp/exec" target="_blank" class="cbtn cbtn-fire data-lang" data-hi="अभी Buy करें ➔" data-en="Buy Now ➔" data-cg="अभी Buy करव ➔">अभी Buy करें ➔</a>
+    </div>
+  </div>
+</section>
+<!-- PROCESS FLOW -->
+<section id="process" class="proc2">
+  <div class="tc rv"><span class="sl2 lg">Step-by-Step Flow</span>
+    <h2 class="st data-lang" data-hi="प्रवेश से टेस्ट तक — पूरी प्रक्रिया" data-en="From Admission to Test — Complete Process" data-cg="एडमिशन ले टेस्ट तक — पूरी प्रक्रिया">प्रवेश से टेस्ट तक — पूरी प्रक्रिया</h2>
+    <p class="ss data-lang" data-hi="एडमिशन → Payment → App Login → Tests — बस इतना ही!" data-en="Admission → Payment → App Login → Tests — that's it!" data-cg="एडमिशन → Payment → App Login → Tests — बस ओतकेच!">एडमिशन → Payment → App Login → Tests — बस इतना ही!</p>
+  </div>
+  <div class="flow rv">
+    <!-- 1 -->
+    <div class="flow-step">
+      <div class="flow-left"><div class="flow-circle" style="background:linear-gradient(135deg,#3b82f6,#6366f1)">1</div><div class="flow-line" style="background:linear-gradient(180deg,#6366f1,#8b5cf6)"></div></div>
+      <div class="flow-body">
+        <h4>🖱️ <span class="data-lang" data-hi="एडमिशन बटन दबाएं" data-en="Click Admission Button" data-cg="एडमिशन बटन दबावव">एडमिशन बटन दबाएं</span></h4>
+        <p class="data-lang" data-hi="नीचे दिए गए 'एडमिशन पोर्टल खोलें' बटन पर क्लिक करें। यह एक सुरक्षित Google Form पर खुलेगा।" data-en="Click the 'Open Admission Portal' button below. It opens on a secure Google Form." data-cg="'एडमिशन पोर्टल खोलव' बटन मा क्लिक करव। ये एक सुरक्षित Google Form मा खुलही।">नीचे दिए गए 'एडमिशन पोर्टल खोलें' बटन पर क्लिक करें। यह एक सुरक्षित Google Form पर खुलेगा।</p>
+      </div>
+    </div>
+    <!-- 2 -->
+    <div class="flow-step">
+      <div class="flow-left"><div class="flow-circle" style="background:linear-gradient(135deg,#8b5cf6,#7c3aed)">2</div><div class="flow-line" style="background:linear-gradient(180deg,#8b5cf6,#10b981)"></div></div>
+      <div class="flow-body">
+        <h4>📝 <span class="data-lang" data-hi="विवरण भरें" data-en="Fill Your Details" data-cg="अपन जानकारी भरव">विवरण भरें</span></h4>
+        <p class="data-lang" data-hi="फॉर्म में अपना नाम, मोबाइल नंबर, ईमेल और शहर/जिला दर्ज करें। अपनी पसंद का कोर्स और विषय चुनें।" data-en="Enter your Name, Mobile Number, Email and City/District. Select your preferred course and subject." data-cg="फॉर्म मा अपन नाम, मोबाइल नंबर, ईमेल अउ शहर भरव। पसंद के कोर्स अउ बिसय चुनव।">फॉर्म में अपना नाम, मोबाइल नंबर, ईमेल और शहर/जिला दर्ज करें। अपनी पसंद का कोर्स और विषय चुनें।</p>
+      </div>
+    </div>
+    <!-- 3 -->
+    <div class="flow-step">
+      <div class="flow-left"><div class="flow-circle" style="background:linear-gradient(135deg,#10b981,#059669)">3</div><div class="flow-line" style="background:linear-gradient(180deg,#10b981,#f59e0b)"></div></div>
+      <div class="flow-body">
+        <h4>✅ <span class="data-lang" data-hi="विवरण की पुष्टि करें" data-en="Confirm Your Details" data-cg="अपन जानकारी ला कनफर्म करव">विवरण की पुष्टि करें</span></h4>
+        <p class="data-lang" data-hi="Submit के बाद सभी जानकारियों का Confirmation दिखेगा। सब सही हो तो 'Proceed to Payment' पर क्लिक करें।" data-en="After submit, you'll see a Confirmation of all details. If correct, click 'Proceed to Payment'." data-cg="Submit के बाद सबो जानकारी के Confirmation दिखही। सब ठीक होय त 'Proceed to Payment' मा क्लिक करव।">Submit के बाद सभी जानकारियों का Confirmation दिखेगा। सब सही हो तो 'Proceed to Payment' पर क्लिक करें।</p>
+        <span class="ftag ftag-ok">🔍 <span class="data-lang" data-hi="कोई गलती हो तो सुधार सकते हैं" data-en="Mistakes can be corrected" data-cg="गलती होय तो सुधार सकत हव">कोई गलती हो तो सुधार सकते हैं</span></span>
+      </div>
+    </div>
+    <!-- 4 -->
+    <div class="flow-step">
+      <div class="flow-left"><div class="flow-circle" style="background:linear-gradient(135deg,#f59e0b,#ea580c)">4</div><div class="flow-line" style="background:linear-gradient(180deg,#f59e0b,#22c55e)"></div></div>
+      <div class="flow-body">
+        <h4>💳 <span class="data-lang" data-hi="भुगतान (Payment) करें" data-en="Make Payment" data-cg="पेमेंट करव">भुगतान (Payment) करें</span></h4>
+        <p class="data-lang" data-hi="UPI, Net Banking, Debit/Credit Card — Razorpay के ज़रिए 100% सुरक्षित भुगतान करें। Payment के बाद Invoice आपके Mobile पर आएगा।" data-en="Pay securely via Razorpay — UPI, Net Banking, Debit/Credit Card. Invoice sent to your mobile after payment." data-cg="UPI, Net Banking, Debit/Credit Card — Razorpay मा 100% सुरक्षित पेमेंट करव। पेमेंट के बाद Invoice तुम्हर Mobile मा आही।">UPI, Net Banking, Debit/Credit Card — Razorpay के ज़रिए 100% सुरक्षित भुगतान करें। Payment के बाद Invoice आपके Mobile पर आएगा।</p>
+      </div>
+    </div>
+    <!-- 5 — APP LOGIN (NEW) -->
+    <div class="flow-step">
+      <div class="flow-left"><div class="flow-circle" style="background:linear-gradient(135deg,#22c55e,#16a34a)">5</div><div class="flow-line" style="background:linear-gradient(180deg,#22c55e,#6366f1)"></div></div>
+      <div class="flow-body app-step">
+        <h4>📲 <span class="data-lang" data-hi="BTS App Download करें और OTP से Login करें" data-en="Download BTS App &amp; Login with OTP" data-cg="BTS App Download करव अउ OTP ले Login करव">BTS App Download करें और OTP से Login करें</span>
+          <span style="background:rgba(34,197,94,.12);color:#15803d;border:1px solid rgba(34,197,94,.25);font-size:10px;font-weight:800;padding:2px 8px;border-radius:5px;">📱 NEW</span>
+        </h4>
+        <p class="data-lang" data-hi="Payment के बाद BTS Android App Download करें — Mobile Number से OTP Login करें और सभी Tests एक जगह पाएं।" data-en="After payment, download the BTS Android App — login with Mobile Number via OTP and access all Tests in one place." data-cg="Payment के बाद BTS Android App Download करव — Mobile Number ले OTP Login करव अउ सबो Tests एके जगह पावव।">Payment के बाद BTS Android App Download करें — Mobile Number से OTP Login करें और सभी Tests एक जगह पाएं।</p>
+        <div class="otp-steps">
+          <div class="otp-step"><div class="otp-num">①</div><span class="data-lang" data-hi="दिए गए Link से BTS App Install करें (WhatsApp / Screen पर मिलेगा)" data-en="Install BTS App from the provided link (on WhatsApp / Screen)" data-cg="दिए गे Link ले BTS App Install करव (WhatsApp / Screen मा मिलही)">दिए गए Link से BTS App Install करें</span></div>
+          <div class="otp-step"><div class="otp-num">②</div><span class="data-lang" data-hi="App खोलें → 'Login with Mobile' पर Click करें" data-en="Open App → Click 'Login with Mobile'" data-cg="App खोलव → 'Login with Mobile' मा Click करव">App खोलें → 'Login with Mobile' पर Click करें</span></div>
+          <div class="otp-step"><div class="otp-num">③</div><span class="data-lang" data-hi="अपना Registered Mobile Number डालें" data-en="Enter your Registered Mobile Number" data-cg="अपन Registered Mobile Number डालव">अपना Registered Mobile Number डालें</span></div>
+          <div class="otp-step"><div class="otp-num">④</div><span class="data-lang" data-hi="आपके Mobile पर 6-Digit OTP आएगा — Enter करें और Login हो जाएं" data-en="A 6-Digit OTP comes to your mobile — Enter it and you're logged in!" data-cg="तुम्हर Mobile मा 6-Digit OTP आही — Enter करव अउ Login हो जावव!">6-Digit OTP आएगा → Enter करें → Login हो जाएं ✅</span></div>
+        </div>
+        <span class="ftag ftag-app">📱 Android App</span>
+        <span class="ftag ftag-ok">🔐 No Password — OTP Login</span>
+      </div>
+    </div>
+    <!-- 6 — GROUP -->
+    <div class="flow-step">
+      <div class="flow-left"><div class="flow-circle" style="background:linear-gradient(135deg,#6366f1,#4f46e5)">6</div><div class="flow-line" style="background:linear-gradient(180deg,#6366f1,#0088cc)"></div></div>
+      <div class="flow-body">
+        <h4>🎉 <span class="data-lang" data-hi="ग्रुप जॉइन करें — Instant Access!" data-en="Join Group — Instant Access!" data-cg="Group मा जुड़व — Instant Access!">ग्रुप जॉइन करें — Instant Access!</span></h4>
+        <p class="data-lang" data-hi="Payment सफल होते ही Screen पर Private Group का Link आ जाएगा। Monthly Plan → Telegram। Full Course → Telegram + WhatsApp दोनों।" data-en="Payment success → Private Group Link appears on screen. Monthly → Telegram. Full Course → Telegram + WhatsApp both." data-cg="Payment पूरा होवत साठ Screen मा Private Group के Link आ जाही। Monthly → Telegram। Full Course → Telegram + WhatsApp दूनो।">Payment सफल होते ही Screen पर Private Group का Link आ जाएगा। Monthly → Telegram। Full Course → Telegram + WhatsApp दोनों।</p>
+        <span class="ftag ftag-tg">📨 Telegram</span><span class="ftag ftag-wa">💬 WhatsApp (Full Course)</span>
+      </div>
+    </div>
+    <!-- 7 — TEST -->
+    <div class="flow-step">
+      <div class="flow-left"><div class="flow-circle" style="background:linear-gradient(135deg,#0088cc,#0077b3)">7</div><div class="flow-line" style="background:linear-gradient(180deg,#0088cc,#8b5cf6)"></div></div>
+      <div class="flow-body">
+        <h4>🧪 <span class="data-lang" data-hi="टेस्ट दें — App या Telegram/WhatsApp से!" data-en="Give Test — via App or Telegram/WhatsApp!" data-cg="टेस्ट देवव — App या Telegram/WhatsApp ले!">टेस्ट दें — App या Telegram/WhatsApp से!</span></h4>
+        <p class="data-lang" data-hi="BTS App से या Group के Link से टेस्ट दें — किसी भी Device पर, 24/7 और Unlimited Attempts। Test देने के बाद Answer Key और Score तुरंत मिलेगा।" data-en="Give tests via BTS App or Group Link — on any device, 24/7, unlimited attempts. Answer Key and Score available immediately after test." data-cg="BTS App ले या Group के Link ले टेस्ट देवव — कोनो भी Device मा, 24/7, Unlimited Attempts। टेस्ट के बाद Answer Key अउ Score तुरंत मिलही।">BTS App से या Group के Link से टेस्ट दें — किसी भी Device पर, 24/7, Unlimited Attempts।</p>
+        <span class="ftag ftag-app">📱 App से दें</span><span class="ftag ftag-tg">📨 Telegram से दें</span>
+      </div>
+    </div>
+    <!-- 8 — RANK -->
+    <div class="flow-step">
+      <div class="flow-left"><div class="flow-circle" style="background:linear-gradient(135deg,#8b5cf6,#7c3aed)">8</div></div>
+      <div class="flow-body">
+        <h4>🏆 <span class="data-lang" data-hi="Rank List देखें" data-en="View Rank List" data-cg="Rank List देखव">Rank List देखें</span></h4>
+        <p class="data-lang" data-hi="टेस्ट के 2 दिन बाद Telegram Channel पर Official Rank List प्रकाशित होगी। Privacy का पूरा ध्यान — केवल नाम और रैंक दिखेगी।" data-en="2 days after test, official Rank List published on Telegram Channel. Full privacy — only Name and Rank shown." data-cg="टेस्ट के 2 दिन बाद Telegram Channel मा Official Rank List प्रकाशित होही। Privacy के पूरा ध्यान — सिरिफ नाम अउ रैंक दिखही।">टेस्ट के 2 दिन बाद Telegram Channel पर Official Rank List प्रकाशित होगी। Privacy का पूरा ध्यान — केवल नाम और रैंक।</p>
+        <span class="ftag ftag-rank">🔒 Privacy Protected</span><span class="ftag ftag-rank">📊 Rank after 2 Days</span>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- GUARANTEE -->
+<section class="guarantee">
+  <div class="gbox rv">
+    <div class="gshield">🛡️</div>
+    <h3 class="data-lang" data-hi="हमारा वादा — आपका विश्वास" data-en="Our Promise — Your Trust" data-cg="हमर वादा — तुम्हर बिस्वास">हमारा वादा — आपका विश्वास</h3>
+    <p class="data-lang" data-hi="यदि आप हमारी टेस्ट सीरीज़ से संतुष्ट नहीं हैं तो हमसे तुरंत संपर्क करें। हम आपकी समस्या का समाधान करने के लिए प्रतिबद्ध हैं। Razorpay के माध्यम से सुरक्षित भुगतान, आपकी जानकारी पूरी तरह सुरक्षित।" data-en="If not satisfied, contact us immediately. We are committed to resolving your issue. Secure payment via Razorpay — your information completely safe." data-cg="अगर संतुष्ट नइ हव त तुरंत संपर्क करव। Razorpay ले सुरक्षित भुगतान, तुम्हर जानकारी एकदम सुरक्षित।">यदि आप हमारी टेस्ट सीरीज़ से संतुष्ट नहीं हैं तो हमसे तुरंत संपर्क करें। Razorpay के माध्यम से सुरक्षित भुगतान, आपकी जानकारी पूरी तरह सुरक्षित।</p>
+  </div>
+</section>
+<!-- TRUST -->
+<section class="trust">
+  <div class="tc rv"><h2 class="st" style="font-size:20px" data-lang-key="trust">आपकी सुरक्षा, हमारी प्राथमिकता</h2></div>
+  <div class="tbadges">
+    <div class="tb rv"><span class="tb-icon">🔒</span><span>Razorpay Secured Payment</span></div>
+    <div class="tb rv d1"><span class="tb-icon">🛡️</span><span>SSL Encrypted Portal</span></div>
+    <div class="tb rv d2"><span class="tb-icon">📱</span><span>Dedicated Android App</span></div>
+    <div class="tb rv d3"><span class="tb-icon">📨</span><span>Instant Telegram Access</span></div>
+    <div class="tb rv"><span class="tb-icon">💬</span><span>WhatsApp Support</span></div>
+    <div class="tb rv d1"><span class="tb-icon">♾️</span><span>Unlimited Attempts</span></div>
+    <div class="tb rv d2"><span class="tb-icon">📋</span><span>Official Syllabus Pattern</span></div>
+  </div>
+</section>
+<!-- TESTIMONIALS -->
+<section class="testi">
+  <div class="tc rv"><span class="sl2 li">Testimonials</span>
+    <h2 class="st data-lang" data-hi="हमारे विद्यार्थियों की राय" data-en="What Our Students Say" data-cg="हमर विद्यार्थी मन के राय">हमारे विद्यार्थियों की राय</h2>
+  </div>
+  <div class="tgrid">
+    <div class="tcard rv"><div class="stars">★★★★★</div><div class="tcard-badge">✓ Verified</div>
+      <p class="data-lang" data-hi="150+ टेस्ट की यह सुविधा छत्तीसगढ़ में कहीं नहीं मिलती। BTS ने सच में मेरी तैयारी को एक नया आयाम दिया है।" data-en="150+ tests facility is not available anywhere in Chhattisgarh. BTS has truly given a new dimension to my preparation." data-cg="150+ टेस्ट के ये सुबिधा CG मा कहूँ नइ मिलय। BTS ह सच मा मोर तइयारी ला नवा आयाम दे हे।">150+ टेस्ट की यह सुविधा छत्तीसगढ़ में कहीं नहीं मिलती। BTS ने सच में मेरी तैयारी को एक नया आयाम दिया है।</p>
+      <div class="tauth"><div class="tav" style="background:var(--g1)">R</div><div class="tauth-t"><h5>Ramesh Sahu</h5><p>वर्ग-1 · Maths · Bilaspur</p></div></div>
+    </div>
+    <div class="tcard rv d1"><div class="stars">★★★★★</div><div class="tcard-badge">✓ Verified</div>
+      <p class="data-lang" data-hi="Unlimited Attempts का फीचर सबसे बढ़िया है। जितनी बार चाहूं उतनी बार दे सकती हूं। WhatsApp group में भी बहुत अच्छा support मिलता है।" data-en="The Unlimited Attempts feature is the best. I can give tests as many times as I want. WhatsApp group support is also excellent." data-cg="Unlimited Attempts के फीचर सबले बढ़िया हे। जतका बार चाहूं ओतका बार दे सकत हंव। WhatsApp group मा घलो बहुत बढ़िया support मिलथे।">Unlimited Attempts का फीचर सबसे बढ़िया है। जितनी बार चाहूं उतनी बार दे सकती हूं।</p>
+      <div class="tauth"><div class="tav" style="background:var(--g2)">P</div><div class="tauth-t"><h5>Priya Dewangan</h5><p>वर्ग-2 · SST · Raipur</p></div></div>
+    </div>
+    <div class="tcard rv d2"><div class="stars">★★★★★</div><div class="tcard-badge">✓ Verified</div>
+      <p class="data-lang" data-hi="CTET की तैयारी के लिए BTS Special Batch बेहतरीन है। App और Telegram दोनों से Tests देने की सुविधा बहुत काम आती है।" data-en="BTS Special Batch for CTET preparation is excellent. The facility to give tests both via App and Telegram is very useful." data-cg="CTET के तइयारी बर BTS Special Batch जबरदस्त हे। App अउ Telegram दूनो ले Tests देय के सुबिधा बहुत काम के हे।">CTET की तैयारी के लिए BTS Special Batch बेहतरीन है। App से Tests देना बहुत convenient है।</p>
+      <div class="tauth"><div class="tav" style="background:var(--g4)">S</div><div class="tauth-t"><h5>Suresh Yadav</h5><p>CTET · Paper 2 · Korba</p></div></div>
+    </div>
+  </div>
+</section>
+<!-- FAQ -->
+<section id="faq" class="faq">
+  <div class="tc rv"><span class="sl2 li">FAQ</span>
+    <h2 class="st data-lang" data-hi="अक्सर पूछे जाने वाले सवाल" data-en="Frequently Asked Questions" data-cg="अकसर पूछे जाय वाला सवाल">अक्सर पूछे जाने वाले सवाल</h2>
+  </div>
+  <div class="faq-list">
+    <div class="faq-item rv" onclick="toggleFaq(this)">
+      <div class="faq-q"><span class="data-lang" data-hi="BTS की टेस्ट सीरीज़ कहाँ दी जाती है — App पर या Online?" data-en="Where is BTS test given — on App or Online?" data-cg="BTS के टेस्ट कहाँ दिए जाथे — App मा या Online?">BTS की टेस्ट सीरीज़ कहाँ दी जाती है — App पर या Online?</span><span class="faq-arrow">▾</span></div>
+      <div class="faq-a"><div class="faq-a-inner data-lang" data-hi="BTS App (Android), Telegram Group और WhatsApp Group — तीनों में से किसी भी माध्यम से टेस्ट दे सकते हैं। कहीं जाने की ज़रूरत नहीं।" data-en="Tests can be given via BTS App (Android), Telegram Group or WhatsApp Group — all three options available. No need to go anywhere." data-cg="BTS App (Android), Telegram Group अउ WhatsApp Group — तीनों मा से कोनो भी माध्यम ले टेस्ट दे सकत हव।">BTS App (Android), Telegram Group और WhatsApp Group — तीनों में से किसी भी माध्यम से टेस्ट दे सकते हैं।</div></div>
+    </div>
+    <div class="faq-item rv" onclick="toggleFaq(this)">
+      <div class="faq-q"><span class="data-lang" data-hi="App में Login कैसे होगा?" data-en="How to login in the App?" data-cg="App मा Login कइसे होही?">App में Login कैसे होगा?</span><span class="faq-arrow">▾</span></div>
+      <div class="faq-a"><div class="faq-a-inner data-lang" data-hi="बहुत आसान! App खोलें → 'Login with Mobile' → अपना Registered Mobile Number डालें → 6-Digit OTP आएगा → Enter करें → Login हो गया! कोई Password याद रखने की ज़रूरत नहीं।" data-en="Very easy! Open App → 'Login with Mobile' → Enter your Registered Mobile Number → 6-Digit OTP will come → Enter it → Logged in! No password to remember." data-cg="बहुत आसान! App खोलव → 'Login with Mobile' → Registered Mobile Number डालव → 6-Digit OTP आही → Enter करव → Login हो गे! कोनो Password याद रखे के ज़रूरत नइ।">बहुत आसान! App खोलें → Mobile Number → OTP → Login। कोई Password नहीं।</div></div>
+    </div>
+    <div class="faq-item rv" onclick="toggleFaq(this)">
+      <div class="faq-q"><span class="data-lang" data-hi="एक विषय में कितने टेस्ट मिलेंगे?" data-en="How many tests per subject?" data-cg="एक बिसय मा कतका टेस्ट मिलही?">एक विषय में कितने टेस्ट मिलेंगे?</span><span class="faq-arrow">▾</span></div>
+      <div class="faq-a"><div class="faq-a-inner data-lang" data-hi="प्रत्येक विषय में 150+ टेस्ट उपलब्ध होंगे। Combined/Full-Length Mock Tests भी होंगे। सभी Official Syllabus के अनुसार क्रमानुसार।" data-en="150+ tests per subject. Combined/Full-Length Mock Tests also available. All prepared sequentially per Official Syllabus." data-cg="हर एक बिसय मा 150+ टेस्ट मिलही। Combined/Full-Length Mock Tests घलो होही। सबो Official Syllabus के हिसाब ले।">प्रत्येक विषय में 150+ टेस्ट। Combined Mock Tests भी। सब Official Syllabus अनुसार क्रमानुसार।</div></div>
+    </div>
+    <div class="faq-item rv" onclick="toggleFaq(this)">
+      <div class="faq-q"><span class="data-lang" data-hi="मंथली और फुल कोर्स में क्या फर्क है?" data-en="Difference between Monthly and Full Course?" data-cg="Monthly अउ Full Course मा का फरक हे?">मंथली और फुल कोर्स में क्या फर्क है?</span><span class="faq-arrow">▾</span></div>
+      <div class="faq-a"><div class="faq-a-inner data-lang" data-hi="Monthly Plan: 1 महीने के लिए Telegram Group Access। Full Course: पूरे कोर्स की अवधि तक Telegram + WhatsApp दोनों Groups + PYQ और Notes का Special Access + App Access।" data-en="Monthly Plan: 1 month Telegram Group access. Full Course: Telegram + WhatsApp both + PYQ & Notes Special Access + App Access for full course duration." data-cg="Monthly Plan: 1 महिना बर Telegram Group Access। Full Course: पूरे कोर्स तक Telegram + WhatsApp दूनो + PYQ अउ Notes + App Access।">Monthly: 1 महीना Telegram। Full Course: Telegram + WhatsApp + PYQ + Notes + App Access।</div></div>
+    </div>
+    <div class="faq-item rv" onclick="toggleFaq(this)">
+      <div class="faq-q"><span class="data-lang" data-hi="Payment के बाद Access कब मिलेगा?" data-en="When will I get access after payment?" data-cg="Payment के बाद Access कब मिलही?">Payment के बाद Access कब मिलेगा?</span><span class="faq-arrow">▾</span></div>
+      <div class="faq-a"><div class="faq-a-inner data-lang" data-hi="Payment सफल होते ही आपकी Screen पर Instant Group Link आ जाएगा। App Link भी WhatsApp पर तुरंत भेजा जाएगा। पूरी तरह Automated — कोई Manual Approval नहीं।" data-en="As soon as payment is successful, Instant Group Link appears on screen. App link also sent on WhatsApp immediately. Fully automated — no manual approval." data-cg="Payment पूरा होवत साठ Screen मा Instant Group Link आ जाही। App Link घलो WhatsApp मा तुरंत भेजे जाही। पूरी Automated — कोनो Manual Approval नइ।">Payment सफल होते ही Instant Group Link। App Link भी तुरंत WhatsApp पर। पूरी Automated।</div></div>
+    </div>
+    <div class="faq-item rv" onclick="toggleFaq(this)">
+      <div class="faq-q"><span class="data-lang" data-hi="CTET के लिए अलग से कोर्स क्यों है?" data-en="Why is there a separate CTET course?" data-cg="CTET बर अलग कोर्स काबर हे?">CTET के लिए अलग से कोर्स क्यों है?</span><span class="faq-arrow">▾</span></div>
+      <div class="faq-a"><div class="faq-a-inner data-lang" data-hi="CG सरकार ने कार्यरत शिक्षकों के लिए CTET अनिवार्य किया है। CTET का Pattern और Syllabus CG भर्ती से अलग है, इसलिए Paper 1 और Paper 2 दोनों के लिए Special Batch तैयार किया गया है।" data-en="CG government has made CTET mandatory for serving teachers. CTET Pattern & Syllabus differs from CG recruitment, so Special Batches for both Paper 1 and Paper 2." data-cg="CG सरकार ह काम करत मास्टर मन बर CTET ज़रूरी कर दे हे। CTET के Pattern अउ Syllabus CG भरती ले अलग हे।">CG सरकार ने CTET अनिवार्य किया है। Pattern अलग होने के कारण Paper 1 और 2 के लिए Special Batch।</div></div>
+    </div>
+  </div>
+</section>
+<!-- FINAL CTA -->
+<section class="fcta">
+  <div class="fbox rv">
+    <div class="fbox-grid"></div>
+    <h3 class="data-lang" data-hi="प्रवेश प्रक्रिया शुरू करें" data-en="Start Admission Process" data-cg="एडमिशन प्रक्रिया सुरू करव">प्रवेश प्रक्रिया शुरू करें</h3>
+    <a href="https://script.google.com/macros/s/AKfycbwamJrSV85Bl3q4DdZZO-6fgHbOjlls9GeSjfwa8bSYh8F7nXUEdrYp/exec" target="_blank" class="btn-p data-lang" data-hi="🚀 आधिकारिक एडमिशन फॉर्म खोलें ➔" data-en="🚀 Open Official Admission Form ➔" data-cg="🚀 असली एडमिशन फॉर्म ला खोलव ➔">🚀 आधिकारिक एडमिशन फॉर्म खोलें ➔</a>
+  </div>
+</section>
+<footer>
+  <p>© <span id="yr"></span> <span>Azad Institute &amp; Bilaspur Test Series.</span> सर्वाधिकार सुरक्षित।</p>
+</footer>
+<!-- WA & APP FAB -->
+<a href="https://wa.me/919981957779?text=Namaste,%20mujhe%20Azad%20Institute%20ke%20courses%20ke%20bare%20me%20jankari%20chahiye." target="_blank" class="wa">
+  <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="currentColor" viewBox="0 0 16 16"><path d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.933 7.933 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.898 7.898 0 0 0 13.6 2.326zM7.994 14.521a6.573 6.573 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.557 6.557 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592zm3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.729.729 0 0 0-.529.247c-.182.198-.691.677-.691 1.654 0 .977.71 1.916.81 2.049.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232z"/></svg>
+</a>
+<a href="#app-download" class="app-fab" title="Download BTS App">📱</a>
+<script>
+// SCROLL PROGRESS BAR
+window.addEventListener('scroll',()=>{const s=document.documentElement;const p=(s.scrollTop/(s.scrollHeight-s.clientHeight))*100;document.getElementById('spbar').style.width=p+'%';},{passive:true});
+
+// PARTICLES IN HERO
+(function(){
+  const c=document.getElementById('particles');if(!c)return;
+  const cols=['rgba(245,158,11,0.7)','rgba(251,191,36,0.5)','rgba(99,102,241,0.5)','rgba(255,255,255,0.35)','rgba(34,197,94,0.4)'];
+  for(let i=0;i<28;i++){
+    const d=document.createElement('div');d.className='p-dot';
+    const size=Math.random()*4+2;
+    d.style.cssText=`width:${size}px;height:${size}px;left:${Math.random()*100}%;background:${cols[Math.floor(Math.random()*cols.length)]};animation-duration:${Math.random()*10+6}s;animation-delay:${Math.random()*8}s;`;
+    c.appendChild(d);
+  }
+})();
+
+// DEMO TABS
+const DEMO_LINKS={varg1:{maths:'maths.html',physics:'physics.html',chemistry:'',biology:'',commerce:'',hindi:'',english:''},varg2:{sst:'varg2-sst.html',maths:'',science:''},varg3:{common:'',full:''},ctet:{p1:'',p2_math:'',p2_sst:''}};
+function initializeDemoSystem(){
+  function setupBtn(id,url){const b=document.getElementById(id);if(!b)return;if(url&&url.trim()){b.href=url;b.classList.remove('hidden')}else{b.classList.add('hidden')}}
+  setupBtn('btn-v1-maths',DEMO_LINKS.varg1.maths);setupBtn('btn-v1-physics',DEMO_LINKS.varg1.physics);
+  setupBtn('btn-v1-chemistry',DEMO_LINKS.varg1.chemistry);setupBtn('btn-v1-biology',DEMO_LINKS.varg1.biology);
+  setupBtn('btn-v1-commerce',DEMO_LINKS.varg1.commerce);setupBtn('btn-v1-hindi',DEMO_LINKS.varg1.hindi);setupBtn('btn-v1-english',DEMO_LINKS.varg1.english);
+  setupBtn('btn-v2-sst',DEMO_LINKS.varg2.sst);setupBtn('btn-v2-maths',DEMO_LINKS.varg2.maths);setupBtn('btn-v2-science',DEMO_LINKS.varg2.science);
+  setupBtn('btn-v3-common',DEMO_LINKS.varg3.common);setupBtn('btn-v3-full',DEMO_LINKS.varg3.full);
+  setupBtn('btn-ctet-p1',DEMO_LINKS.ctet.p1);setupBtn('btn-ctet-p2-math',DEMO_LINKS.ctet.p2_math);setupBtn('btn-ctet-p2-sst',DEMO_LINKS.ctet.p2_sst);
+  switchDemoTab('demo-varg1');
+}
+function switchDemoTab(pid){
+  document.querySelectorAll('.demo-content-pane').forEach(p=>p.classList.add('hidden'));
+  document.querySelectorAll('.demo-tab-btn').forEach(t=>t.classList.remove('active'));
+  const p=document.getElementById(pid);
+  if(p){p.classList.remove('hidden');document.getElementById('demo-empty-notice').classList.toggle('hidden',p.querySelectorAll('a:not(.hidden)').length>0)}
+  const t=document.getElementById('tab-'+pid);if(t)t.classList.add('active');
+}
+
+// LANGUAGE SWITCHER
+function switchLanguage(lang){
+  document.querySelectorAll('.data-lang').forEach(el=>{
+    if(el.hasAttribute('data-'+lang)){
+      const v=el.getAttribute('data-'+lang);
+      if(el.children.length>0||v.includes('<')){el.innerHTML=v}else{el.textContent=v}
+    }
+  });
+  localStorage.setItem('selectedLanguage',lang);
+}
+
+// FAQ
+function toggleFaq(item){
+  const isOpen=item.classList.contains('open');
+  document.querySelectorAll('.faq-item').forEach(i=>i.classList.remove('open'));
+  if(!isOpen)item.classList.add('open');
+}
+
+// COUNTER ANIMATION
+function animCounter(el,target,dur){
+  const sp=el.querySelector('em');if(!sp)return;
+  const s=performance.now(),ease=t=>1-Math.pow(1-t,3);
+  function u(now){const p=Math.min((now-s)/dur,1);sp.textContent=Math.round(ease(p)*target);if(p<1)requestAnimationFrame(u);else sp.textContent=target}
+  requestAnimationFrame(u);
+}
+
+// SCROLL REVEAL
+const obs=new IntersectionObserver(entries=>{entries.forEach(e=>{if(e.isIntersecting)e.target.classList.add('in')})},{threshold:0.1});
+document.querySelectorAll('.rv').forEach(el=>obs.observe(el));
+
+const cobs=new IntersectionObserver(entries=>{entries.forEach(e=>{if(e.isIntersecting){const t=e.target.dataset.target;if(t)animCounter(e.target,parseInt(t),1600);cobs.unobserve(e.target)}})},{threshold:0.5});
+document.querySelectorAll('.sn[data-target]').forEach(el=>cobs.observe(el));
+
+// SCROLL SPY
+const sections=['usp','compare','app-download','demo','courses','process','faq'];
+const navLinks=document.querySelectorAll('nav a[href^="#"]');
+const onScroll=()=>{
+  const scrollY=window.scrollY+120;let current='';
+  sections.forEach(id=>{const el=document.getElementById(id);if(el&&el.offsetTop<=scrollY)current=id});
+  navLinks.forEach(a=>{a.classList.toggle('active',a.getAttribute('href')==='#'+current)});
+};
+window.addEventListener('scroll',onScroll,{passive:true});
+
+// INIT
+document.addEventListener('DOMContentLoaded',()=>{
+  document.getElementById('yr').textContent=new Date().getFullYear();
+  initializeDemoSystem();
+  const lang=localStorage.getItem('selectedLanguage')||'hi';
+  const sel=document.getElementById('langSelect');if(sel){sel.value=lang;switchLanguage(lang);}
+  setTimeout(()=>{document.querySelectorAll('.rv').forEach(el=>{if(el.getBoundingClientRect().top<window.innerHeight)el.classList.add('in')})},60);
+});
+</script>
+</body>
+</html>
