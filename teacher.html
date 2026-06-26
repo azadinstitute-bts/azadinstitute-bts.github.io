@@ -785,68 +785,496 @@ section, .hero, .comp, .pat, .pricing, .faq, .fcta, .cs-section, .usp {
 <button class="btn-nv data-lang" data-cg="🎓 Get Admission" data-en="🎓 Get Admission" data-hi="🎓 Get Admission" onclick="openRequestModal(null)">🎓 Get Admission</button>
 </div>
 </div>
-</header><div id="hub-screen">
-<div class="hub-bg"></div>
-<div class="hub-orb hub-o1"></div>
-<div class="hub-orb hub-o2"></div>
-<div class="hub-orb hub-o3"></div>
-<div class="hub-inner">
-<div class="hub-eyebrow rv"><span class="pr"></span><span class="data-lang" data-cg="Azad Institute — तुम्हर सफलता के केंद्र" data-en="Azad Institute — Your Center of Success" data-hi="Azad Institute — आपकी सफलता का केंद्र">Azad Institute — आपकी सफलता का केंद्र</span></div>
-<h2 class="hub-title rv">
-<span class="data-lang" data-cg="कोन परीक्षा के तइयारी करना हे?" data-en="Which Exam Are You Preparing For?" data-hi="किस परीक्षा की तैयारी करनी है?">किस परीक्षा की <span class="gold">तैयारी करनी है?</span></span>
-</h2>
-<p class="hub-sub rv d1 data-lang" data-cg="अपन परीक्षा चुनव अउ सोझा ओकर Test Series, Courses अउ Pricing मा जावव।" data-en="Choose your exam and go directly to its Test Series, Courses and Pricing." data-hi="अपनी परीक्षा चुनें और सीधे उसके Test Series, Courses और Pricing पर जाएं।">अपनी परीक्षा चुनें और सीधे उसके Test Series, Courses और Pricing पर जाएं।</p>
-<div class="hub-cards">
-<!-- TEACHER VACANCY — LIVE -->
-<div class="hub-card live rv d1" onclick="showExam('teacher')">
-<span class="hub-card-icon">👨‍🏫</span>
-<div class="hub-badge badge-live"><span class="hub-live-dot"></span><span class="data-lang" data-cg="Live — अभी उपलब्ध" data-en="Live — Available Now" data-hi="Live — अभी उपलब्ध">Live — अभी उपलब्ध</span></div>
-<h3 class="hub-card-title" data-cg="CG शिक्षक भरती" data-en="CG Teacher Vacancy" data-hi="CG शिक्षक भर्ती" data-lang"="" style="margin-top:14px">CG शिक्षक भर्ती</h3>
-<p class="hub-card-sub data-lang" data-cg="वर्ग-1 · वर्ग-2 · वर्ग-3 · CTET Special" data-en="Varg-1 (Lecturer) · Varg-2 (Teacher) · Varg-3 (Asst. Teacher) · CTET Special" data-hi="वर्ग-1 (व्याख्याता) · वर्ग-2 (शिक्षक) · वर्ग-3 (सहायक शिक्षक) · CTET Special">वर्ग-1 (व्याख्याता) · वर्ग-2 (शिक्षक) · वर्ग-3 (सहायक शिक्षक) · CTET Special</p>
-<div class="hub-arrow">→</div>
+</header><div class="exam-section active" id="exam-teacher" style="display: block;">
+<!-- HERO -->
+<section class="hero">
+<div class="hg"></div>
+<div class="particles" id="particles"></div>
+<div class="orb o1"></div><div class="orb o2"></div><div class="orb o3"></div>
+<div class="sh2d sh1"></div><div class="sh2d sh2"></div><div class="sh2d sh3"></div>
+<div class="hero-c rv">
+<div class="eyebrow data-lang" data-cg="🎯 CG शिक्षक भरती 2026 अउ CTET स्पेशल" data-en="🎯 CG Teacher Recruitment 2026 &amp; CTET Special" data-hi="🎯 CG शिक्षक भर्ती 2026 एवं CTET स्पेशल"><span class="pr"></span>🎯 CG शिक्षक भर्ती 2026 एवं CTET स्पेशल</div>
+<h2 class="data-lang" data-cg="मास्टर बने के सपना ला देवव असली उड़ान, अउ काम करत मास्टर मन नौकरी ला सुरक्षित करव!" data-en="Give real flight to your teaching dream, and serving teachers secure your job!" data-hi="शिक्षक बनने के सपने को दें असली उड़ान, और कार्यरत शिक्षक करें अपनी जॉब सुरक्षित!">
+        शिक्षक बनने के सपने को दें<br/><span class="gold">असली उड़ान,</span><br/>और कार्यरत शिक्षक करें अपनी जॉब सुरक्षित!
+      </h2>
+<div class="hero-d">
+<p class="data-lang" data-cg="&lt;b&gt;शून्य ले चयन तक:&lt;/b&gt; वर्ग-1, 2 अउ 3 के 100% परीक्षा के हिसाब ले टेस्ट सीरीज़।" data-en="&lt;b&gt;From Zero to Selection:&lt;/b&gt; 100% exam-oriented test series for Varg-1, 2 &amp; 3." data-hi="&lt;b&gt;शून्य से चयन तक:&lt;/b&gt; नए अभ्यर्थियों के लिए वर्ग-1, 2 और 3 की 100% एग्जाम-ओरिएंटेड टेस्ट सीरीज़।"><b>शून्य से चयन तक:</b> नए अभ्यर्थियों के लिए वर्ग-1, 2 और 3 की 100% एग्जाम-ओरिएंटेड टेस्ट सीरीज़।</p>
+<p class="data-lang" data-cg="&lt;b&gt;नौकरी के सुरक्षा:&lt;/b&gt; काम करत मास्टर मन बर CTET पास करे के अचूक रणनीति।" data-en="&lt;b&gt;Job Security:&lt;/b&gt; Foolproof strategy for serving teachers to pass mandatory CTET." data-hi="&lt;b&gt;नौकरी की सुरक्षा:&lt;/b&gt; कार्यरत शिक्षकों के लिए अनिवार्य CTET पास करने की अचूक रणनीति।"><span class="alert-l"><b>नौकरी की सुरक्षा:</b> कार्यरत शिक्षकों के लिए अनिवार्य CTET — अभी तैयारी शुरू करें।</span></p>
 </div>
-<!-- CG VYAPAM — COMING SOON -->
-<div class="hub-card coming rv d2">
-<div class="hub-coming-overlay">
-<span class="hub-coming-text data-lang" data-cg="जल्द आवत हे" data-en="Coming Soon" data-hi="जल्द आ रहा है">जल्द आ रहा है</span>
-<button class="hub-notify-btn data-lang" data-cg="🔔 Notify करव" data-en="🔔 Notify Me" data-hi="🔔 Notify करें" onclick="event.stopPropagation();openRequestModal('CG Vyapam')">🔔 Notify करें</button>
-</div>
-<span class="hub-card-icon" style="opacity:.35">📋</span>
-<div class="hub-badge badge-coming" style="margin-bottom:14px"><span class="data-lang" data-cg="Coming Soon" data-en="Coming Soon" data-hi="Coming Soon">Coming Soon</span></div>
-<h3 class="hub-card-title" data-cg="CG Vyapam" data-en="CG Vyapam" data-hi="CG Vyapam" data-lang"="" style="opacity:.4;margin-top:0">CG Vyapam</h3>
-<p class="hub-card-sub" style="opacity:.3">Patwari · Forest Guard · Sub-Engineer · और अधिक</p>
-</div>
-<!-- CGPSC — COMING SOON -->
-<div class="hub-card coming rv d3">
-<div class="hub-coming-overlay">
-<span class="hub-coming-text data-lang" data-cg="जल्द आवत हे" data-en="Coming Soon" data-hi="जल्द आ रहा है">जल्द आ रहा है</span>
-<button class="hub-notify-btn data-lang" data-cg="🔔 Notify करव" data-en="🔔 Notify Me" data-hi="🔔 Notify करें" onclick="event.stopPropagation();openRequestModal('CGPSC')">🔔 Notify करें</button>
-</div>
-<span class="hub-card-icon" style="opacity:.35">🏛️</span>
-<div class="hub-badge badge-coming" style="margin-bottom:14px"><span class="data-lang" data-cg="Coming Soon" data-en="Coming Soon" data-hi="Coming Soon">Coming Soon</span></div>
-<h3 class="hub-card-title" style="opacity:.4;margin-top:0">CGPSC</h3>
-<p class="hub-card-sub" style="opacity:.3">Prelims · Mains · Interview · State Service</p>
-</div>
-<!-- SSC — COMING SOON -->
-<div class="hub-card coming rv d3">
-<div class="hub-coming-overlay">
-<span class="hub-coming-text data-lang" data-cg="जल्द आवत हे" data-en="Coming Soon" data-hi="जल्द आ रहा है">जल्द आ रहा है</span>
-<button class="hub-notify-btn data-lang" data-cg="🔔 Notify करव" data-en="🔔 Notify Me" data-hi="🔔 Notify करें" onclick="event.stopPropagation();openRequestModal('SSC')">🔔 Notify करें</button>
-</div>
-<span class="hub-card-icon" style="opacity:.35">📚</span>
-<div class="hub-badge badge-coming" style="margin-bottom:14px"><span class="data-lang" data-cg="Coming Soon" data-en="Coming Soon" data-hi="Coming Soon">Coming Soon</span></div>
-<h3 class="hub-card-title" style="opacity:.4;margin-top:0">SSC</h3>
-<p class="hub-card-sub" style="opacity:.3">CGL · CHSL · MTS · GD Constable</p>
+<div class="hbtns">
+<a class="btn-p data-lang" data-cg="🔒 एडमिशन पोर्टल ला खोलव" data-en="🔒 Open Admission Portal" data-hi="🔒 एडमिशन पोर्टल खोलें" href="https://admission.bilaspurtestseries.com" target="_blank">🔒 एडमिशन पोर्टल खोलें</a>
+<a class="btn-g data-lang" data-cg="📝 फ्री डेमो टेस्ट देवव" data-en="📝 Try Free Demo" data-hi="📝 फ्री डेमो टेस्ट दें" href="#demo">📝 फ्री डेमो टेस्ट दें</a>
 </div>
 </div>
-<div class="hub-global-request rv">
-<p class="data-lang" data-cg="तुम्हर Exam ऊपर नइ दिखय? अपन Test Series Request करव।" data-en="Your exam not listed? Request your Test Series." data-hi="आपका Exam ऊपर नहीं दिखा? अपनी Test Series Request करें।">आपका Exam ऊपर नहीं दिखा? अपनी Test Series Request करें।</p>
-<button class="hub-req-btn" onclick="openRequestModal(null)">
-<span>📬</span>
-<span class="data-lang" data-cg="Test Series Request करव" data-en="Request a Test Series" data-hi="Test Series Request करें">Test Series Request करें</span>
-</button>
+<div class="hclip"></div>
+</section>
+<!-- STATS -->
+<div class="stats"><div class="si">
+<div class="stat rv"><div class="sn" data-target="120"><em>0</em><span style="color:var(--orange)">+</span></div><div class="sl-stat">Consistent Tests</div></div>
+<div class="stat rv d1"><div class="sn" data-target="4"><em>0</em></div><div class="sl-stat">Exam Categories</div></div>
+<div class="stat rv d2"><div class="sn">₹2.5<em style="font-size:14px;color:var(--orange)">/दिन</em></div><div class="sl-stat">से शुरुआत</div></div>
+<div class="stat rv d3"><div class="sn" data-target="100"><em>0</em><span style="color:var(--orange)">%</span></div><div class="sl-stat">Exam Oriented</div></div>
+</div></div>
+<!-- FREE DEMO TEST ZONE -->
+<section class="demo" id="demo">
+<div class="tc rv">
+<h2 class="st data-lang" data-cg="🎯 फ्री डेमो टेस्ट ज़ोन" data-en="🎯 Free Demo Test Zone" data-hi="🎯 फ्री डेमो टेस्ट ज़ोन">🎯 फ्री डेमो टेस्ट ज़ोन</h2>
+<p class="ss data-lang" data-cg="अपन पसंद के वर्ग अउ बिसय ला चुनव अउ सोझा स्क्रीन मा परीक्षा के अनुभव करव।" data-en="Select your category &amp; subject and experience the exam directly on screen." data-hi="अपनी पसंद के वर्ग और विषय का चयन करें और सीधे स्क्रीन पर परीक्षा का अनुभव करें।">अपनी पसंद के वर्ग और विषय का चयन करें और सीधे स्क्रीन पर परीक्षा का अनुभव करें।</p>
+</div>
+<div class="dtabs rv">
+<button class="demo-tab-btn active" id="tab-demo-varg1" onclick="switchDemoTab('demo-varg1')"><span class="dtb-main">वर्ग-1</span><span class="dtb-sub">व्याख्याता</span></button>
+<button class="demo-tab-btn" id="tab-demo-varg2" onclick="switchDemoTab('demo-varg2')"><span class="dtb-main">वर्ग-2</span><span class="dtb-sub">शिक्षक</span></button>
+<button class="demo-tab-btn" id="tab-demo-varg3" onclick="switchDemoTab('demo-varg3')"><span class="dtb-main">वर्ग-3</span><span class="dtb-sub">सहायक</span></button>
+<button class="demo-tab-btn" id="tab-demo-ctet" onclick="switchDemoTab('demo-ctet')"><span class="dtb-main">CTET</span><span class="dtb-sub">स्पेशल</span></button>
+</div>
+<div class="dpane rv">
+<div class="demo-content-pane dgrid" id="demo-varg1">
+<a class="dlink" href="DEMO_Common_CDP_Foundation_Pedagogy_Day_01_08_CDP_CHILD_DEVELOPMENT_PRIN.html" target="_blank">📝 CDP Foundation Pedagogy ➔</a>
+<a class="dlink" href="DEMO_Varg_1_Biology_Concept_And_NCERT_Depth_Day_01_05_BIOLOGY_CELL_BIOLOGY_BIOMOLECU.html" target="_blank">📝 Biology Concept And NCERT Depth ➔</a>
+<a class="dlink" href="DEMO_Varg_1_Chemistry_Scoring_Concepts_Day_01_04_CHEMISTRY_MOLE_CONCEPT_STOICHIOM.html" target="_blank">📝 Chemistry Scoring Concepts ➔</a>
+<a class="dlink" href="DEMO_Varg_1_Commerce_Accountancy_High-Value_Topics_Day_01_01_COMMERCE_ACCOUNTING_PRINCIPLES.html" target="_blank">📝 Commerce Accountancy High-Value Topics ➔</a>
+<a class="dlink" href="DEMO_Varg_1_English_Grammar_Vocabulary_Passage_Day_01_07_ENGLISH_ENGLISH_GRAMMAR_TENSE.html" target="_blank">📝 English Grammar Vocabulary Passage ➔</a>
+<a class="dlink" href="DEMO_Varg_1_Hindi_Grammar_Literature_Passage_Day_01_06_HINDI_HINDI_VYAKARAN_SANDHI.html" target="_blank">📝 Hindi Grammar Literature Passage ➔</a>
+<a class="dlink" href="DEMO_Varg_1_Maths_Core_Analytical_Topics_Day_01_02_MATHS_SETS_RELATIONS_FUNCTIO.html" target="_blank">📝 Maths Core Analytical Topics ➔</a>
+<a class="dlink" href="DEMO_Varg_1_Physics_Numericals_And_Concepts_Day_01_03_PHYSICS_UNITS_DIMENSIONS_ERROR.html" target="_blank">📝 Physics Numericals And Concepts ➔</a>
+</div>
+<div class="demo-content-pane dgrid hidden" id="demo-varg2">
+<a class="dlink" href="DEMO_Common_CDP_Foundation_Pedagogy_Day_01_08_CDP_CHILD_DEVELOPMENT_PRIN.html" target="_blank">📝 CDP Foundation Pedagogy ➔</a>
+<a class="dlink" href="DEMO_Varg_2_Maths_Science_High-Value_Topics_Day_01_09_MATHS_NUMBER_SYSTEM_DIVISIBI.html" target="_blank">📝 Maths Science High-Value Topics ➔</a>
+<a class="dlink" href="DEMO_Varg_2_SST_History_Polity_Geography_Day_01_10_HISTORY_ANCIENT_INDIA_SOURCES.html" target="_blank">📝 SST History Polity Geography ➔</a>
+</div>
+<div class="demo-content-pane dgrid hidden" id="demo-varg3">
+<a class="dlink" href="DEMO_Common_CDP_Foundation_Pedagogy_Day_01_08_CDP_CHILD_DEVELOPMENT_PRIN.html" target="_blank">📝 CDP Foundation Pedagogy ➔</a>
+<a class="dlink" href="DEMO_Varg_3_Primary_Maths_EVS_Pedagogy_Day_01_11_MATHS_PRIMARY_MATHS_NUMBER_S.html" target="_blank">📝 Primary Maths EVS Pedagogy ➔</a>
+</div>
+<div class="demo-content-pane dgrid hidden" id="demo-ctet">
+<a class="dlink" href="DEMO_CTET_Paper_II_Maths_Science_Day_01_13_CDP_CTET_PAPER_II_CDP_ADOL.html" target="_blank">📝 Paper II Maths Science ➔</a>
+<a class="dlink" href="DEMO_CTET_Paper_II_SST_History_Geography_Civics_Day_01_14_CDP_CTET_PAPER_II_CDP_LEAR.html" target="_blank">📝 Paper II SST History Geography Civics ➔</a>
+<a class="dlink" href="DEMO_CTET_Paper_I_Primary_CDP_Maths_EVS_Language_Day_01_12_CDP_CTET_CDP_DEVELOPMENT_L.html" target="_blank">📝 Paper I Primary CDP Maths EVS Language ➔</a>
+</div>
+<div class="dempty hidden" id="demo-empty-notice">इस वर्ग के डेमो टेस्ट शीघ्र ही अपलोड किए जा रहे हैं। कृपया जुड़े रहें!</div>
+</div>
+<div class="tc mt10 rv">
+<a class="tgbtn" href="https://t.me/YOUR_TELEGRAM_CHANNEL_LINK" target="_blank">
+<svg fill="currentColor" height="22" viewbox="0 0 16 16" width="22" xmlns="http://www.w3.org/2000/svg"><path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.287 5.906c-.778.324-2.334.994-4.666 2.01-.378.15-.577.298-.595.442-.03.243.275.339.69.47l.175.055c.408.133.958.288 1.243.294.26.006.549-.1.868-.32 2.179-1.471 3.304-2.214 3.374-2.23.05-.012.12-.026.166.016.047.041.042.12.037.141-.03.129-1.227 1.241-1.846 1.817-.193.18-.33.307-.358.336a8.154 8.154 0 0 1-.188.186c-.38.366-.664.64.015 1.088.327.216.589.393.85.571.284.194.568.387.936.629.093.06.183.125.27.187.331.236.63.448.997.414.214-.02.435-.22.547-.82.265-1.417.786-4.486.906-5.751a1.426 1.426 0 0 0-.013-.315.337.337 0 0 0-.114-.217.526.526 0 0 0-.31-.093c-.3.005-.763.166-2.984 1.09z"></path></svg>
+<span class="data-lang" data-cg="फ्री डेमो टेलीग्राम चैनल जॉइन करव" data-en="Join Free Demo Telegram Channel" data-hi="जॉइन फ्री डेमो टेलीग्राम चैनल">जॉइन फ्री डेमो टेलीग्राम चैनल</span>
+</a>
+</div>
+</section>
+<!-- USP -->
+<section class="ctab">
+<div class="tc rv"><span class="sl2 lb3">Available Test Series</span>
+<h2 class="st data-lang" data-cg="हमर करा उपलब्ध Test Series अउ बिसय" data-en="Our Available Test Series &amp; Subjects" data-hi="हमारी उपलब्ध Test Series एवं विषय">हमारी उपलब्ध Test Series एवं विषय</h2>
+</div>
+<div class="ctab-g">
+<div class="ctab-c rv"><div class="ctab-acc" style="background:var(--g1)"></div><span class="cbadge" style="background:#eff6ff;color:#1d4ed8">वर्ग-1 (व्याख्याता)</span><h4>Lecturer Test Series</h4><div class="ctags"><span class="ctag">Maths</span><span class="ctag">Physics</span><span class="ctag">Chemistry</span><span class="ctag">Biology</span><span class="ctag">Commerce</span><span class="ctag">Hindi</span><span class="ctag">English</span></div>
+<p class="data-lang" data-cg="📌 अभी पुराना/केंद्रीय पाठ्यक्रम के हिसाब ले। नवा सिलेबस आय मा बदले जाही।" data-en="📌 Currently based on Old/Central syllabus. Will be updated with latest official syllabus." data-hi="📌 वर्तमान में पुराने/केंद्रीय पाठ्यक्रम के अनुसार टेस्ट। नवीनतम सिलेबस आने पर अद्यतन होगा।" style="margin-top:14px;font-size:12px;color:#b45309;background:#fffbeb;border:1px solid #fcd34d;border-radius:10px;padding:10px 12px;line-height:1.65;font-weight:600;">📌 वर्तमान में पुराने/केंद्रीय पाठ्यक्रम के अनुसार टेस्ट। नवीनतम सिलेबस आने पर अद्यतन होगा।</p>
+</div>
+<div class="ctab-c rv d1"><div class="ctab-acc" style="background:var(--g2)"></div><span class="cbadge" style="background:#f0fdf4;color:#15803d">वर्ग-2 (शिक्षक)</span><h4>Teacher Test Series</h4><div class="ctags"><span class="ctag">Social Science (SST)</span><span class="ctag">Maths</span><span class="ctag">Science</span></div>
+<p class="data-lang" data-cg="📌 अभी अनुमानित पाठ्यक्रम के हिसाब ले। नवा सिलेबस आय मा बदले जाही।" data-en="📌 Currently based on estimated syllabus. Will update with official syllabus." data-hi="📌 वर्तमान में अनुमानित पाठ्यक्रम के आधार पर टेस्ट। नवीनतम सिलेबस आने पर अद्यतन होगा।" style="margin-top:14px;font-size:12px;color:#b45309;background:#fffbeb;border:1px solid #fcd34d;border-radius:10px;padding:10px 12px;line-height:1.65;font-weight:600;">📌 वर्तमान में अनुमानित पाठ्यक्रम के आधार पर टेस्ट। नवीनतम सिलेबस आने पर अद्यतन होगा।</p>
+</div>
+<div class="ctab-c rv d2"><div class="ctab-acc" style="background:var(--g3)"></div><span class="cbadge" style="background:#fffbeb;color:#b45309">वर्ग-3 (सहायक शिक्षक)</span><h4>Asst. Teacher</h4><div class="ctags"><span class="ctag">संपूर्ण प्राथमिक सिलेबस</span><span class="ctag">बाल विकास (CDP)</span></div></div>
+<div class="ctab-c rv d3"><div class="ctab-acc" style="background:var(--g4)"></div><span class="cbadge" style="background:#faf5ff;color:#7c3aed">CTET स्पेशल</span><h4>Central Eligibility</h4><div class="ctags"><span class="ctag">Paper 1 (Pedagogy)</span><span class="ctag">Paper 2 (Maths &amp; Sci)</span><span class="ctag">Paper 2 (SST)</span></div></div>
+</div>
+</section>
+<section class="pricing" id="courses">
+<div class="tc rv"><span class="sl2 la">Plans &amp; Pricing</span>
+<h2 class="st data-lang" data-cg="Test Series सब्सक्रिप्शन प्लान" data-en="Test Series Subscription Plans" data-hi="Test Series सब्सक्रिप्शन प्लान्स">Test Series सब्सक्रिप्शन प्लान्स</h2>
+<p class="ss data-lang" data-cg="सिरिफ 3 महिना के कीमत मा पूरी Full Test Series — बचत करव, स्मार्ट बनव!" data-en="Get the Full Test Series at the price of just 3 months — Save Smart!" data-hi="महज़ 3 महीने की कीमत में पूरी Full Test Series — बचत करें, स्मार्ट बनें!">महज़ 3 महीने की कीमत में पूरी Full Test Series — बचत करें, स्मार्ट बनें!</p>
+</div>
+<!-- URGENCY BAR -->
+<div class="urgency-bar rv">
+<span class="urgency-dot"></span>
+<span class="data-lang" data-cg="⚠️ Limited Seats — ये batch मा थोरहा सीट बाचे हे। अभी Enroll करव!" data-en="⚠️ Limited Seats — Only a few seats left in this batch. Enroll Now!" data-hi="⚠️ Limited Seats — इस बैच में सीमित सीटें ही बची हैं। अभी Enroll करें!">⚠️ Limited Seats — इस बैच में सीमित सीटें ही बची हैं। अभी Enroll करें!</span>
+</div>
+
+<div class="launch-offer rv" style="background: var(--emerald); color: #fff !important; padding: 12px 16px; border-radius: 8px; margin-top: 10px; font-weight: 500; font-size: 14px; text-align: center; border: 1px dashed rgba(255,255,255,0.4); box-shadow: 0 4px 12px rgba(5,150,105,.25);">
+<span class="data-lang" 
+data-cg="🎉 &lt;b&gt;लॉन्च ऑफर:&lt;/b&gt; पहिली 200 लइका मन ला अगला टेस्ट सीरीज़ ले बर 25% अउ छूट मिलही!" 
+data-en="🎉 &lt;b&gt;Launch Offer:&lt;/b&gt; First 200 students get an EXTRA 25% discount on their next test series purchase!" 
+data-hi="🎉 &lt;b&gt;लॉन्च ऑफर:&lt;/b&gt; पहले 200 छात्रों को अगली टेस्ट सीरीज़ पर 25% अतिरिक्त छूट दी जाएगी!">
+🎉 <b>लॉन्च ऑफर:</b> पहले 200 छात्रों को अगली टेस्ट सीरीज़ पर 25% अतिरिक्त छूट दी जाएगी!
+</span>
+</div>
+
+<div class="pcards">
+<!-- VARG 1 -->
+<div class="card rv">
+<div class="cstripe" style="background:var(--g1)"></div><div class="ribbon">Most Popular</div>
+<span class="ctg" style="background:#eff6ff;color:#1d4ed8;margin-top:10px;">वर्ग - 1</span>
+<h4 style="color:var(--navy)">Lecturer <span style="font-size:15px;color:var(--muted);font-weight:600">(व्याख्याता)</span></h4>
+<p class="cstl" style="color:var(--muted)">उपलब्ध विषय</p>
+<ul class="clist">
+<li><span class="ck" style="background:#dcfce7;color:#16a34a">✓</span>Mathematics</li>
+<li><span class="ck" style="background:#dcfce7;color:#16a34a">✓</span>Physics</li>
+<li><span class="ck" style="background:#dcfce7;color:#16a34a">✓</span>Chemistry</li>
+<li><span class="ck" style="background:#dcfce7;color:#16a34a">✓</span>Biology</li>
+<li><span class="ck" style="background:#dcfce7;color:#16a34a">✓</span>Commerce</li>
+<li><span class="ck" style="background:#dcfce7;color:#16a34a">✓</span>Hindi</li>
+<li><span class="ck" style="background:#dcfce7;color:#16a34a">✓</span>English</li>
+</ul>
+<div class="cprice">
+<div class="pcol">
+<span class="plbl" style="color:var(--muted)">मंथली</span>
+<span class="pamt" style="color:var(--navy)">₹249</span>
+<span class="pchip-m">~₹8/दिन</span>
+<span class="pben">✅ Telegram</span>
+</div>
+<div class="pcol" style="text-align:right">
+<span class="plbl" style="color:var(--muted)">Full Test Series</span>
+<span class="pamt-old">₹1,099</span>
+<span class="pamt" style="color:#1d4ed8">₹749</span>
+<span class="pchip">~₹4/दिन</span>
+<span class="psave">32% की बचत!</span>
+<span class="pben" style="display:block;margin-top:3px">✅ Telegram + WhatsApp</span>
 </div>
 </div>
+<a class="cbtn cbtn-ink data-lang" data-cg="अभी Buy करव ➔" data-en="Buy Now ➔" data-hi="अभी Buy करें ➔" href="https://admission.bilaspurtestseries.com" target="_blank">अभी Buy करें ➔</a>
+</div>
+<!-- VARG 2 -->
+<div class="card rv d1">
+<div class="cstripe" style="background:var(--g2)"></div>
+<span class="ctg" style="background:#f0fdf4;color:#15803d;margin-top:10px;">वर्ग - 2</span>
+<h4 style="color:var(--navy)">Teacher <span style="font-size:15px;color:var(--muted);font-weight:600">(शिक्षक)</span></h4>
+<p class="cstl" style="color:var(--muted)">उपलब्ध विषय</p>
+<ul class="clist">
+<li><span class="ck" style="background:#dcfce7;color:#16a34a">✓</span>Social Science (SST)</li>
+<li><span class="ck" style="background:#dcfce7;color:#16a34a">✓</span>Mathematics</li>
+<li><span class="ck" style="background:#dcfce7;color:#16a34a">✓</span>Science</li>
+</ul>
+<div class="cprice">
+<div class="pcol">
+<span class="plbl" style="color:var(--muted)">मंथली</span>
+<span class="pamt" style="color:var(--navy)">₹199</span>
+<span class="pchip-m">~₹6.6/दिन</span>
+<span class="pben">✅ Telegram</span>
+</div>
+<div class="pcol" style="text-align:right">
+<span class="plbl" style="color:var(--muted)">Full Test Series</span>
+<span class="pamt-old">₹799</span>
+<span class="pamt" style="color:#059669">₹549</span>
+<span class="pchip">~₹3/दिन</span>
+<span class="psave">31% की बचत!</span>
+<span class="pben" style="display:block;margin-top:3px">✅ Telegram + WhatsApp</span>
+</div>
+</div>
+<a class="cbtn cbtn-ink data-lang" data-cg="अभी Buy करव ➔" data-en="Buy Now ➔" data-hi="अभी Buy करें ➔" href="https://admission.bilaspurtestseries.com" target="_blank">अभी Buy करें ➔</a>
+</div>
+<!-- VARG 3 -->
+<div class="card rv d2">
+<div class="cstripe" style="background:var(--g3)"></div><div class="ribbon" style="background:var(--emerald)">Best Value</div>
+<span class="ctg" style="background:#fffbeb;color:#b45309;margin-top:10px;">वर्ग - 3</span>
+<h4 style="color:var(--navy)">Asst. Teacher <span style="font-size:15px;color:var(--muted);font-weight:600">(सहायक शिक्षक)</span></h4>
+<p class="cstl" style="color:var(--muted)">विषय समूह</p>
+<ul class="clist">
+<li><span class="ck" style="background:#dcfce7;color:#16a34a">✓</span>संपूर्ण प्राथमिक सिलेबस</li>
+<li><span class="ck" style="background:#dcfce7;color:#16a34a">✓</span>बाल विकास (CDP)</li>
+</ul>
+<div class="cprice">
+<div class="pcol">
+<span class="plbl" style="color:var(--muted)">मंथली</span>
+<span class="pamt" style="color:var(--navy)">₹149</span>
+<span class="pchip-m">~₹5/दिन</span>
+<span class="pben">✅ Telegram</span>
+</div>
+<div class="pcol" style="text-align:right">
+<span class="plbl" style="color:var(--muted)">Full Test Series</span>
+<span class="pamt-old">₹599</span>
+<span class="pamt" style="color:#d97706">₹449</span>
+<span class="pchip">~₹2.5/दिन</span>
+<span class="psave">25% की बचत!</span>
+<span class="pben" style="display:block;margin-top:3px">✅ Telegram + WhatsApp</span>
+</div>
+</div>
+<a class="cbtn cbtn-ink data-lang" data-cg="अभी Buy करव ➔" data-en="Buy Now ➔" data-hi="अभी Buy करें ➔" href="https://admission.bilaspurtestseries.com" target="_blank">अभी Buy करें ➔</a>
+</div>
+<!-- CTET -->
+<div class="card dk rv d3">
+<div class="cstripe" style="background:linear-gradient(90deg,#fbbf24,#f59e0b)"></div><div class="ribbon ribbon-special">Special Batch</div>
+<span class="ctg" style="background:rgba(255,255,255,.08);color:#c4b5fd;border:1px solid rgba(196,181,253,.2);margin-top:10px;">Teachers' Upgrade</span>
+<h4 style="color:#fff">CTET <span style="font-size:15px;color:#94a3b8;font-weight:600">(केंद्रीय पात्रता)</span></h4>
+<p class="cstl" style="color:#64748b">उपलब्ध विषय</p>
+<ul class="clist">
+<li><span class="ck" style="background:rgba(16,185,129,.15);color:#34d399">✓</span><span style="color:#cbd5e1">Paper 1 (Primary / Pedagogy)</span></li>
+<li><span class="ck" style="background:rgba(16,185,129,.15);color:#34d399">✓</span><span style="color:#cbd5e1">Paper 2 (Maths &amp; Science)</span></li>
+<li><span class="ck" style="background:rgba(16,185,129,.15);color:#34d399">✓</span><span style="color:#cbd5e1">Paper 2 (Social Science)</span></li>
+</ul>
+<div class="cprice" style="display:block;padding-top:16px;">
+<div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px;border-bottom:1px dashed rgba(255,255,255,.15);padding-bottom:10px;">
+<div><span class="plbl" style="color:#94a3b8;display:block;">Paper 1 (वर्ग-3 के लिए)</span><span style="font-size:10px;color:#64748b;font-weight:700;">Full Test Series (2 माह)</span></div>
+<div style="text-align:right"><span class="pamt-old-dk">₹399</span><span class="pamt" style="color:#fff;font-size:24px;">₹249</span><span class="psave-dk">37% off</span></div>
+</div>
+<div style="display:flex;justify-content:space-between;align-items:center;">
+<div><span class="plbl" style="color:#94a3b8;display:block;">Paper 2 (वर्ग-2 के लिए)</span><span style="font-size:10px;color:#64748b;font-weight:700;">Full Test Series (2 माह)</span></div>
+<div style="text-align:right"><span class="pamt-old-dk">₹499</span><span class="pamt" style="color:#818cf8;font-size:24px;">₹299</span><span class="psave-dk">40% off</span></div>
+</div>
+<div style="text-align:right;margin-top:12px;"><span class="pben pben-dk">✅ Telegram + WhatsApp Group</span></div>
+</div>
+<a class="cbtn cbtn-fire data-lang" data-cg="अभी Buy करव ➔" data-en="Buy Now ➔" data-hi="अभी Buy करें ➔" href="https://admission.bilaspurtestseries.com" target="_blank">अभी Buy करें ➔</a>
+</div>
+</div>
+</section>
+<section class="usp" id="usp">
+<div class="tc rv"><span class="sl2 li">Our USP</span>
+<h2 class="st data-lang" data-cg="हमर टेस्ट श्रृंखला के वैज्ञानिक रूप" data-en="Scientific Format of Our Test Series" data-hi="हमारी टेस्ट श्रृंखला का वैज्ञानिक प्रारूप">हमारी टेस्ट श्रृंखला का वैज्ञानिक प्रारूप</h2>
+</div>
+<div class="fc rv mt8">
+<div class="fp">⭐ छत्तीसगढ़ में पहली बार</div>
+<h3 class="data-lang" data-cg="120+ कंसिस्टेंट टेस्ट — बिना गैप के, Unlimited Attempts" data-en="120+ Consistent Tests — No Gap, Unlimited Attempts" data-hi="120+ कंसिस्टेंट टेस्ट्स — बिना गैप के, Unlimited Attempts">120+ कंसिस्टेंट टेस्ट्स — बिना गैप के, Unlimited Attempts</h3>
+<p class="data-lang" data-cg="दूसर कोचिंग कस कोनो गैप नइ। कोनो भी दिन, कोनो भी समय Unlimited Attempts। हर बिसय मा 120+ टेस्ट — हर एक मा ~100 प्रश्न।" data-en="No gaps like other coachings. Give tests any day, any time, unlimited times. 120+ tests per subject, ~100 questions each." data-hi="अन्य कोचिंग की तरह कोई गैप नहीं। किसी भी दिन, किसी भी समय और कितनी भी बार (Unlimited Attempts) टेस्ट दें। प्रत्येक विषय में 120+ टेस्ट — प्रत्येक में ~100 प्रश्न।">अन्य कोचिंग की तरह कोई गैप नहीं। किसी भी दिन, किसी भी समय और कितनी भी बार (Unlimited Attempts) टेस्ट दें। प्रत्येक विषय में 120+ टेस्ट — प्रत्येक में ~100 प्रश्न।</p>
+</div>
+<div class="ug">
+<div class="uc rv"><div class="ui" style="background:#eff6ff">📋</div><h4 class="data-lang" data-cg="एकदम सिलेबस के हिसाब ले" data-en="Strict Syllabus Following" data-hi="सटीक पाठ्यक्रम अनुकरण">सटीक पाठ्यक्रम अनुकरण</h4><p class="data-lang" data-cg="सबो टेस्ट असली सिलेबस के हिसाब ले सिरी-सिरी।" data-en="All tests sequentially as per official syllabus topics." data-hi="सभी टेस्ट विभाग द्वारा निर्धारित आधिकारिक पाठ्यक्रम के टॉपिक्स के अनुसार क्रमानुसार।">सभी टेस्ट आधिकारिक पाठ्यक्रम के टॉपिक्स के अनुसार क्रमानुसार।</p></div>
+<div class="uc rv d1"><div class="ui" style="background:#fffbeb">🔄</div><h4 class="data-lang" data-cg="बिसय वार अउ कंबाइंड टेस्ट" data-en="Subject-wise &amp; Combined Tests" data-hi="विषयवार एवं कंबाइंड टेस्ट">विषयवार एवं कंबाइंड टेस्ट</h4><p class="data-lang" data-cg="बिसय वार टेस्ट के संगे सबो बिसय के कंबाइंड टेस्ट घलो नियमित।" data-en="Along with subject-wise tests, Combined Test of all subjects at regular intervals." data-hi="विषयवार टेस्ट के साथ सभी विषयों का 'कंबाइंड टेस्ट' भी नियमित अंतराल पर।">विषयवार के साथ सभी विषयों का 'कंबाइंड टेस्ट' भी नियमित अंतराल पर।</p></div>
+<div class="uc rv d2"><div class="ui" style="background:#fff1f2">📊</div><h4 class="data-lang" data-cg="मेरिट लिस्ट अउ संदेहा के हल" data-en="Merit List &amp; Doubt Resolution" data-hi="मेरिट सूची एवं आपत्ति निवारण">मेरिट सूची एवं आपत्ति निवारण</h4><p class="data-lang" data-cg="टेस्ट के बाद Answer Key, Merit List अउ विसेसग्य मन डहर ले संदेहा हल।" data-en="After test: Answer Key, Merit List, and expert doubt resolution." data-hi="टेस्ट के बाद Answer Key, Merit List और विशेषज्ञों द्वारा संशय निवारण।">टेस्ट के बाद Answer Key, Merit List और विशेषज्ञों द्वारा संशय निवारण।</p></div>
+</div>
+</section>
+<!-- COMPARISON -->
+<section class="comp" id="compare">
+<div class="tc rv"><span class="sl2 lr">हम क्यों बेहतर हैं?</span>
+<h2 class="st data-lang" data-cg="BTS बनाम दूसर कोचिंग संस्थान" data-en="BTS vs Other Coaching Institutes" data-hi="BTS बनाम अन्य कोचिंग संस्थान">BTS बनाम अन्य कोचिंग संस्थान</h2>
+<p class="ss data-lang" data-cg="खुद देख लव — एक ही नदर मा फरक साफ दिख जाही।" data-en="See for yourself — the difference is clear at a glance." data-hi="खुद देखिए — एक ही नज़र में फर्क साफ दिखेगा।">खुद देखिए — एक ही नज़र में फर्क साफ दिखेगा।</p>
+</div>
+<div class="comp-wrap rv">
+<table class="ct"><thead><tr><th>विशेषता</th><th class="hl">🏆 BTS (हम)</th><th>अन्य कोचिंग</th></tr></thead>
+<tbody>
+<tr><td>टेस्ट की संख्या</td><td class="col-bts"><span class="c-hl">120+ per subject</span></td><td><span class="c-part">10–30 टेस्ट</span></td></tr>
+<tr><td>Unlimited Attempts</td><td class="col-bts"><span class="c-yes">✓</span></td><td><span class="c-no">✗</span></td></tr>
+<tr><td>कभी भी टेस्ट दें (24/7)</td><td class="col-bts"><span class="c-yes">✓</span></td><td><span class="c-no">✗ Fixed Schedule</span></td></tr>
+<tr><td>Answer Key + Merit List</td><td class="col-bts"><span class="c-yes">✓</span></td><td><span class="c-part">कभी-कभी</span></td></tr>
+<tr><td>Live Leaderboard</td><td class="col-bts"><span class="c-yes">✓ Instant Rank</span></td><td><span class="c-no">✗ नहीं</span></td></tr>
+<tr><td>CTET Special Batch</td><td class="col-bts"><span class="c-yes">✓</span></td><td><span class="c-no">✗ नहीं</span></td></tr>
+<tr><td>Telegram + WhatsApp Group</td><td class="col-bts"><span class="c-yes">✓</span></td><td><span class="c-part">केवल Telegram</span></td></tr>
+<tr><td>मूल्य (Full Test Series)</td><td class="col-bts"><span class="c-hl">₹449–₹749</span></td><td><span class="c-part">₹3000–₹8000+</span></td></tr>
+<tr><td>Monthly Plan उपलब्ध</td><td class="col-bts"><span class="c-yes">✓ ₹149 से शुरू</span></td><td><span class="c-no">✗ नहीं</span></td></tr>
+</tbody></table>
+</div>
+</section>
+<!-- COURSES / AVAILABLE SUBJECTS -->
+
+<!-- PATTERN -->
+<section class="pat" id="pattern">
+<div class="tc rv"><span class="sl2 li">Question Patterns</span>
+<h2 class="st data-lang" data-cg="नवा परीक्षा पैटर्न अउ प्रश्न के स्तर" data-en="Latest Exam Pattern &amp; Question Difficulty" data-hi="नवीनतम परीक्षा पैटर्न एवं प्रश्नों का स्तर">नवीनतम परीक्षा पैटर्न एवं प्रश्नों का स्तर</h2>
+<p class="ss data-lang" data-cg="व्यापम, CGPSC अउ शिक्षक भरती बोर्ड के नवा ट्रेंड के हिसाब ले उच्च-स्तरीय प्रश्न।" data-en="High-level questions as per changing trends of Vyapam, CGPSC &amp; Teacher Recruitment Board." data-hi="व्यापम, CGPSC और शिक्षक भर्ती बोर्ड के बदलते ट्रेंड्स के अनुसार उच्च-स्तरीय प्रश्न।">व्यापम, CGPSC और शिक्षक भर्ती बोर्ड के बदलते ट्रेंड्स के अनुसार उच्च-स्तरीय प्रश्न।</p>
+</div>
+<div class="drow">
+<div class="diff de rv"><span class="dd"></span>Easy (सरल) — 30%</div>
+<div class="diff dm rv d1"><span class="dd"></span>Medium (मध्यम) — 40%</div>
+<div class="diff dh rv d2"><span class="dd"></span>Hard (कठिन) — 30%</div>
+</div>
+<div class="pg">
+<div class="pc rv"><em>🤔</em><h4>Assertion &amp; Reasoning</h4><p>(कथन एवं कारण)</p></div>
+<div class="pc rv d1"><em>📑</em><h4>Statement Based</h4><p>(बहु-कथन आधारित)</p></div>
+<div class="pc rv d2"><em>🔗</em><h4>Match the Following</h4><p>(JKLM / सुमेलित करें)</p></div>
+<div class="pc rv"><em>⏳</em><h4>Chronological Order</h4><p>(कालक्रम / व्यवस्थापन)</p></div>
+<div class="pc rv d1"><em>🧮</em><h4>Numerical &amp; Data</h4><p>(गणित एवं विज्ञान)</p></div>
+<div class="pc rv d2"><em>🧠</em><h4>Conceptual / Theoretical</h4><p>(वैचारिक एवं सैद्धांतिक)</p></div>
+<div class="pc rv"><em>👨‍🏫</em><h4>Teaching Pedagogical</h4><p>(शिक्षण शास्त्र)</p></div>
+<div class="pc hl rv d1"><em>✅</em><h4 style="color:#1d4ed8">100% Exam Oriented</h4><p style="color:#3b82f6">Every question counts</p></div>
+</div>
+</section>
+<!-- PRICING -->
+
+<!-- PROCESS FLOW -->
+<section class="proc2" id="process">
+<div class="tc rv"><span class="sl2 lg">Step-by-Step Flow</span>
+<h2 class="st data-lang" data-cg="एडमिशन ले टेस्ट तक — पूरी प्रक्रिया" data-en="From Admission to Test — Complete Process" data-hi="प्रवेश से टेस्ट तक — पूरी प्रक्रिया">प्रवेश से टेस्ट तक — पूरी प्रक्रिया</h2>
+<p class="ss data-lang" data-cg="एडमिशन → Payment → Tests — बस ओतकेच!" data-en="Admission → Payment → Tests — that's it!" data-hi="एडमिशन → Payment → Tests — बस इतना ही!">एडमिशन → Payment → Tests — बस इतना ही!</p>
+</div>
+<div class="flow rv">
+<div class="flow-step">
+<div class="flow-left"><div class="flow-circle" style="background:linear-gradient(135deg,#3b82f6,#6366f1)">1</div><div class="flow-line" style="background:linear-gradient(180deg,#6366f1,#8b5cf6)"></div></div>
+<div class="flow-body">
+<h4>🖱️ <span class="data-lang" data-cg="एडमिशन बटन दबावव" data-en="Click Admission Button" data-hi="एडमिशन बटन दबाएं">एडमिशन बटन दबाएं</span></h4>
+<p class="data-lang" data-cg="'एडमिशन पोर्टल खोलव' बटन मा क्लिक करव। ये एक सुरक्षित Google Form मा खुलही।" data-en="Click the 'Open Admission Portal' button below. It opens on a secure Google Form." data-hi="नीचे दिए गए 'एडमिशन पोर्टल खोलें' बटन पर क्लिक करें। यह एक सुरक्षित Google Form पर खुलेगा।">नीचे दिए गए 'एडमिशन पोर्टल खोलें' बटन पर क्लिक करें। यह एक सुरक्षित Google Form पर खुलेगा।</p>
+</div>
+</div>
+<div class="flow-step">
+<div class="flow-left"><div class="flow-circle" style="background:linear-gradient(135deg,#8b5cf6,#7c3aed)">2</div><div class="flow-line" style="background:linear-gradient(180deg,#8b5cf6,#10b981)"></div></div>
+<div class="flow-body">
+<h4>📝 <span class="data-lang" data-cg="अपन जानकारी भरव" data-en="Fill Your Details" data-hi="विवरण भरें">विवरण भरें</span></h4>
+<p class="data-lang" data-cg="फॉर्म मा अपन नाम, मोबाइल नंबर, ईमेल अउ शहर भरव। पसंद के Test Series अउ बिसय चुनव।" data-en="Enter your Name, Mobile Number, Email and City/District. Select your preferred Test Series and subject." data-hi="फॉर्म में अपना नाम, मोबाइल नंबर, ईमेल और शहर/जिला दर्ज करें। अपनी पसंद की Test Series और विषय चुनें।">फॉर्म में अपना नाम, मोबाइल नंबर, ईमेल और शहर/जिला दर्ज करें। अपनी पसंद की Test Series और विषय चुनें।</p>
+</div>
+</div>
+<div class="flow-step">
+<div class="flow-left"><div class="flow-circle" style="background:linear-gradient(135deg,#10b981,#059669)">3</div><div class="flow-line" style="background:linear-gradient(180deg,#10b981,#f59e0b)"></div></div>
+<div class="flow-body">
+<h4>✅ <span class="data-lang" data-cg="अपन जानकारी ला कनफर्म करव" data-en="Confirm Your Details" data-hi="विवरण की पुष्टि करें">विवरण की पुष्टि करें</span></h4>
+<p class="data-lang" data-cg="Submit के बाद सबो जानकारी के Confirmation दिखही। सब ठीक होय त 'Proceed to Payment' मा क्लिक करव।" data-en="After submit, you'll see a Confirmation of all details. If correct, click 'Proceed to Payment'." data-hi="Submit के बाद सभी जानकारियों का Confirmation दिखेगा। सब सही हो तो 'Proceed to Payment' पर क्लिक करें।">Submit के बाद सभी जानकारियों का Confirmation दिखेगा। सब सही हो तो 'Proceed to Payment' पर क्लिक करें।</p>
+<span class="ftag ftag-ok">🔍 <span class="data-lang" data-cg="गलती होय तो सुधार सकत हव" data-en="Mistakes can be corrected" data-hi="कोई गलती हो तो सुधार सकते हैं">कोई गलती हो तो सुधार सकते हैं</span></span>
+</div>
+</div>
+<div class="flow-step">
+<div class="flow-left"><div class="flow-circle" style="background:linear-gradient(135deg,#f59e0b,#ea580c)">4</div><div class="flow-line" style="background:linear-gradient(180deg,#f59e0b,#6366f1)"></div></div>
+<div class="flow-body">
+<h4>💳 <span class="data-lang" data-cg="पेमेंट करव" data-en="Make Payment" data-hi="भुगतान (Payment) करें">भुगतान (Payment) करें</span></h4>
+<p class="data-lang" data-cg="UPI, Net Banking, Debit/Credit Card — Razorpay मा 100% सुरक्षित पेमेंट करव। पेमेंट के बाद Invoice तुम्हर Mobile मा आही।" data-en="Pay securely via Razorpay — UPI, Net Banking, Debit/Credit Card. Invoice sent to your mobile after payment." data-hi="UPI, Net Banking, Debit/Credit Card — Razorpay के ज़रिए 100% सुरक्षित भुगतान करें। Payment के बाद Invoice आपके Mobile पर आएगा।">UPI, Net Banking, Debit/Credit Card — Razorpay के ज़रिए 100% सुरक्षित भुगतान करें। Payment के बाद Invoice आपके Mobile पर आएगा।</p>
+</div>
+</div>
+<div class="flow-step">
+<div class="flow-left"><div class="flow-circle" style="background:linear-gradient(135deg,#6366f1,#4f46e5)">5</div><div class="flow-line" style="background:linear-gradient(180deg,#6366f1,#0088cc)"></div></div>
+<div class="flow-body">
+<h4>🎉 <span class="data-lang" data-cg="Group मा जुड़व — Instant Access!" data-en="Join Group — Instant Access!" data-hi="ग्रुप जॉइन करें — Instant Access!">ग्रुप जॉइन करें — Instant Access!</span></h4>
+<p class="data-lang" data-cg="Payment पूरा होवत साठ Screen मा Private Group के Link आ जाही।" data-en="Payment success → Private Group Link appears on screen. Monthly → Telegram. Full Course → Telegram + WhatsApp both." data-hi="Payment सफल होते ही Screen पर Private Group का Link आ जाएगा। Monthly Plan → Telegram। Full Course → Telegram + WhatsApp दोनों।">Payment सफल होते ही Screen पर Private Group का Link आ जाएगा। Monthly → Telegram। Full Course → Telegram + WhatsApp दोनों।</p>
+<span class="ftag ftag-tg">📨 Telegram</span><span class="ftag ftag-wa">💬 WhatsApp (Full Test Series)</span>
+</div>
+</div>
+<div class="flow-step">
+<div class="flow-left"><div class="flow-circle" style="background:linear-gradient(135deg,#0088cc,#0077b3)">6</div><div class="flow-line" style="background:linear-gradient(180deg,#0088cc,#8b5cf6)"></div></div>
+<div class="flow-body">
+<h4>🧪 <span class="data-lang" data-cg="टेस्ट देवव — Telegram या WhatsApp ले!" data-en="Give Test — via Telegram or WhatsApp!" data-hi="टेस्ट दें — Telegram या WhatsApp से!">टेस्ट दें — Telegram या WhatsApp से!</span></h4>
+<p class="data-lang" data-cg="Group के Link ले टेस्ट देवव — कोनो भी Device मा, 24/7, Unlimited Attempts।" data-en="Give tests via Group Link — on any device, 24/7, unlimited attempts. Answer Key and Score available immediately after test." data-hi="Group के Link से टेस्ट दें — किसी भी Device पर, 24/7 और Unlimited Attempts। Test देने के बाद Answer Key और Score तुरंत मिलेगा।">Group के Link से टेस्ट दें — किसी भी Device पर, 24/7, Unlimited Attempts।</p>
+<span class="ftag ftag-tg">📨 Telegram से दें</span><span class="ftag ftag-wa">💬 WhatsApp से दें</span>
+</div>
+</div>
+<div class="flow-step">
+<div class="flow-left"><div class="flow-circle" style="background:linear-gradient(135deg,#8b5cf6,#7c3aed)">7</div></div>
+<div class="flow-body">
+<h4>🏆 <span class="data-lang" data-cg="Rank List देखव — Live Leaderboard!" data-en="View Rank List — Live Leaderboard!" data-hi="Rank List देखें — Live Leaderboard!">Rank List देखें — Live Leaderboard!</span></h4>
+<p class="data-lang" data-cg="टेस्ट Submit करत साठ Live Leaderboard मा तुम्हर नाम, प्राप्तांक, Percentile अउ Rank तुरंत दिखही।" data-en="As soon as you submit the test, your Name, Score, Percentile and Rank appear on the Live Leaderboard instantly. Official Rank List published on Telegram Channel 2 days after test." data-hi="टेस्ट Submit करते ही Live Leaderboard पर आपका नाम, प्राप्तांक (Score), Percentile और Rank तुरंत दिखेगी। Official Rank List टेस्ट के 2 दिन बाद Telegram Channel पर प्रकाशित होगी।">टेस्ट Submit करते ही — नाम, प्राप्तांक (Score), Percentile और Rank — Live Leaderboard पर तुरंत। Official Rank List 2 दिन बाद Telegram पर।</p>
+<span class="ftag ftag-rank">⚡ Live Leaderboard</span><span class="ftag ftag-rank">🔒 Privacy Protected</span>
+</div>
+</div>
+</div>
+</section>
+<!-- LEADERBOARD -->
+<section class="lboard" id="leaderboard">
+<div class="lboard-inner">
+<div class="tc rv">
+<div class="lboard-badge"><span class="live-badge-dot"></span> Live Feature — अभी उपलब्ध</div>
+<h2 class="st" data-cg="टेस्ट के तुरंत बाद — Live Rank देखव!" data-en="Instantly After Test — See Your Live Rank!" data-hi="टेस्ट के तुरंत बाद — Live Rank देखें!" data-lang"="" style="color:#fff;margin-top:4px">टेस्ट के तुरंत बाद — <span class="gold" style="color:transparent;background:linear-gradient(135deg,#fbbf24,#f97316);-webkit-background-clip:text;background-clip:text">Live Rank</span> देखें!</h2>
+<p class="ss" data-cg="टेस्ट Submit करत साठ Leaderboard मा तुम्हर Rank अउ Score तुरंत दिखही।" data-en="The moment you submit the test, your Rank and Score appear on the Leaderboard instantly — no waiting for anyone." data-hi="टेस्ट Submit करते ही Leaderboard पर आपकी Rank और Score तुरंत दिखेगा — किसी का इंतज़ार नहीं करना।" data-lang"="" style="color:rgba(255,255,255,.6);margin-top:8px">टेस्ट Submit करते ही Leaderboard पर Rank और Score तुरंत — किसी का इंतज़ार नहीं।</p>
+</div>
+<div class="lboard-grid">
+<!-- LEFT: Features -->
+<div class="lboard-left rv">
+<ul class="lboard-feats">
+<li><div class="lf-icon" style="background:rgba(245,158,11,.2)">⚡</div><span><b style="color:#fbbf24">Instant Result:</b> टेस्ट Submit होते ही — नाम, प्राप्तांक (Score), Percentile और Rank Live Leaderboard पर — कोई देरी नहीं।</span></li>
+<li><div class="lf-icon" style="background:rgba(99,102,241,.2)">📊</div><span><b style="color:#a5b4fc">Subject-wise Rankings:</b> हर विषय और हर टेस्ट का अलग Leaderboard — देखें कहाँ हैं आप।</span></li>
+<li><div class="lf-icon" style="background:rgba(16,185,129,.2)">🔄</div><span><b style="color:#6ee7b7">Real-time Update:</b> जैसे-जैसे और Students टेस्ट देते हैं, Rank automatically update होती रहती है।</span></li>
+<li><div class="lf-icon" style="background:rgba(239,68,68,.15)">🔒</div><span><b style="color:#fca5a5">Privacy Protected:</b> नाम, प्राप्तांक और Rank दिखता है — कोई phone number या personal detail नहीं।</span></li>
+<li><div class="lf-icon" style="background:rgba(124,58,237,.2)">📈</div><span><b style="color:#c4b5fd">Percentile Score:</b> Rank के साथ Percentile भी दिखेगा — जानें आप Top कितने % में हैं।</span></li>
+<li><div class="lf-icon" style="background:rgba(245,158,11,.15)">📋</div><span><b style="color:#fbbf24">Official Rank List:</b> टेस्ट के 2 दिन बाद Telegram Channel पर Official Rank List भी प्रकाशित होती है।</span></li>
+</ul>
+<div class="lboard-note">💡 <b>Tip:</b> Unlimited Attempts में हर बार देने पर अलग Rank मिलेगी — practice करते रहें, Rank सुधरती रहेगी।</div>
+</div>
+<!-- RIGHT: Visual Mockup -->
+<div class="rv d2">
+<div class="lboard-mockup">
+<div class="lm-header">
+<span class="lm-title">🏆 Varg-1 Mathematics — Test #47</span>
+<span class="lm-live"><span class="live-badge-dot"></span> LIVE</span>
+</div>
+<div class="lm-rows">
+<div class="lm-row">
+<div class="lm-rank rank-1">1</div>
+<div style="flex:1"><div class="lm-name">Ramesh Sahu</div><div class="lm-detail">Bilaspur · 97th Percentile</div></div>
+<div style="text-align:right"><div class="lm-score">94/100</div><div style="font-size:10px;color:rgba(255,255,255,.4);font-weight:600">94%</div></div>
+</div>
+<div class="lm-divider"></div>
+<div class="lm-row">
+<div class="lm-rank rank-2">2</div>
+<div style="flex:1"><div class="lm-name">Priya Dewangan</div><div class="lm-detail">Raipur · 95th Percentile</div></div>
+<div style="text-align:right"><div class="lm-score">91/100</div><div style="font-size:10px;color:rgba(255,255,255,.4);font-weight:600">91%</div></div>
+</div>
+<div class="lm-divider"></div>
+<div class="lm-row">
+<div class="lm-rank rank-3">3</div>
+<div style="flex:1"><div class="lm-name">Suresh Yadav</div><div class="lm-detail">Korba · 93rd Percentile</div></div>
+<div style="text-align:right"><div class="lm-score">89/100</div><div style="font-size:10px;color:rgba(255,255,255,.4);font-weight:600">89%</div></div>
+</div>
+<div class="lm-divider"></div>
+<div class="lm-row" style="background:rgba(245,158,11,.06);border-left:3px solid rgba(245,158,11,.5)">
+<div class="lm-rank rank-n">47</div>
+<div style="flex:1"><div class="lm-name" style="color:#fbbf24">आप (You)</div><div class="lm-detail" style="color:rgba(245,158,11,.6)">64th Percentile</div></div>
+<div style="text-align:right"><div class="lm-score" style="color:#fbbf24">72/100</div><div style="font-size:10px;color:rgba(245,158,11,.5);font-weight:600">72%</div></div>
+</div>
+</div>
+<div class="lm-footer">
+<span class="lm-footer-txt">1,230 Students · Test #47 · Varg-1 Maths</span>
+<span class="lm-update"><span class="live-badge-dot"></span> अभी Update हुआ</span>
+</div>
+</div>
+<p style="text-align:center;font-size:11px;color:rgba(255,255,255,.3);font-weight:600;margin-top:10px;">* यह एक Sample Preview है। Actual Leaderboard test देने के बाद दिखेगा।</p>
+</div>
+</div>
+</div>
+</section>
+<!-- WHATSAPP CTA -->
+<section class="wa-cta-sec">
+<div class="wa-cta-box rv">
+<div class="wa-icon">💬</div>
+<div class="wa-cta-text">
+<h4 class="data-lang" data-cg="कोनो सवाल हे? हमन WhatsApp मा हवन!" data-en="Any Questions? We're on WhatsApp!" data-hi="कोई सवाल है? हम WhatsApp पर हैं!">कोई सवाल है? हम WhatsApp पर हैं!</h4>
+<p class="data-lang" data-cg="Course, Syllabus, Payment — कोनो भी बिसय मा तुरंत जवाब पावव। सोमवार ले शनिवार, सुबह 9 बजे ले रात 9 बजे तक।" data-en="Get instant answers on Course, Syllabus, Payment — any topic. Mon–Sat, 6PM to 9PM." data-hi="Course, Syllabus, Payment — किसी भी विषय पर तुरंत उत्तर पाएं। सोमवार से शनिवार, सुबह 9 बजे से रात 9 बजे तक।">Course, Syllabus, Payment — किसी भी विषय पर तुरंत उत्तर पाएं। सोम–शनि, शाम 6 से रात 9 बजे।</p>
+<a class="wa-cta-btn" href="https://wa.me/919981957779?text=🙏%20नमस्ते!%0A%0ABTS%20(Bilaspur%20Test%20Series)%20में%20आपका%20स्वागत%20है।%0A%0Aमुझे%20Test%20Series%20के%20बारे%20में%20जानकारी%20चाहिए।%0Aकृपया%20बताएं%20—%20मेरी%20Requirements%20क्या%20हैं?" target="_blank">
+<svg fill="currentColor" height="20" viewbox="0 0 16 16" width="20" xmlns="http://www.w3.org/2000/svg"><path d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.933 7.933 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.898 7.898 0 0 0 13.6 2.326zM7.994 14.521a6.573 6.573 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.557 6.557 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592zm3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.729.729 0 0 0-.529.247c-.182.198-.691.677-.691 1.654 0 .977.71 1.916.81 2.049.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232z"></path></svg>
+<span class="data-lang" data-cg="WhatsApp मा पूछव" data-en="Ask on WhatsApp" data-hi="WhatsApp पर पूछें">WhatsApp पर पूछें</span>
+</a>
+</div>
+</div>
+</section>
+<!-- GUARANTEE -->
+<section class="guarantee">
+<div class="gbox rv">
+<div class="gshield">🛡️</div>
+<h3 class="data-lang" data-cg="हमर वादा — तुम्हर बिस्वास" data-en="Our Promise — Your Trust" data-hi="हमारा वादा — आपका विश्वास">हमारा वादा — आपका विश्वास</h3>
+<p class="data-lang" data-cg="अगर संतुष्ट नइ हव त तुरंत संपर्क करव। Razorpay ले सुरक्षित भुगतान, तुम्हर जानकारी एकदम सुरक्षित।" data-en="If not satisfied, contact us immediately. We are committed to resolving your issue. Secure payment via Razorpay — your information completely safe." data-hi="यदि आप हमारी टेस्ट सीरीज़ से संतुष्ट नहीं हैं तो हमसे तुरंत संपर्क करें। हम आपकी समस्या का समाधान करने के लिए प्रतिबद्ध हैं। Razorpay के माध्यम से सुरक्षित भुगतान, आपकी जानकारी पूरी तरह सुरक्षित।">यदि आप हमारी टेस्ट सीरीज़ से संतुष्ट नहीं हैं तो हमसे तुरंत संपर्क करें। Razorpay के माध्यम से सुरक्षित भुगतान, आपकी जानकारी पूरी तरह सुरक्षित।</p>
+</div>
+</section>
+<!-- TRUST BADGES -->
+<section class="trust">
+<div class="tc rv"><h2 class="st" style="font-size:20px">आपकी सुरक्षा, हमारी प्राथमिकता</h2></div>
+<div class="tbadges">
+<div class="tb rv"><span class="tb-icon">🔒</span><span>Razorpay Secured Payment</span></div>
+<div class="tb rv d1"><span class="tb-icon">🛡️</span><span>SSL Encrypted Portal</span></div>
+<div class="tb rv d2"><span class="tb-icon">📨</span><span>Instant Telegram Access</span></div>
+<div class="tb rv d3"><span class="tb-icon">💬</span><span>WhatsApp Support</span></div>
+<div class="tb rv"><span class="tb-icon">♾️</span><span>Unlimited Attempts</span></div>
+<div class="tb rv d1"><span class="tb-icon">📋</span><span>Official Syllabus Pattern</span></div>
+</div>
+</section>
+<!-- FAQ -->
+<section class="faq" id="faq">
+<div class="tc rv"><span class="sl2 li">FAQ</span>
+<h2 class="st data-lang" data-cg="अकसर पूछे जाय वाला सवाल" data-en="Frequently Asked Questions" data-hi="अक्सर पूछे जाने वाले सवाल">अक्सर पूछे जाने वाले सवाल</h2>
+</div>
+<div class="faq-list">
+<div class="faq-item rv" onclick="toggleFaq(this)">
+<div class="faq-q"><span class="data-lang" data-cg="BTS के टेस्ट कहाँ दिए जाथे?" data-en="Where is BTS test given?" data-hi="BTS की टेस्ट सीरीज़ कहाँ दी जाती है?">BTS की टेस्ट सीरीज़ कहाँ दी जाती है?</span><span class="faq-arrow">▾</span></div>
+<div class="faq-a"><div class="faq-a-inner data-lang" data-cg="Telegram Group अउ WhatsApp Group — दूनो मा से कोनो भी माध्यम ले टेस्ट दे सकत हव।" data-en="Tests can be given via Telegram Group or WhatsApp Group — both options available. No need to go anywhere." data-hi="Telegram Group और WhatsApp Group — दोनों में से किसी भी माध्यम से टेस्ट दे सकते हैं। कहीं जाने की ज़रूरत नहीं।">Telegram Group और WhatsApp Group — दोनों में से किसी भी माध्यम से टेस्ट दे सकते हैं। कहीं जाने की ज़रूरत नहीं।</div></div>
+</div>
+<div class="faq-item rv" onclick="toggleFaq(this)">
+<div class="faq-q"><span class="data-lang" data-cg="एक बिसय मा कतका टेस्ट मिलही?" data-en="How many tests per subject?" data-hi="एक विषय में कितने टेस्ट मिलेंगे?">एक विषय में कितने टेस्ट मिलेंगे?</span><span class="faq-arrow">▾</span></div>
+<div class="faq-a"><div class="faq-a-inner data-lang" data-cg="हर एक बिसय मा 120+ टेस्ट मिलही। Combined Mock Tests घलो होही।" data-en="120+ tests per subject. Combined/Full-Length Mock Tests also available. All prepared sequentially per Official Syllabus." data-hi="प्रत्येक विषय में 120+ टेस्ट उपलब्ध होंगे। Combined/Full-Length Mock Tests भी होंगे। सभी Official Syllabus के अनुसार क्रमानुसार।">प्रत्येक विषय में 120+ टेस्ट। Combined Mock Tests भी। सब Official Syllabus अनुसार क्रमानुसार।</div></div>
+</div>
+<div class="faq-item rv" onclick="toggleFaq(this)">
+<div class="faq-q"><span class="data-lang" data-cg="Monthly अउ Full Test Series मा का फरक हे?" data-en="Difference between Monthly and Full Test Series?" data-hi="मंथली और Full Test Series में क्या फर्क है?">मंथली और Full Test Series में क्या फर्क है?</span><span class="faq-arrow">▾</span></div>
+<div class="faq-a"><div class="faq-a-inner data-lang" data-cg="Monthly Plan: 1 महिना बर Telegram Group Access। Full Test Series: पूरी अवधि तक Telegram + WhatsApp दूनो।" data-en="Monthly Plan: 1 month Telegram Group access. Full Test Series: Telegram + WhatsApp both Groups access for full duration." data-hi="Monthly Plan: 1 महीने के लिए Telegram Group Access। Full Test Series: पूरी अवधि तक Telegram + WhatsApp दोनों Groups का Access।">Monthly: 1 महीना Telegram। Full Test Series: Telegram + WhatsApp — पूरी अवधि तक।</div></div>
+</div>
+<div class="faq-item rv" onclick="toggleFaq(this)">
+<div class="faq-q"><span class="data-lang" data-cg="Payment के बाद Access कब मिलही?" data-en="When will I get access after payment?" data-hi="Payment के बाद Access कब मिलेगा?">Payment के बाद Access कब मिलेगा?</span><span class="faq-arrow">▾</span></div>
+<div class="faq-a"><div class="faq-a-inner data-lang" data-cg="Payment पूरा होवत साठ Screen मा Instant Group Link आ जाही। पूरी Automated — कोनो Manual Approval नइ।" data-en="As soon as payment is successful, Instant Group Link appears on screen. Fully automated — no manual approval." data-hi="Payment सफल होते ही आपकी Screen पर Instant Group Link आ जाएगा। पूरी तरह Automated — कोई Manual Approval नहीं।">Payment सफल होते ही Instant Group Link। पूरी Automated — कोई Manual Approval नहीं।</div></div>
+</div>
+<div class="faq-item rv" onclick="toggleFaq(this)">
+<div class="faq-q"><span class="data-lang" data-cg="CTET बर अलग Test Series काबर हे?" data-en="Why is there a separate CTET Test Series?" data-hi="CTET के लिए अलग से Test Series क्यों है?">CTET के लिए अलग से Test Series क्यों है?</span><span class="faq-arrow">▾</span></div>
+<div class="faq-a"><div class="faq-a-inner data-lang" data-cg="CG सरकार ह काम करत मास्टर मन बर CTET ज़रूरी कर दे हे।" data-en="CG government has made CTET mandatory for serving teachers. CTET Pattern &amp; Syllabus differs from CG recruitment, so Special Batches for both Paper 1 and Paper 2." data-hi="CG सरकार ने कार्यरत शिक्षकों के लिए CTET अनिवार्य किया है। CTET का Pattern और Syllabus CG भर्ती से अलग है, इसलिए Paper 1 और Paper 2 दोनों के लिए Special Batch तैयार किया गया है।">CG सरकार ने CTET अनिवार्य किया है। Pattern अलग होने के कारण Paper 1 और 2 के लिए Special Batch।</div></div>
+</div>
+<div class="faq-item rv" onclick="toggleFaq(this)">
+<div class="faq-q"><span class="data-lang" data-cg="Refund Policy का हे?" data-en="What is the Refund Policy?" data-hi="Refund Policy क्या है?">Refund Policy क्या है?</span><span class="faq-arrow">▾</span></div>
+<div class="faq-a"><div class="faq-a-inner data-lang" data-cg="अगर कोनो कारण ले संतुष्ट नइ हव त 7 दिन के अंदर WhatsApp मा संपर्क करव।" data-en="If you are not satisfied for any reason, contact us via WhatsApp within 7 days. We will try to resolve your issue promptly." data-hi="यदि आप किसी कारण से संतुष्ट नहीं हैं तो 7 दिनों के भीतर हमसे WhatsApp पर संपर्क करें। हम आपकी समस्या का त्वरित समाधान करने की कोशिश करेंगे।">किसी कारण से संतुष्ट नहीं हैं? 7 दिनों के भीतर WhatsApp पर संपर्क करें। त्वरित समाधान की गारंटी।</div></div>
+</div>
+</div>
+</section>
+<!-- FINAL CTA -->
+<section class="fcta">
+<div class="fbox rv">
+<div class="fbox-grid"></div>
+<h3 class="data-lang" data-cg="एडमिशन प्रक्रिया सुरू करव" data-en="Start Admission Process" data-hi="प्रवेश प्रक्रिया शुरू करें">प्रवेश प्रक्रिया शुरू करें</h3>
+<a class="btn-p data-lang" data-cg="🚀 असली एडमिशन फॉर्म ला खोलव ➔" data-en="🚀 Open Official Admission Form ➔" data-hi="🚀 आधिकारिक एडमिशन फॉर्म खोलें ➔" href="https://admission.bilaspurtestseries.com" style="display:inline-flex;animation:cp 2.8s ease-in-out infinite" target="_blank">🚀 आधिकारिक एडमिशन फॉर्म खोलें ➔</a>
+</div>
+</section>
 </div><footer>
 <div class="footer-inner">
 <div class="footer-top">
