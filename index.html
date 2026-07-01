@@ -62,6 +62,10 @@ body{font-family:'Noto Sans Devanagari','Plus Jakarta Sans',sans-serif;backgroun
 .logo-sep{color:rgba(255,255,255,.25);font-weight:700;font-size:13px}
 .logo-t h1{color:#fff;font-size:15px;font-weight:800;letter-spacing:-.3px;line-height:1}
 .logo-t p{color:rgba(255,255,255,.38);font-size:10px;font-weight:600;margin-top:3px}
+
+.logo-img{display:block;object-fit:contain;flex-shrink:0;background:#fff}
+.logo-img-top{width:48px;height:48px;border-radius:10px;padding:2px;box-shadow:0 4px 14px rgba(99,102,241,.28)}
+.logo-img-footer{width:56px;height:56px;border-radius:12px;padding:2px;box-shadow:0 4px 14px rgba(12,10,30,.14)}
 nav ul{display:none;gap:22px;list-style:none}
 @media(min-width:960px){nav ul{display:flex}}
 nav a{color:rgba(255,255,255,.58);text-decoration:none;font-size:13px;font-weight:600;transition:color .2s;position:relative;padding-bottom:2px}
@@ -72,7 +76,7 @@ nav a:hover::after,nav a.active::after{width:100%}
 .lang-s{background:rgba(255,255,255,.07);color:rgba(255,255,255,.85);border:1px solid rgba(255,255,255,.12);padding:6px 10px;border-radius:8px;font-size:11px;font-weight:700;cursor:pointer;font-family:inherit;appearance:none;-webkit-appearance:none;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='6' fill='none'%3E%3Cpath d='M1 1l4 4 4-4' stroke='rgba(255,255,255,.5)' stroke-width='1.5' stroke-linecap='round'/%3E%3C/svg%3E");background-repeat:no-repeat;background-position:right 8px center;padding-right:24px}
 .lang-s option{background:#1e1354;color:#fff;font-weight:600}
 .btn-nv{display:none;background:var(--gc);color:#fff;padding:9px 18px;border-radius:10px;font-size:12px;font-weight:800;text-decoration:none;box-shadow:0 4px 18px rgba(234,88,12,.38);transition:all .2s;cursor:pointer;border:none;font-family:inherit}
-@media(min-width:576px){.btn-nv{display:block}}
+@media(min-width:960px){.btn-nv{display:block}}
 .btn-nv:hover{transform:translateY(-2px)}
 
 /* ===================== HUB SCREEN ===================== */
@@ -764,7 +768,7 @@ section, .hero, .comp, .pat, .pricing, .faq, .fcta, .cs-section, .usp {
 </div></div><header class="navbar">
 <div class="nav-inner">
 <div class="logo-w" onclick="showHub()" style="cursor:pointer">
-<div class="logo-bs"><div class="lb lb1">BTS</div><span class="logo-sep">+</span><div class="lb lb2">आज़ाद</div></div>
+<div class="logo-bs"><img class="logo-img logo-img-top" src="assets/bts-logo.png" alt="Bilaspur Test Series logo"/></div>
 <div class="logo-t">
 <h1 class="data-lang" data-cg="बिलासपुर टेस्ट सीरीज़" data-en="Bilaspur Test Series" data-hi="बिलासपुर टेस्ट सीरीज़">बिलासपुर टेस्ट सीरीज़</h1>
 <p class="data-lang" data-cg="आज़ाद इंस्टीट्यूट के उदिम" data-en="Azad Institute Venture" data-hi="आज़ाद इंस्टीट्यूट वेंचर">आज़ाद इंस्टीट्यूट वेंचर</p>
@@ -782,7 +786,7 @@ section, .hero, .comp, .pat, .pricing, .faq, .fcta, .cs-section, .usp {
 <select class="lang-s" id="langSelect" onchange="switchLanguage(this.value)">
 <option value="hi">हिन्दी</option><option value="en">English</option><option value="cg">छत्तीसगढ़ी</option>
 </select>
-<button class="btn-nv data-lang" data-cg="🎓 Get Admission" data-en="🎓 Get Admission" data-hi="🎓 Get Admission" onclick="openRequestModal(null)">🎓 Get Admission</button>
+<a class="btn-nv data-lang" data-cg="🎓 Get Admission" data-en="🎓 Get Admission" data-hi="🎓 Get Admission" href="https://admission.bilaspurtestseries.com" target="_blank" rel="noopener">🎓 Get Admission</a>
 </div>
 </div>
 </header><div id="hub-screen">
@@ -852,7 +856,7 @@ section, .hero, .comp, .pat, .pricing, .faq, .fcta, .cs-section, .usp {
 <div class="footer-top">
 <div class="footer-brand">
 <div class="logo-w" style="margin-bottom:10px">
-<div class="logo-bs"><div class="lb lb1">BTS</div><span class="logo-sep">+</span><div class="lb lb2">आज़ाद</div></div>
+<div class="logo-bs"><img class="logo-img logo-img-footer" src="assets/azad-institute-logo.jpg" alt="Azad Institute logo"/></div>
 <div class="logo-t">
 <h1 style="color:#fff;font-size:15px;font-weight:800">बिलासपुर टेस्ट सीरीज़</h1>
 <p style="color:rgba(255,255,255,.38);font-size:10px;font-weight:600;margin-top:3px">आज़ाद इंस्टीट्यूट वेंचर</p>
@@ -889,7 +893,7 @@ section, .hero, .comp, .pat, .pricing, .faq, .fcta, .cs-section, .usp {
 <input id="modal-exam" placeholder="किस Exam की Test Series चाहिए? / Which exam?" type="text"/>
 <textarea id="modal-msg" placeholder="कोई और जानकारी / Additional message (optional)" rows="3"></textarea>
 <button class="modal-submit" onclick="submitModalForm()">
-<span class="data-lang" data-cg="Submit" data-en="Submit" data-hi="Submit">Submit</span>
+<span class="data-lang" data-cg="📩 Request भेजव" data-en="📩 Submit Request" data-hi="📩 Request भेजें">📩 Request भेजें</span>
 </button>
 </div>
 <div class="modal-success" id="modal-success">
@@ -1006,10 +1010,31 @@ window.addEventListener('scroll',()=>{
    DEMO TABS
 ============================================================ */
 const DEMO_LINKS={
-  varg1:{maths:'maths.html',physics:'physics.html',chemistry:'',biology:'',commerce:'',hindi:'',english:''},
-  varg2:{sst:'varg2-sst.html',maths:'',science:''},
-  varg3:{common:'',full:''},
-  ctet:{p1:'',p2_math:'',p2_sst:''}
+  varg1:{
+    cdp:'DEMO_Common_CDP_Foundation_Pedagogy_Day_01_08_CDP_CHILD_DEVELOPMENT_PRIN_R7.html',
+    maths:'DEMO_Varg_1_Maths_Core_Analytical_Topics_Day_01_02_MATHS_SETS_RELATIONS_FUNCTIO_R6.html',
+    physics:'DEMO_Varg_1_Physics_Numericals_And_Concepts_Day_01_03_PHYSICS_UNITS_DIMENSIONS_ERROR_R6.html',
+    chemistry:'DEMO_Varg_1_Chemistry_Scoring_Concepts_Day_01_04_CHEMISTRY_MOLE_CONCEPT_STOICHIOM_R7.html',
+    biology:'DEMO_Varg_1_Biology_Concept_And_NCERT_Depth_Day_01_05_BIOLOGY_CELL_BIOLOGY_BIOMOLECU_R9.html',
+    commerce:'DEMO_Varg_1_Commerce_Accountancy_High-Value_Topics_Day_01_01_COMMERCE_ACCOUNTING_PRINCIPLES_R9.html',
+    hindi:'DEMO_Varg_1_Hindi_Grammar_Literature_Passage_Day_01_R3.html',
+    english:'DEMO_Varg_1_English_Grammar_Vocabulary_Passage_Day_01_07_ENGLISH_ENGLISH_GRAMMAR_TENSE_R6.html'
+  },
+  varg2:{
+    cdp:'DEMO_Common_CDP_Foundation_Pedagogy_Day_01_08_CDP_CHILD_DEVELOPMENT_PRIN_R7.html',
+    sst:'DEMO_Varg_2_SST_History_Polity_Geography_Day_01_10_HISTORY_ANCIENT_INDIA_SOURCES_R6.html',
+    maths:'DEMO_Varg_2_Maths_Science_High-Value_Topics_Day_01_09_MATHS_NUMBER_SYSTEM_DIVISIBI_R6.html',
+    science:'DEMO_Varg_2_Maths_Science_High-Value_Topics_Day_01_09_MATHS_NUMBER_SYSTEM_DIVISIBI_R6.html'
+  },
+  varg3:{
+    common:'DEMO_Common_CDP_Foundation_Pedagogy_Day_01_08_CDP_CHILD_DEVELOPMENT_PRIN_R7.html',
+    full:'DEMO_Varg_3_Primary_Maths_EVS_Pedagogy_Day_01_11_MATHS_PRIMARY_MATHS_NUMBER_S_R6.html'
+  },
+  ctet:{
+    p1:'DEMO_CTET_Paper_I_Primary_CDP_Maths_EVS_Language_Day_01_12_CDP_CTET_CDP_DEVELOPMENT_L_R7.html',
+    p2_math:'DEMO_CTET_Paper_II_Maths_Science_Day_01_13_CDP_CTET_PAPER_II_CDP_ADOL_R8.html',
+    p2_sst:'DEMO_CTET_Paper_II_SST_History_Geography_Civics_Day_01_14_CDP_CTET_PAPER_II_CDP_LEAR_R9.html'
+  }
 };
 function initializeDemoSystem(){
   function setupBtn(id,url){const b=document.getElementById(id);if(!b)return;if(url&&url.trim()){b.href=url;b.classList.remove('hidden')}else{b.classList.add('hidden')}}
