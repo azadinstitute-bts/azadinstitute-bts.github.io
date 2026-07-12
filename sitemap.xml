@@ -117,4 +117,16 @@
   <url>
     <loc>https://bilaspurtestseries.com/teacher-week-1-syllabus.html</loc>
   </url>
+  <url>
+    <loc>https://bilaspurtestseries.com/teacher-syllabus.html</loc>
+    <lastmod>2026-07-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://bilaspurtestseries.com/teacher-week-2-syllabus.html</loc>
+    <lastmod>2026-07-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.80</priority>
+  </url>
 </urlset>

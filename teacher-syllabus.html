@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>CG Teacher Syllabus & Timetable | Week 1 & Week 2 | Bilaspur Test Series</title>
+<meta name="description" content="Bilaspur Test Series CG Teacher Week 1 and Week 2 syllabus and timetable.">
+<link rel="canonical" href="https://bilaspurtestseries.com/teacher-syllabus.html">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" href="/favicon-48x48.png" sizes="48x48">
+<link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<style>
+:root{--navy:#0f172a;--blue:#1d4ed8;--line:#dbe3ef;--bg:#f4f3ff;--muted:#64748b;--amber:#f59e0b}
+*{box-sizing:border-box}body{margin:0;font-family:'Nirmala UI','Mangal','Segoe UI',Arial,sans-serif;background:linear-gradient(145deg,#eef2ff,#f8fafc 48%,#eff6ff);color:var(--navy)}
+.wrap{max-width:1180px;margin:0 auto;padding:14px 12px 28px}.top{display:flex;gap:14px;align-items:center;background:#fff;border:1px solid var(--line);border-radius:18px;padding:14px 16px;box-shadow:0 10px 32px rgba(15,23,42,.08);margin-bottom:12px}.logo{width:58px;height:58px;object-fit:contain;border-radius:12px;background:#fff;box-shadow:0 4px 14px rgba(15,23,42,.10)}h1{font-size:clamp(20px,4.8vw,32px);line-height:1.15;margin:0;color:#1e3a8a}.sub{margin-top:4px;color:var(--muted);font-size:13px;font-weight:700}.tabs{position:sticky;top:0;z-index:5;display:grid;grid-template-columns:1fr 1fr;gap:8px;background:rgba(244,243,255,.94);backdrop-filter:blur(12px);padding:8px 0}.tab{border:1px solid var(--line);background:#fff;color:#1e3a8a;border-radius:13px;padding:13px 12px;font-size:15px;font-weight:900;cursor:pointer;box-shadow:0 6px 18px rgba(15,23,42,.07)}.tab.active{background:linear-gradient(135deg,#1e3a8a,#2563eb);border-color:#1d4ed8;color:#fff}.panel{display:none}.panel.active{display:block}.frame-shell{height:calc(100vh - 155px);min-height:620px;background:#fff;border:1px solid var(--line);border-radius:16px;overflow:hidden;box-shadow:0 12px 34px rgba(15,23,42,.09)}iframe{width:100%;height:100%;border:0;background:#fff}.actions{display:flex;gap:8px;flex-wrap:wrap;margin:8px 0 12px}.actions a{display:inline-flex;align-items:center;justify-content:center;text-decoration:none;background:#fff7ed;border:1px solid #fed7aa;color:#9a3412;border-radius:12px;padding:10px 12px;font-size:13px;font-weight:900}.back{color:#1d4ed8;text-decoration:none;font-weight:900;font-size:13px}@media(max-width:680px){.top{align-items:flex-start;padding:12px}.logo{width:50px;height:50px}.wrap{padding:9px 8px 18px}.frame-shell{height:calc(100vh - 170px);min-height:560px}.tab{font-size:14px;padding:12px 8px}}
+</style>
+</head>
+<body>
+<main class="wrap">
+  <a class="back" href="teacher.html">? Teacher page par wapas ????</a>
+  <section class="top">
+    <img class="logo" src="assets/bts-logo.png" alt="Bilaspur Test Series logo">
+    <div><h1>CG Teacher Syllabus & Time Table</h1><div class="sub">Week 1 aur Week 2 study plan ek jagah.</div></div>
+  </section>
+  <div class="tabs" role="tablist" aria-label="Week tabs">
+    <button class="tab active" type="button" role="tab" aria-selected="true" aria-controls="week1-panel" id="week1-tab" onclick="showWeek('week1')">Week 1</button>
+    <button class="tab" type="button" role="tab" aria-selected="false" aria-controls="week2-panel" id="week2-tab" onclick="showWeek('week2')">Week 2</button>
+  </div>
+  <section class="panel active" id="week1-panel" role="tabpanel" aria-labelledby="week1-tab">
+    <div class="actions"><a href="teacher-week-1-syllabus.html" target="_blank" rel="noopener">Week 1 full page ?????</a></div>
+    <div class="frame-shell"><iframe src="teacher-week-1-syllabus.html" title="Week 1 Syllabus and Timetable"></iframe></div>
+  </section>
+  <section class="panel" id="week2-panel" role="tabpanel" aria-labelledby="week2-tab">
+    <div class="actions"><a href="teacher-week-2-syllabus.html" target="_blank" rel="noopener">Week 2 full page ?????</a></div>
+    <div class="frame-shell"><iframe src="teacher-week-2-syllabus.html" title="Week 2 Syllabus and Timetable"></iframe></div>
+  </section>
+</main>
+<script>
+function showWeek(id){
+  document.querySelectorAll('.tab').forEach(function(btn){btn.classList.remove('active');btn.setAttribute('aria-selected','false')});
+  document.querySelectorAll('.panel').forEach(function(panel){panel.classList.remove('active')});
+  var tab=document.getElementById(id+'-tab');
+  var panel=document.getElementById(id+'-panel');
+  if(tab){tab.classList.add('active');tab.setAttribute('aria-selected','true')}
+  if(panel){panel.classList.add('active')}
+  if(history.replaceState){history.replaceState(null,'','#'+id)}
+}
+window.addEventListener('DOMContentLoaded',function(){if(location.hash==='#week2')showWeek('week2')});
+</script>
+</body>
+</html>
