@@ -1,0 +1,665 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="theme-color" content="#4a0b18" />
+  <meta name="color-scheme" content="light" />
+  <meta name="robots" content="noindex,nofollow,noarchive,nosnippet,noimageindex" />
+  <meta name="googlebot" content="noindex,nofollow,noarchive,nosnippet,noimageindex" />
+  <meta name="referrer" content="no-referrer" />
+  <meta name="author" content="Azad Institute" />
+  <meta name="description" content="A limited product profile for Azad QBS, a proprietary B2B assessment software platform developed and operated by Azad Institute." />
+  <title>Azad QBS — B2B Assessment Software Product</title>
+
+  <style>
+    :root {
+      --brand: #641326;
+      --brand-dark: #3c0915;
+      --brand-soft: #f8eef1;
+      --gold: #c89a43;
+      --ink: #211d1f;
+      --muted: #665f62;
+      --line: #eadfe2;
+      --paper: #ffffff;
+      --soft: #fbf8f9;
+      --success: #246746;
+      --shadow: 0 22px 60px rgba(65, 10, 24, 0.12);
+      --max: 1080px;
+    }
+
+    * { box-sizing: border-box; }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      margin: 0;
+      color: var(--ink);
+      background:
+        radial-gradient(circle at 8% -12%, rgba(200, 154, 67, 0.14), transparent 30%),
+        radial-gradient(circle at 100% 0%, rgba(100, 19, 38, 0.10), transparent 34%),
+        var(--paper);
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif;
+      line-height: 1.62;
+      -webkit-font-smoothing: antialiased;
+      text-rendering: optimizeLegibility;
+    }
+
+    a { color: inherit; }
+
+    .shell {
+      width: min(calc(100% - 32px), var(--max));
+      margin-inline: auto;
+    }
+
+    .site-header {
+      border-bottom: 1px solid rgba(234, 223, 226, 0.9);
+      background: rgba(255, 255, 255, 0.92);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+    }
+
+    .nav {
+      min-height: 72px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 18px;
+    }
+
+    .brand {
+      display: inline-flex;
+      align-items: center;
+      gap: 12px;
+      min-width: 0;
+      text-decoration: none;
+    }
+
+    .brand-mark {
+      width: 42px;
+      height: 42px;
+      flex: 0 0 42px;
+      display: grid;
+      place-items: center;
+      border-radius: 14px;
+      color: #fff;
+      background: linear-gradient(145deg, #8b3044, var(--brand-dark));
+      box-shadow: 0 10px 24px rgba(100, 19, 38, 0.2);
+      font-weight: 850;
+      letter-spacing: -0.04em;
+    }
+
+    .brand-copy {
+      display: grid;
+      line-height: 1.15;
+    }
+
+    .brand-copy strong {
+      color: var(--brand-dark);
+      font-size: 0.98rem;
+    }
+
+    .brand-copy span {
+      margin-top: 3px;
+      color: var(--muted);
+      font-size: 0.76rem;
+    }
+
+    .header-note {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      color: var(--brand);
+      font-size: 0.8rem;
+      font-weight: 780;
+    }
+
+    .header-note::before {
+      content: "";
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: var(--success);
+      box-shadow: 0 0 0 5px rgba(36, 103, 70, 0.10);
+    }
+
+    .hero {
+      padding: 78px 0 62px;
+    }
+
+    .hero-grid {
+      display: grid;
+      grid-template-columns: minmax(0, 1.12fr) minmax(300px, 0.88fr);
+      gap: 48px;
+      align-items: center;
+    }
+
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      padding: 8px 13px;
+      border: 1px solid #ead6da;
+      border-radius: 999px;
+      color: var(--brand);
+      background: rgba(255, 255, 255, 0.86);
+      font-size: 0.77rem;
+      font-weight: 850;
+      letter-spacing: 0.09em;
+      text-transform: uppercase;
+    }
+
+    h1 {
+      max-width: 760px;
+      margin: 23px 0 18px;
+      color: var(--brand-dark);
+      font-size: clamp(2.7rem, 6vw, 5.15rem);
+      line-height: 0.98;
+      letter-spacing: -0.058em;
+    }
+
+    .lead {
+      max-width: 690px;
+      margin: 0;
+      color: #514b4e;
+      font-size: clamp(1.03rem, 1.9vw, 1.2rem);
+      line-height: 1.74;
+    }
+
+    .hero-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-top: 30px;
+    }
+
+    .button {
+      min-height: 50px;
+      padding: 0 22px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 14px;
+      font-size: 0.94rem;
+      font-weight: 820;
+      text-decoration: none;
+      transition: transform 160ms ease, box-shadow 160ms ease;
+    }
+
+    .button-primary {
+      color: #fff;
+      background: linear-gradient(135deg, var(--brand), var(--brand-dark));
+      box-shadow: 0 14px 30px rgba(100, 19, 38, 0.22);
+    }
+
+    .button-secondary {
+      color: var(--brand);
+      border: 1px solid #dfc9ce;
+      background: #fff;
+    }
+
+    .button:hover { transform: translateY(-2px); }
+
+    .status-card {
+      position: relative;
+      overflow: hidden;
+      min-height: 390px;
+      padding: 30px;
+      border: 1px solid rgba(217, 190, 197, 0.78);
+      border-radius: 30px;
+      background: linear-gradient(155deg, #fff 8%, #f9edef 100%);
+      box-shadow: var(--shadow);
+    }
+
+    .status-card::before {
+      content: "";
+      position: absolute;
+      width: 250px;
+      height: 250px;
+      top: -118px;
+      right: -92px;
+      border-radius: 50%;
+      background: rgba(200, 154, 67, 0.18);
+    }
+
+    .status-card::after {
+      content: "QBS";
+      position: absolute;
+      right: -8px;
+      bottom: -26px;
+      color: rgba(100, 19, 38, 0.055);
+      font-size: 9.5rem;
+      font-weight: 950;
+      line-height: 1;
+      letter-spacing: -0.08em;
+    }
+
+    .status-inner {
+      position: relative;
+      z-index: 1;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .status-label {
+      align-self: flex-start;
+      padding: 8px 12px;
+      border-radius: 999px;
+      color: var(--success);
+      background: #eaf6ef;
+      font-size: 0.75rem;
+      font-weight: 850;
+      letter-spacing: 0.055em;
+      text-transform: uppercase;
+    }
+
+    .status-card h2 {
+      margin: 48px 0 13px;
+      color: var(--brand-dark);
+      font-size: clamp(1.75rem, 3vw, 2.35rem);
+      line-height: 1.08;
+      letter-spacing: -0.04em;
+    }
+
+    .status-card p {
+      margin: 0;
+      color: #5e5559;
+    }
+
+    .status-meta {
+      margin-top: 34px;
+      display: grid;
+      gap: 11px;
+    }
+
+    .meta-line {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      gap: 18px;
+      padding-top: 12px;
+      border-top: 1px solid rgba(100, 19, 38, 0.12);
+      font-size: 0.87rem;
+    }
+
+    .meta-line span { color: var(--muted); }
+    .meta-line strong { color: var(--brand-dark); text-align: right; }
+
+    .section {
+      padding: 62px 0;
+    }
+
+    .section-soft {
+      border-top: 1px solid #f0e5e8;
+      border-bottom: 1px solid #f0e5e8;
+      background: var(--soft);
+    }
+
+    .section-head {
+      max-width: 750px;
+      margin-bottom: 30px;
+    }
+
+    .kicker {
+      margin: 0 0 10px;
+      color: var(--brand);
+      font-size: 0.77rem;
+      font-weight: 850;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+    }
+
+    .section h2 {
+      margin: 0;
+      color: var(--brand-dark);
+      font-size: clamp(1.9rem, 4vw, 3.1rem);
+      line-height: 1.08;
+      letter-spacing: -0.045em;
+    }
+
+    .section-intro {
+      margin: 15px 0 0;
+      color: var(--muted);
+      font-size: 1.02rem;
+      line-height: 1.72;
+    }
+
+    .summary-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 16px;
+    }
+
+    .summary-card {
+      min-height: 190px;
+      padding: 25px;
+      border: 1px solid var(--line);
+      border-radius: 21px;
+      background: #fff;
+      box-shadow: 0 8px 28px rgba(48, 17, 25, 0.04);
+    }
+
+    .summary-card .number {
+      width: 37px;
+      height: 37px;
+      display: grid;
+      place-items: center;
+      border-radius: 11px;
+      color: var(--brand);
+      background: #fff3d7;
+      font-size: 0.8rem;
+      font-weight: 900;
+    }
+
+    .summary-card h3 {
+      margin: 22px 0 8px;
+      color: var(--brand-dark);
+      font-size: 1.04rem;
+      line-height: 1.28;
+    }
+
+    .summary-card p {
+      margin: 0;
+      color: var(--muted);
+      font-size: 0.91rem;
+    }
+
+    .profile-grid {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+      gap: 26px;
+    }
+
+    .panel {
+      padding: clamp(26px, 4vw, 38px);
+      border: 1px solid var(--line);
+      border-radius: 25px;
+      background: #fff;
+    }
+
+    .panel-dark {
+      color: #fff;
+      border-color: transparent;
+      background: linear-gradient(145deg, rgba(100, 19, 38, 0.98), rgba(60, 9, 21, 0.99));
+      box-shadow: var(--shadow);
+    }
+
+    .panel-dark .kicker { color: #f1d58d; }
+    .panel-dark h2 { color: #fff; }
+    .panel-dark p { color: rgba(255, 255, 255, 0.8); }
+
+    .panel h3 {
+      margin: 0;
+      color: var(--brand-dark);
+      font-size: clamp(1.45rem, 3vw, 2rem);
+      line-height: 1.18;
+      letter-spacing: -0.03em;
+    }
+
+    .panel > p {
+      margin: 14px 0 0;
+      color: var(--muted);
+    }
+
+    .facts {
+      margin-top: 24px;
+      border-top: 1px solid var(--line);
+    }
+
+    .fact {
+      display: grid;
+      grid-template-columns: 145px minmax(0, 1fr);
+      gap: 18px;
+      padding: 15px 0;
+      border-bottom: 1px solid var(--line);
+      font-size: 0.92rem;
+    }
+
+    .fact span { color: var(--muted); }
+    .fact strong { color: var(--ink); }
+
+    .contact-card {
+      position: relative;
+      overflow: hidden;
+      padding: clamp(31px, 6vw, 58px);
+      border-radius: 30px;
+      color: #fff;
+      background: linear-gradient(130deg, var(--brand-dark), var(--brand) 62%, #7b2035);
+      box-shadow: var(--shadow);
+    }
+
+    .contact-card::after {
+      content: "AZAD";
+      position: absolute;
+      right: -18px;
+      bottom: -48px;
+      color: rgba(255, 255, 255, 0.055);
+      font-size: clamp(7rem, 19vw, 13rem);
+      font-weight: 950;
+      line-height: 1;
+      letter-spacing: -0.08em;
+      pointer-events: none;
+    }
+
+    .contact-content {
+      position: relative;
+      z-index: 1;
+      max-width: 720px;
+    }
+
+    .contact-card .kicker { color: #f0cf78; }
+    .contact-card h2 { color: #fff; }
+    .contact-card p {
+      margin: 17px 0 27px;
+      color: rgba(255, 255, 255, 0.8);
+    }
+
+    .contact-card .button-primary {
+      color: var(--brand-dark);
+      background: #fff;
+      box-shadow: none;
+    }
+
+    footer {
+      padding: 28px 0 40px;
+      color: #756e71;
+      font-size: 0.82rem;
+    }
+
+    .footer-row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 18px;
+      flex-wrap: wrap;
+    }
+
+    .footer-row a {
+      color: var(--brand);
+      text-decoration: none;
+      font-weight: 760;
+    }
+
+    @media (max-width: 900px) {
+      .hero { padding-top: 54px; }
+      .hero-grid { grid-template-columns: 1fr; gap: 32px; }
+      .status-card { min-height: 345px; }
+      .summary-grid { grid-template-columns: 1fr; }
+      .summary-card { min-height: auto; }
+      .profile-grid { grid-template-columns: 1fr; }
+    }
+
+    @media (max-width: 600px) {
+      .shell { width: min(calc(100% - 22px), var(--max)); }
+      .nav { min-height: 67px; }
+      .brand-copy span { display: none; }
+      .header-note { font-size: 0.73rem; }
+      .hero { padding: 42px 0 39px; }
+      h1 { margin-top: 20px; }
+      .hero-actions { display: grid; grid-template-columns: 1fr; }
+      .button { width: 100%; }
+      .status-card { min-height: 330px; padding: 24px; border-radius: 24px; }
+      .status-card h2 { margin-top: 38px; }
+      .section { padding: 48px 0; }
+      .panel, .contact-card { border-radius: 22px; }
+      .fact { grid-template-columns: 1fr; gap: 3px; }
+      .contact-card::after { bottom: -24px; }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+      *, *::before, *::after { transition: none !important; }
+    }
+  </style>
+</head>
+<body>
+  <header class="site-header">
+    <div class="shell nav">
+      <a class="brand" href="#top" aria-label="Azad QBS profile home">
+        <span class="brand-mark" aria-hidden="true">AQ</span>
+        <span class="brand-copy">
+          <strong>Azad QBS</strong>
+          <span>Proprietary B2B software product</span>
+        </span>
+      </a>
+      <span class="header-note">Working MVP</span>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="shell hero-grid">
+        <div>
+          <span class="eyebrow">Limited product profile</span>
+          <h1>Cloud-based software for assessment operations.</h1>
+          <p class="lead">
+            Azad QBS is a proprietary B2B software product developed and operated by Azad Institute. Its working MVP is currently used in a live assessment-delivery environment and is being prepared for controlled deployment to educational organizations.
+          </p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="mailto:founder@bilaspurtestseries.com?subject=Azad%20QBS%20Business%20Enquiry">Contact the founder</a>
+            <a class="button button-secondary" href="#profile">View company profile</a>
+          </div>
+        </div>
+
+        <aside class="status-card" aria-label="Product status summary">
+          <div class="status-inner">
+            <span class="status-label">Working MVP</span>
+            <h2>Operationally tested.<br />Commercial rollout controlled.</h2>
+            <p>
+              This page confirms the product’s operating status and commercial direction. Product access and technical documentation are not publicly available.
+            </p>
+            <div class="status-meta">
+              <div class="meta-line">
+                <span>Product type</span>
+                <strong>B2B software platform</strong>
+              </div>
+              <div class="meta-line">
+                <span>Initial deployment</span>
+                <strong>Bilaspur Test Series</strong>
+              </div>
+              <div class="meta-line">
+                <span>Current stage</span>
+                <strong>Working MVP</strong>
+              </div>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <section class="section section-soft" id="profile">
+      <div class="shell">
+        <div class="section-head">
+          <p class="kicker">Company and product profile</p>
+          <h2>A digital-native product with validated operational use.</h2>
+          <p class="section-intro">
+            Azad QBS is designed as a scalable software platform for recurring assessment operations. Its working MVP has been validated through live use, while public information remains limited to the product’s purpose, business model and operating status.
+          </p>
+        </div>
+
+        <div class="summary-grid">
+          <article class="summary-card">
+            <span class="number">01</span>
+            <h3>Live operational validation</h3>
+            <p>The working MVP is used in recurring assessment and digital test-delivery operations.</p>
+          </article>
+          <article class="summary-card">
+            <span class="number">02</span>
+            <h3>Commercial software model</h3>
+            <p>Planned as subscription and usage-based B2B software for educational organizations.</p>
+          </article>
+          <article class="summary-card">
+            <span class="number">03</span>
+            <h3>Scalable product roadmap</h3>
+            <p>Controlled institutional pilots and broader market deployment are planned as the product matures.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="shell profile-grid">
+        <article class="panel panel-dark">
+          <p class="kicker">Information policy</p>
+          <h2>Product details remain confidential.</h2>
+          <p class="section-intro">
+            This profile confirms the existence, commercial direction and operating status of the product without publishing its internal interface, technical documentation or proprietary implementation methods.
+          </p>
+        </article>
+
+        <article class="panel">
+          <p class="kicker">Organization</p>
+          <h3>Developed and operated by Azad Institute</h3>
+          <p>
+            Azad Institute develops and operates Azad QBS as a proprietary B2B software product. Bilaspur Test Series serves as its initial live operational deployment.
+          </p>
+          <div class="facts">
+            <div class="fact">
+              <span>Organization</span>
+              <strong>Azad Institute</strong>
+            </div>
+            <div class="fact">
+              <span>Product category</span>
+              <strong>B2B education software</strong>
+            </div>
+            <div class="fact">
+              <span>Current stage</span>
+              <strong>Working MVP</strong>
+            </div>
+            <div class="fact">
+              <span>Business model</span>
+              <strong>Subscription and usage based</strong>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section" id="contact">
+      <div class="shell">
+        <div class="contact-card">
+          <div class="contact-content">
+            <p class="kicker">Business and program enquiries</p>
+            <h2>Verified product information is available on request.</h2>
+            <p>
+              Startup programs, cloud partners, prospective institutional pilot partners and other verified organizations may contact the founder for additional non-public product information.
+            </p>
+            <a class="button button-primary" href="mailto:founder@bilaspurtestseries.com?subject=Azad%20QBS%20Program%20Enquiry">founder@bilaspurtestseries.com</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="shell footer-row">
+      <span>© <span id="year"></span> Azad Institute. All rights reserved.</span>
+      <a href="https://bilaspurtestseries.com" rel="noreferrer">bilaspurtestseries.com</a>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
