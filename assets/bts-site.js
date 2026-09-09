@@ -1,0 +1,4 @@
+(()=>{'use strict';const select=document.getElementById('language');
+function apply(lang){if(!['hi','en','cg'].includes(lang))lang='hi';document.querySelectorAll('[data-hi]').forEach(el=>{el.textContent=el.getAttribute('data-'+lang)||el.getAttribute('data-hi')});document.querySelectorAll('.play-image').forEach(el=>{el.src=el.getAttribute(lang==='en'?'data-image-en':'data-image-hi')});document.documentElement.lang=lang==='cg'?'hne':lang;select.value=lang;try{localStorage.setItem('selectedLanguage',lang)}catch(e){}}
+select.addEventListener('change',()=>apply(select.value));let lang='hi';try{lang=localStorage.getItem('selectedLanguage')||'hi'}catch(e){}apply(lang);
+})();
