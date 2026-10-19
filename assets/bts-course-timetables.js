@@ -21,8 +21,8 @@
       const shown=c.tests.filter(t=>date.value==='all'||t.date===date.value);
       get('course-title').textContent=c.title;
       get('course-range').textContent=c.tests.length+' मेगा टेस्ट · अभ्यास अवधि: '+range(c.tests[0].date,c.tests.at(-1).date);
-      get('course-note').textContent=c.mode==='mega15'?'इस 15-मेगा-टेस्ट पैक में एडमिशन के बाद सभी 15 टेस्ट अनलॉक होते हैं। तारीखें आपके अभ्यास का क्रम बताती हैं।':'हर मेगा टेस्ट संबंधित व्याख्याता विषय की परीक्षा के पूरे पाठ्यक्रम पर आधारित है। अपने विषय के टेस्ट ऐप या वेबसाइट में देखें।';
-      get('mega-summary').textContent='अभी दिख रहे हैं: '+shown.length+' टेस्ट · '+shown.reduce((n,t)=>n+t.questions,0)+' प्रश्न';
+      get('course-note').textContent=c.mode==='mega15'?'इस 15-मेगा-टेस्ट पैक में एडमिशन के बाद सभी 15 टेस्ट अनलॉक होते हैं। तारीखें आपके अभ्यास का क्रम बताती हैं।':'इस 20-मेगा-टेस्ट पैक में कोर्स सक्रिय होते ही सभी 20 टेस्ट एक साथ खुलेंगे। तारीखें आपके अभ्यास का क्रम बताती हैं।';
+      get('mega-summary').textContent='समय-सारणी में: '+shown.length+' टेस्ट · '+shown.reduce((n,t)=>n+t.questions,0)+' प्रश्न';
       get('mega-empty').hidden=shown.length>0;
       get('print').disabled=shown.length===0;
       get('tests').replaceChildren();
@@ -38,6 +38,7 @@
       });
     }
     function changeCourse(){
+      history.replaceState(null,'','#'+course.value);
       const c=byId.get(course.value);
       options(date,[{id:'all',title:'सभी मेगा टेस्ट'},...c.tests.map(t=>({id:t.date,title:shortDate(t.date)+' · '+format(t.date,{weekday:'long'})}))],'all');
       render();
@@ -86,8 +87,9 @@
     });
   }
   function changeCourse(retainWeek){
+    history.replaceState(null,'','#'+course.value);
     const rows=visibleRows();
-    options(week,[{id:'all',title:'सभी उपलब्ध सप्ताह'},...rows.map(w=>({id:String(w.week),title:w.week===0?'पूरा SI timetable':'सप्ताह '+w.week+' · '+shortDate(startDate(w))}))],retainWeek);
+    options(week,[{id:'all',title:'सभी उपलब्ध सप्ताह'},...rows.map(w=>({id:String(w.week),title:w.week===0?'पूरा SI timetable':'सप्ताह '+w.week+' · '+shortDate(startDate(w))}))],retainWeek || (rows.length ? String(rows.at(-1).week) : 'all'));
     week.disabled=rows.length<2;render();
   }
   function changeExam(preferred){

@@ -20,6 +20,7 @@ function apply(){
  document.querySelectorAll('[data-day-step]').forEach(b=>b.disabled=!dayMode||(Number(b.dataset.dayStep)<0?position===0:position===dates.length-1));
  document.querySelectorAll('.day-position').forEach(n=>n.textContent=dayMode?dateLabel(date.value):'');
  if(!chosen)return;
+ document.querySelectorAll('a[href="teacher-syllabus.html"]').forEach(a=>{a.href='teacher-full-timetable.html#'+courseKey(course.value);});
  document.getElementById('courseTitle').textContent=chosen.title;document.getElementById('totalTests').textContent=chosen.tests.length+' टेस्ट';
  const allKnown=chosen.tests.every(t=>t.questions!==null);
  document.getElementById('totalQuestions').textContent=allKnown?chosen.tests.reduce((a,t)=>a+t.questions,0)+' प्रश्न':dates.length+' दिन';
@@ -40,4 +41,4 @@ let printDetails=[];window.addEventListener('beforeprint',()=>{printDetails=[...
 let preferred='';try{preferred=localStorage.getItem('bts-timetable-course')||'';}catch(e){}
 let hash='';try{hash=decodeURIComponent(location.hash.slice(1));}catch(e){}
 const fromHash=data.find(c=>courseKey(c.id)===courseKey(hash));const selected=fromHash||data.find(c=>courseKey(c.id)===courseKey(preferred));if(selected)course.value=selected.id;
-refreshDates();apply();
+refreshDates();if(courseDates().includes(today))date.value=today;apply();
