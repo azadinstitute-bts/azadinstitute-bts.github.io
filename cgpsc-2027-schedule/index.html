@@ -13,6 +13,16 @@ p{line-height:1.55;color:#4d6074}
 a{display:inline-block;margin-top:14px;padding:12px 18px;border-radius:10px;background:#102e53;color:#fff;text-decoration:none;font-weight:700}
 small{display:block;margin-top:18px;color:#788695}
 </style>
+<script>
+!function(f,b,e,v,n,t,s){
+if(f.fbq)return;n=f.fbq=function(){n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];
+t=b.createElement(e);t.async=!0;t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)
+}(window,document,'script','https://connect.facebook.net/en_US/fbevents.js');
+fbq('init','28576915491967306');
+fbq('track','PageView');
+fbq('trackCustom','CGPSC2027ScheduleLanding');
+</script>
 </head>
 <body>
 <main>
@@ -21,14 +31,35 @@ small{display:block;margin-top:18px;color:#788695}
 <a id="fallback" href="/downloads/bts-cgpsc-pre-test-series-2027.pdf" download="BTS_CGPSC_Pre_Test_Series_2027_Schedule.pdf">Download PDF</a>
 <small>If the download does not start automatically, tap the button above.</small>
 </main>
+<noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=28576915491967306&ev=PageView&noscript=1" alt=""></noscript>
 <script>
 (function(){
+  let downloadTracked=false;
+  function trackDownload(source){
+    if(downloadTracked)return;
+    downloadTracked=true;
+    try{
+      if(typeof fbq==='function'){
+        fbq('trackCustom','CGPSC2027ScheduleDownload',{
+          document:'CGPSC_Pre_Test_Series_2027_Schedule',
+          source:source
+        });
+      }
+    }catch(_){}
+  }
+
+  const fallback=document.getElementById('fallback');
+  fallback.addEventListener('click',function(){trackDownload('fallback_click');});
+
   const a=document.createElement('a');
   a.href='/downloads/bts-cgpsc-pre-test-series-2027.pdf';
   a.download='BTS_CGPSC_Pre_Test_Series_2027_Schedule.pdf';
   a.style.display='none';
   document.body.appendChild(a);
-  setTimeout(()=>a.click(),120);
+  setTimeout(function(){
+    trackDownload('auto');
+    a.click();
+  },180);
 })();
 </script>
 </body>
