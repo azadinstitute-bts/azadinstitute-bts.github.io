@@ -10,34 +10,11 @@
   return until?new Date(until).toLocaleDateString('hi-IN',{timeZone:'Asia/Kolkata',day:'numeric',month:'long',year:'numeric'})+' · रात 11:59:59 IST तक':'अंतिम तिथि के लिए सहायता लें';
  }
 
- async function renderCGPSC(s){
+ function renderCGPSC(s){
   const planId='cgpsc_prelims_2027_full';
   const schedule='/cgpsc-2027-schedule/';
   const admission='https://admission.bilaspurtestseries.com/?'+new URLSearchParams({post:'cgpsc',subject:s.id,plan:planId});
-  result.innerHTML='<div class="course-intro"><span class="eyebrow">CGPSC Prelims 2027</span><h2>Paper-I सामान्य अध्ययन + Paper-II Aptitude</h2><p>37 नियोजित टेस्ट · 23 विषयवार + 14 मेगा। हर टेस्ट में 100 प्रश्न होंगे। हिंदी और छत्तीसगढ़ी भाषा-खंडों के अलावा सभी प्रश्न हिंदी और अंग्रेज़ी दोनों में होंगे।</p></div><div class="plan-grid"><article class="plan-card primary"><span class="plan-label">पूर्ण टेस्ट सीरीज़</span><h3>Full Course</h3><div class="price" id="cgpsc-price">शुल्क जाँच रहे हैं</div><section class="test-breakdown" aria-label="टेस्टों का विवरण"><div class="test-total"><strong>37</strong><span>कुल नियोजित टेस्ट</span></div><dl><div><dt>विषयवार टेस्ट</dt><dd>23</dd></div><div><dt>मेगा टेस्ट</dt><dd>14</dd></div></dl></section><dl class="facts"><div><dt>टेस्ट कब मिलेंगे?</dt><dd>15 नवंबर से 21 दिसंबर 2026 के बीच निर्धारित तारीखों से खुलेंगे।</dd></div><div><dt>Access कब तक?</dt><dd id="cgpsc-validity">एडमिशन फॉर्म पर देखें</dd></div><div><dt>Online टेस्ट</dt><dd>Website या Student App में दें।</dd></div></dl><div class="actions"><a class="button" id="cgpsc-admission" href="'+admission+'">एडमिशन लें</a><a href="'+schedule+'">समय-सारणी PDF डाउनलोड करें →</a></div></article></div>';
-  const price=document.getElementById('cgpsc-price');
-  const validityText=document.getElementById('cgpsc-validity');
-  const action=document.getElementById('cgpsc-admission');
-  try{
-   const response=await fetch('https://mqorslvouzmrvciubpoq.supabase.co/functions/v1/admission-api?action=config');
-   if(!response.ok)throw new Error('config unavailable');
-   const config=await response.json();
-   if(!config.ok)throw new Error('config unavailable');
-   if(subject.value!==s.id)return;
-   const post=config.posts?.find(p=>p.post_id==='cgpsc');
-   const subject=config.subjects?.find(item=>item.subject_id===s.id && item.post_id==='cgpsc');
-   const plan=config.plans?.find(p=>p.plan_id===planId && p.subject_id===s.id && p.post_id==='cgpsc');
-   if(!post || !subject || !plan || String(config.settings?.FORM_STATUS||'OPEN').toUpperCase()!=='OPEN'){
-    price.textContent='एडमिशन अभी उपलब्ध नहीं है';
-    action.remove();
-    return;
-   }
-   price.innerHTML='₹'+esc(plan.amount)+'<small>इस कोर्स की वेबसाइट फीस</small>';
-   if(plan.valid_until)validityText.textContent=validity(plan);
-   action.textContent='एडमिशन लें · ₹'+plan.amount;
-  }catch(_){
-   price.textContent='फीस एडमिशन फॉर्म पर देखें';
-  }
+  result.innerHTML='<div class="course-intro"><span class="eyebrow">CGPSC Prelims 2027</span><h2>Paper-I सामान्य अध्ययन + Paper-II Aptitude</h2><p>37 नियोजित टेस्ट · 23 विषयवार + 14 मेगा। हर टेस्ट में 100 प्रश्न होंगे। हिंदी और छत्तीसगढ़ी भाषा-खंडों के अलावा सभी प्रश्न हिंदी और अंग्रेज़ी दोनों में होंगे।</p></div><div class="plan-grid"><article class="plan-card primary"><span class="plan-label">पूर्ण टेस्ट सीरीज़</span><h3>Full Course</h3><div class="price" id="cgpsc-price">₹250<small>इस कोर्स की वेबसाइट फीस</small></div><section class="test-breakdown" aria-label="टेस्टों का विवरण"><div class="test-total"><strong>37</strong><span>कुल नियोजित टेस्ट</span></div><dl><div><dt>विषयवार टेस्ट</dt><dd>23</dd></div><div><dt>मेगा टेस्ट</dt><dd>14</dd></div></dl></section><dl class="facts"><div><dt>टेस्ट कब मिलेंगे?</dt><dd>15 नवंबर से 21 दिसंबर 2026 के बीच निर्धारित तारीखों से खुलेंगे।</dd></div><div><dt>Access कब तक?</dt><dd>28 फ़रवरी 2027 · रात 11:59:59 IST तक</dd></div><div><dt>Online टेस्ट</dt><dd>Website या Student App में दें।</dd></div></dl><div class="actions"><a class="button" id="cgpsc-admission" href="'+admission+'">एडमिशन लें · ₹250</a><a href="'+schedule+'">समय-सारणी PDF डाउनलोड करें →</a></div></article></div>';
  }
  function render(){
   const s=data.subjects.find(x=>x.id===subject.value);
